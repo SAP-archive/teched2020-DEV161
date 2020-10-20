@@ -9,11 +9,11 @@ After completing these steps you will have created...
 
 1. In the **Welcome Page** click **Create project from a template**.
 
-    !![Open Dev Space](03-01-02 AppStudio Welcome Tab withOUT Extensions Loaded Notification_.jpg)
+    ![Open Dev Space](images/03-01-02&#32;AppStudio&#32;Welcome&#32;Tab&#32;withOUT&#32;Extensions&#32;Loaded&#32;Notification_.jpg)
 
     >If the Welcome Page does not appear, in the menu bar, select **View | Find Command** to open the **command palette** and select the command **SAP Business Application Studio: Welcome Page**. The command palette is opened at the top-center of the SAP Business Application Studio window.
 
-    >!![Welcome Page from command palette](03-01-03 AppStudio Welcome Page from Command Palette_.jpg)
+    >![Welcome Page from command palette](images/03-01-03&#32;AppStudio&#32;Welcome&#32;Page&#32;from&#32;Command&#32;Palette_.jpg)
 
     >The easiest way to develop an SAP Fiori freestyle app from scratch is to create it from a template. To continue developing an existing application, the best practice is to use git source code management and clone the repository.
 
@@ -24,7 +24,7 @@ After completing these steps you will have created...
 
 2. Make sure that the target folder is `/home/user/projects`, select the **SAP Fiori Freestyle Project** template, and click **Next**.
 
-    !![Fiori project template](03-03 AppStudio Fiori Project Template_.jpg)
+    ![Fiori project template](images/03-03&#32;AppStudio&#32;Fiori&#32;Project&#32;Template_.jpg)
 
 3. For **Target Running Environment**, select the following, and click **Next**.
 
@@ -33,15 +33,15 @@ After completing these steps you will have created...
     | A | Select the target running environment | **Cloud Foundry** |
     | B | Select the template you want to use | **SAPUI5 Application** |
 
-    !![fiori project template](03-04 AppStudio Fiori Project Template Target Running Environment_.png)
+    ![fiori project template](images/03-04&#32;AppStudio&#32;Fiori&#32;Project&#32;Template&#32;Target&#32;Running&#32;Environment_.png)
 
 4. For **Project Name**, enter `FioriDemo`, and click **Next**.
 
-    !![Fiori project template - project name](03-05 AppStudio Fiori Project Template Project Name.jpg)
+    ![Fiori project template - project name](images/03-05&#32;AppStudio&#32;Fiori&#32;Project&#32;Template&#32;Project&#32;Name.jpg)
 
 5. For **HTML5 Applications**, if you plan to integrate the app to a launchpad site, select **Managed by SAP Cloud Platform** and provide a unique service name. Otherwise, select **Standalone Approuter**, and click **Next**.
 
-    !![Standalone Approuter](03-06-01 AppStudio HTML5 Applications Runtime.png)
+    ![Standalone Approuter](images/03-06-01&#32;AppStudio&#32;HTML5&#32;Applications&#32;Runtime.png)
 
     >The application router is the single point-of-entry for an application running in the Cloud Foundry environment on SAP Cloud Platform. The application router is used to serve static content, authenticate users, rewrite URLs, and forward or proxy requests to other micro services while propagating user information.
 
@@ -56,7 +56,7 @@ After completing these steps you will have created...
     | C | Enter a namespace | **`ns`** |
     | D | Do you want to enable Karma tests? | **No** |
 
-    !![Fiori project template - basic attributes](03-06 AppStudio Fiori Project Basic Attributes.jpg)
+    ![Fiori project template - basic attributes](images/03-06&#32;AppStudio&#32;Fiori&#32;Project&#32;Basic&#32;Attributes.jpg)
 
 7. For **View Name**, select the following, and click **Next**.
 
@@ -65,7 +65,7 @@ After completing these steps you will have created...
     | A | Enter a view name | **`Suppliers`** |
     | B | Do you want to add a data service | **Yes** |
 
-    !![Fiori project template - view name](03-07 AppStudio Fiori Project View Name.png)
+    ![Fiori project template - view name](images/03-07&#32;AppStudio&#32;Fiori&#32;Project&#32;View&#32;Name.png)
 
 8. For **Consume Services**, select the following, and click **Next**.
 
@@ -75,15 +75,15 @@ After completing these steps you will have created...
     | B | Select a source | **`ES5 [Catalog]`** |
     | C | Select a service | **`GWSAMPLE_BASIC`** |
 
-    !![Fiori project template - consume services](03-08 AppStudio Fiori Project Providers.jpg)
+    ![Fiori project template - consume services](images/03-08&#32;AppStudio&#32;Fiori&#32;Project&#32;Providers.jpg)
 
     >A notification that the project has been generated appears at the bottom right of the screen.
 
-    !![Fiori project template - project generated](03-08-02 AppStudio Fiori Project Project Generated.jpg)
+    ![Fiori project template - project generated](images/03-08-02&#32;AppStudio&#32;Fiori&#32;Project&#32;Project&#32;Generated.jpg)
 
 9. Click **Open in New Workspace** in the notification or **File > Open Workspace**, and choose `FioriDemo`.
 
-    !![AppStudio open workspace](03-09 AppStudio Open Workspace_.jpg)
+    ![AppStudio open workspace](images/03-09&#32;AppStudio&#32;Open&#32;Workspace_.jpg)
 
     >The **Explorer** view opens and you can see the `FioriDemo` project, its folder structure, and files. If not, you can click the **Explorer** view button at the top left of the screen.
 

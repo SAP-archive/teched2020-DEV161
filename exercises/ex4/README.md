@@ -10,29 +10,29 @@ Open the layout editor in SAP Business Application Studio to easily make a few c
 
 2. Choose **Open With > Layout Editor**.
 
-    !![Open with Layout Editor](04-01 AppStudio Open Layout Editor_.jpg)
+    ![Open with Layout Editor](images/04-01&#32;AppStudio&#32;Open&#32;Layout&#32;Editor_.jpg)
 
     >To have the Layout Editor option available after opening the workspace, you may need to wait a bit for the Layout Editor extension to be loaded.
 
     >The **Suppliers** view is opened in the **Layout Editor**.
 
-    >!![Layout Editor Opened](04-01-02 AppStudio Open Layout Editor.jpg)
+    >![Layout Editor Opened](images/04-01-02&#32;AppStudio&#32;Open&#32;Layout&#32;Editor.jpg)
 
 3. You can optionally choose to open it with the code editor and see how modifications in the Layout Editor are manifested in the code editor.
 
-    !![Open code editor](04-03 AppStudio Open Code Editor-XML_.jpg)
+    ![Open code editor](images/04-03&#32;AppStudio&#32;Open&#32;Code&#32;Editor-XML_.jpg)
 
     >The **Suppliers** view is opened in the code editor in a tab next to the **Layout Editor**.
 
-    >!![Code editor opened](04-03-02 AppStudio Open Code Editor-XML.jpg)
+    >![Code editor opened](images/04-03-02&#32;AppStudio&#32;Open&#32;Code&#32;Editor-XML.jpg)
 
 4. For convenience, place the code editor below the Layout Editor. Use the drag & drop functionality.
 
-    !![Drag-Drop editor](04-04 AppStudio Drag-Drop Code Editor.jpg)
+    ![Drag-Drop editor](images/04-04&#32;AppStudio&#32;Drag-Drop&#32;Code&#32;Editor.jpg)
 
     >The **Layout Editor** and code editor are stacked so you can see how making changes to one will be reflected on the other.
 
-    >!![Editor dropped](04-04-02 AppStudio Drag-Drop Code Editor.jpg)
+    >![Editor dropped](images/04-04-02&#32;AppStudio&#32;Drag-Drop&#32;Code&#32;Editor.jpg)
 
 
 
@@ -42,41 +42,41 @@ Make some changes using the layout editor, with no need to do any coding.
 
 1. In the **Controls** pane, enter `List` to filter the controls list in the search box.
 
-    !![Filter List control](05-01 AppStudio Layout Editor Filter Controls-List.jpg)
+    ![Filter List control](images/05-01&#32;AppStudio&#32;Layout&#32;Editor&#32;Filter&#32;Controls-List.jpg)
 
 2. Drag the **List** control and drop it on the **View** control in the canvas.
 
-    !![Drag and drop](05-02 AppStudio Layout Editor List Dropped_.jpg)
+    ![Drag and drop](images/05-02&#32;AppStudio&#32;Layout&#32;Editor&#32;List&#32;Dropped_.jpg)
 
 3. Select the **Standard List Item** control by clicking it (the breadcrumb indicates which control is selected) and, in the **Entity Set** property in the **Properties** pane, click the Bind icon.
 
-    !![Open entity set bind window](05-03 AppStudio Layout Editor Bind to Entity Set_.jpg)
+    ![Open entity set bind window](images/05-03&#32;AppStudio&#32;Layout&#32;Editor&#32;Bind&#32;to&#32;Entity&#32;Set_.jpg)
 
     >The **Select Entity Set** view is displayed.
 
 4. Select the **Define entity set and set the selected control as template** option, and in the **Entity Set** dropdown list, choose the `BusinessPartnerSet` entity set. Click **Bind** to complete the operation.
 
-    !![entity set bind window](05-04 AppStudio Layout Editor Bind to Entity Set_.jpg)
+    ![entity set bind window](images/05-04&#32;AppStudio&#32;Layout&#32;Editor&#32;Bind&#32;to&#32;Entity&#32;Set_.jpg)
 
     >The space of the **Select Entity Set** view may be to narrow to show all options. In case you do not see the **Define entity set and set the selected control as template** option, scroll down in the **Select Entity Set** view to make it available.
 
     >The bind operation is reflected in both the **Layout Editor** and the code editor.
 
-    >!![entity set bind window](05-04-02 AppStudio Layout Editor Bind to Entity Set_.jpg)
+    >![entity set bind window](images/05-04-02&#32;AppStudio&#32;Layout&#32;Editor&#32;Bind&#32;to&#32;Entity&#32;Set_.jpg)
 
 5. In the **Properties** pane, in the **Title** property, click the **Bind** icon.
 
-    !![open Title bind window](05-05 AppStudio Layout Editor Bind Title_.jpg)
+    ![open Title bind window](images/05-05&#32;AppStudio&#32;Layout&#32;Editor&#32;Bind&#32;Title_.jpg)
 
     >The **Data Binding** view is displayed.
 
 6. Click the **Clear expression** (eraser) icon to clear the default text, and in the data fields double click  `CompanyName`. Click **Bind** to complete the operation.
 
-    !![Title bound](05-06 AppStudio Layout Editor Bind Title_.jpg)
+    ![Title bound](images/05-06&#32;AppStudio&#32;Layout&#32;Editor&#32;Bind&#32;Title_.jpg)
 
 7. Repeat the last two steps for the **Description** property in the **Properties** pane. Choose  `BusinessPartnerID`.
 
-    !![Bind Description](05-07 AppStudio Layout Editor Bind Description_.jpg)
+    ![Bind Description](images/05-07&#32;AppStudio&#32;Layout&#32;Editor&#32;Bind&#32;Description_.jpg)
 
 
 ## Exercise 2.2 Sub Exercise 2 Test run the application
@@ -85,17 +85,17 @@ Run your new application to test it.
 
 1. Open the **Run Configurations** view.
 
-    !![Open Run Configurations](06-01 AppStudio Run Configurations_.jpg)
+    ![Open Run Configurations](images/06-01&#32;AppStudio&#32;Run&#32;Configurations_.jpg)
 
 2. Click **+** to create a new **Run Configurations**.
 
-    !![Create new run configuration](06-02 AppStudio Run Configurations_.jpg)
+    ![Create new run configuration](images/06-02&#32;AppStudio&#32;Run&#32;Configurations_.jpg)
 
     >Creating a new **Run Configuration** launches the command palette, a text-based mini wizard. The command palette is opened at the top-center of the SAP Business Application Studio window.
 
 3. When "What would you like to run?" question appears, select **`BusinessPartners`**.
 
-    >!![run configuration select BusinessPartners](06-02-01 AppStudio Run Configurations_.jpg)
+    >![run configuration select BusinessPartners](images/06-02-01&#32;AppStudio&#32;Run&#32;Configurations_.jpg)
 
 4. For the next steps of the wizard, select the following:
 
@@ -109,27 +109,27 @@ Run your new application to test it.
 
 5. Expand the run configuration to display the services that can be bound.
 
-    !![Bindable objects](06-04 AppStudio Run Configurations_.jpg)
+    ![Bindable objects](images/06-04&#32;AppStudio&#32;Run&#32;Configurations_.jpg)
 
     >SAP Business Application Studio allows you to test your app with resources.
 
 6. To bind to the destination, click the **Bind** icon to the right of the destination resource to get a list of available destinations.
 
-    !![Bind to Destination](06-05 AppStudio Run Configurations Bind Destination_.jpg)
+    ![Bind to Destination](images/06-05&#32;AppStudio&#32;Run&#32;Configurations&#32;Bind&#32;Destination_.jpg)
 
 7. Select the `ES5` destination from the list.
 
-    !![Select Destination](06-05-02 AppStudio Run Configurations Bind Destination_.jpg)
+    ![Select Destination](images/06-05-02&#32;AppStudio&#32;Run&#32;Configurations&#32;Bind&#32;Destination_.jpg)
 
     >Once the destination has been bound, the **Bind** icon turns green.
 
     >To unbind the destination, click the **Unbind** icon.
 
-    >!![Destination is bound](06-05-03 AppStudio Run Configurations Bind Destination_.jpg)
+    >![Destination is bound](images/06-05-03&#32;AppStudio&#32;Run&#32;Configurations&#32;Bind&#32;Destination_.jpg)
 
 8. Hover over the run configuration and click the Run Module icon.  
 
-    !![Running the app locally](06-06 AppStudio Run Configurations Run_.jpg)
+    ![Running the app locally](images/06-06&#32;AppStudio&#32;Run&#32;Configurations&#32;Run_.jpg)
 
 9. Wait for the **A service is listening to port 6004** notification and then click the button to open the app.
 
@@ -137,7 +137,7 @@ Run your new application to test it.
 
     >If you are running the app for the first time, the button in the notification will say **Expose and Open**. Otherwise it will say **Open in New Tab**.
 
-    !![App is running locally](06-07 AppStudio Run Configurations Run_.jpg)
+    ![App is running locally](images/06-07&#32;AppStudio&#32;Run&#32;Configurations&#32;Run_.jpg)
 
     >Some of the notifications appear on the screen for a short period of time.
 
@@ -147,7 +147,7 @@ Run your new application to test it.
 
     The app is opened in a new tab and a list of suppliers is displayed.
 
-    !![SAP Fiori app is running](AppStudio Run Configurations-16.jpg)
+    ![SAP Fiori app is running](images/AppStudio&#32;Run&#32;Configurations-16.jpg)
 
 
 ## Exercise 2.2 Sub Exercise 2 Stop the running application
@@ -158,7 +158,7 @@ After completing these steps you will have...
 
 2. In the **Debug** view click the Stop icon.
 
-    !![Stop running app](05-02 AppStudio Stop Running App_.jpg)
+    ![Stop running app](images/05-02&#32;AppStudio&#32;Stop&#32;Running&#32;App_.jpg)
 
     >The status bar background color changes from orange to blue.
 
@@ -170,4 +170,4 @@ After completing these steps you will have...
 
 With this, you have successfully completed the development of an SAP Fiori app using SAP Business Application Studio, including test-running the app locally in the dev space. In this tutorial, you learned about high productivity tools that are available out-of-the-box in SAP Business Applications Studio, such as: templates and wizards, command palette, Layout Editor, local run, and more.
 
-Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
+Continue to - [Exercise 3 - Excercise 3 ](images/../ex3/README.md)
