@@ -39,11 +39,16 @@ Provide the exercise content here directly in README.md using [markdown](https:/
     - [Exercise 2.2 - Launch the Application](exercises/ex2#exercise-22-sub-exercise-2-description)
     - [Exercise 2.2 - Load Data to Mock Server](exercises/ex2#exercise-22-sub-exercise-2-description)
 
-- [Exercise 8 - Apply CI/CD to SAP Fiori Development on SAP Cloud Platform](exercises/ex2/)
-    - [Based on SCP Starter Scenario - Extend UI on SCP)](https://github.com/SAP-samples/cloud-extension-html5-sample/blob/mission/mission/ci-cd-service/README.md)
-    - [Exercise 2.1 - Getting Started (git, ...)](exercises/ex2#exercise-21-sub-exercise-1-description)
-    - [Exercise 2.2 - Continuous Integration and Delivery pipeline setup](exercises/ex2#exercise-22-sub-exercise-2-description)
-    - [Exercise 2.2 - Test automatic triggering of CI/CD job](exercises/ex2#exercise-22-sub-exercise-2-description)
+- [Exercise 8 - Apply CI/CD to SAP Fiori Development on SAP Cloud Platform](exercises/ex8/)
+    - [Exercise 8.1 - Create a GitHub Project](exercises/ex8#exercise-81-Create-a-GitHub-Project)
+    - [Exercise 8.2 - Create Personal Access Token for GitHub](exercises/ex8#exercise-82-Create-Personal-Access-Token-for-GitHub)
+    - [Exercise 8.3 - Add Git repository to Fiori project](exercises/ex8#exercise-83-Add-Git-repository-to-Fiori-project)
+    - [Exercise 8.4 - Enable SAP CP Contunuous Integration and Delivery](exercises/ex8#exercise-84-Enable-SAP-CP-Contunuous-Integration-and-Delivery)
+    - [Exercise 8.5 - Configure Credentials in SAP CP Continuous Integration and Delivery](exercises/ex8#exercise-85-Configure-Credentials-in-SAP-CP-Continuous-Integration-and-Delivery)
+    - [Exercise 8.6 - Configure a job in SAP Cloud Platform Continuous Integration and Delivery](exercises/ex8#exercise-86-Configure-a-job-in-SAP-Cloud-Platform-Continuous-Integration-and-Delivery)
+    - [Exercise 8.7 - Make a Change in the Project](exercises/ex8#exercise-87-Make-a-Change-in-the-Project)
+    - [Exercise 8.8 - Verify Build Success in SAP CP Continuous Integration and Delivery](exercises/ex8#exercise-88-Verify-Build-Success-in-SAP-CP-Continuous-Integration-and-Delivery)
+    - [Exercise 8.9 - Access the Application](exercises/ex8#exercise-89-Access-the-Application)
 
 
 **OR** Link to the PDF document stored in your github repo for example...
