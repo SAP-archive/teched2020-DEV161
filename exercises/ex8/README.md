@@ -69,7 +69,7 @@ After completing these steps you will have added your project sources to a GitHu
 
 10. When prompted, enter your Git Username and Password (or Token).
 
-## Exercise 2.4 Enable SAP CP Continuous Integration and Delivery
+## Exercise 8.4 Enable SAP CP Continuous Integration and Delivery
 
 After completing these steps you will have subscribed to SAP Cloud Platform Continuous Integration and Delivery and will have asigned the `Administrator` role to your user.
 
@@ -89,7 +89,7 @@ If the user is new to the subaccount, choose Add User in the Confirmation dialog
 - Choose `Assign Role Collection`.
 - From the dropdown list, select the `CICD Service Administrator` role.
 
-## Exercise 2.5 Configure Credentials in SAP CP Continuous Integration and Delivery
+## Exercise 8.5 Configure Credentials in SAP CP Continuous Integration and Delivery
 
 After completing these steps you will have created credentials for connecting `SAP Cloud Platform Continuous Integration and Delivery` to other services.
 
@@ -120,7 +120,7 @@ After completing these steps you will have created credentials for connecting `S
   - For 'Password', use the password for Cloud Platform password.
 ![Credentials GitHub](./images/CICD_credentials_cfdeploy.png)
 
-## Exercise 2.6 Configure a job in SAP Cloud Platform Continuous Integration and Delivery
+## Exercise 8.6 Configure a job in SAP Cloud Platform Continuous Integration and Delivery
 
 After completing these steps you will have configured a job in `SAP Cloud Platform Continuous Integration and Delivery`.
 
@@ -159,13 +159,13 @@ Get the org name, space name and apiEndpoint values from your Cloud Platform Coc
 ![Webhook Details](./images/GH_webhook_details.png)
 
 
-## Exercise 2.7 Make a Change in the Project.
+## Exercise 8.7 Make a Change in the Project.
 1. Go to your repository in GitHub.
 2. Change one file.
 3. Commit the change to `GitHub`.
 
 
-## Exercise 2.8 Verify Build Success in SAP CP Contunuous Integration and Delivery.
+## Exercise 8.8 Verify Build Success in SAP CP Contunuous Integration and Delivery.
 
 After completing these steps you will learn how to monitor the outcome of a job in `SAP Cloud Platform Continuous Integration and Delivery`.
 
@@ -178,7 +178,7 @@ After completing these steps you will learn how to monitor the outcome of a job 
 2. Wait until the job has finished and verify the build tile has been marked as 'Successful'.
 ![Successful Build](./images/CICD_successful_build.png)
 
-## Exercise 2.9 Access the Application.
+## Exercise 8.9 Access the Application.
 
 1. Go to 'Cloud Foundry' tab for your trial account and select the 'Spaces'.
 ![CP Spaces](./images/CP_cloudfoundry.png)
