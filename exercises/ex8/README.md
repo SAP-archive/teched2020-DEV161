@@ -96,7 +96,7 @@ After completing these steps you will have created credentials for connecting `S
 1. Access SAP Cloud Platform Continuous Integration and Delivery in the SAP Cloud Platform cockpit.
 
 - In your subaccount in the SAP Cloud Platform cockpit, choose 'Subscriptions'.
-- In the SaaS Applications category, choose Continuous Integration & Delivery.
+- In the 'Extension Suite - Development Efficiency' category, choose Continuous Integration & Delivery.
 - Choose Go to Application.
 - Use your credentials to log on to the application.
 ![CICD](./images/CICD_access.png)
@@ -163,10 +163,26 @@ Get the org name, space name and API endpoint values from your Cloud Platform Co
 
 
 ## Exercise 8.7 Make a Change in the Project.
-1. Go to your repository in GitHub.
-2. Change one file.
-3. Commit the change to `GitHub`.
 
+1. Go to your development space in 'Business Application Studio'.
+2. Navigate to `productsinventory/webapp/i18n/i18n.properties` file.
+3. Change the `appDescription`.
+![Change Description](./images/change_description.png).
+
+4. Open the Source Control: Git
+![Git](./images/bas_git.png).
+
+5. Stage the changed file to the commit.
+![Stage File](./images/bas_add_file_commit.png).
+
+6. Specify commit message. 
+![Changed File](./images/bas_commit_message.png).
+
+7. Commit the change.
+![Changed File](./images/bas_commit.png).
+
+8. Push the changes to 'GitHub'
+![Push Changes](./images/git_push_bas.png).
 
 ## Exercise 8.8 Verify Build Success in SAP CP Contunuous Integration and Delivery.
 
