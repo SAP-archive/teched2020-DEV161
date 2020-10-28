@@ -165,8 +165,8 @@ Get the org name, space name and API endpoint values from your Cloud Platform Co
 ## Exercise 8.7 Make a Change in the Project.
 
 1. Go to your development space in 'Business Application Studio'.
-2. Navigate to `productsinventory/webapp/i18n/i18n.properties` file.
-3. Change the `appDescription`.
+2. Make a small change - for example navigate to `productsinventory/webapp/i18n/i18n.properties` file.
+and change the `appDescription`.
 ![Change Description](./images/change_description.png).
 
 4. Open the Source Control: Git
@@ -199,14 +199,17 @@ After completing these steps you will learn how to monitor the outcome of a job 
 
 ## Exercise 8.9 Access the Application.
 
-1. Go to 'Cloud Foundry' tab for your trial account and select the 'Spaces'.
+1. Go to 'Cloud Foundry' tab for your trial account,  select the 'Spaces' and enter your soace.
 ![CP Spaces](./images/CP_cloudfoundry.png)
 
-2. Select the space.
+2. Verify the `products-inventory-router` application is runnung. Click on the `products-inventory-router` link.
+![CP Apps](./images/CP_apps.png) 
 
-3. Verify the 'Procurement' Application has been deployed 
+3. Click on the application routes link to access the application.
+![CP Apps](./images/CP_app_routes.png) 
 
-4. Verify the deployed application is running and showing its Home Screen.
+4. Verify the deployed application is running and showing the change made.
+![Fiori App](./images/fiori_app.png) 
 
 
 ## Summary
