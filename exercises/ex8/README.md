@@ -108,7 +108,7 @@ After completing these steps you will have created credentials for connecting `S
   - For 'Name', freely choose a name for your credential, which is unique in your subaccount on SAP Cloud Platform. In this example - 'github' 
   - For 'Type', select 'Basic Authentication'.
   - For 'Username', enter your Github user name.
-  - For 'Password', use the personal access token which you created in the Github in previous step.
+  - For 'Password', use the personal access token which you created in the Github in step 8.2.
 ![Credentials GitHub](./images/CICD_credentials_github.png)
 
 3. Create Credentials to deploy to CP, Cloud Foundry Environment.
@@ -117,7 +117,7 @@ After completing these steps you will have created credentials for connecting `S
   - For 'Name', freely choose a name for your credential, which is unique in your subaccount on SAP Cloud Platform. In this example - 'cfdeploy' 
   - For 'Type', select 'Basic Authentication'.
   - For 'Username', enter your Cloud Platform Cockpit user name.
-  - For 'Password', use the password for Cloud Platform password.
+  - For 'Password', enter your Cloud Platform Cockpit password .
 ![Credentials GitHub](./images/CICD_credentials_cfdeploy.png)
 
 ## Exercise 8.6 Configure a job in SAP Cloud Platform Continuous Integration and Delivery
@@ -128,22 +128,25 @@ After completing these steps you will have configured a job in `SAP Cloud Platfo
 ![Jobs](./images/CICD_jobs.png)
 
 2. Fill in the general information
-- For 'Job Name', Freely choose a job name that is unique in your subaccount on SAP Cloud Platform - for in this example 'RiskManagment'.
+- For 'Job Name', Freely choose a job name that is unique in your subaccount on SAP Cloud Platform - for in this example 'Procurement'.
 - For 'Repository URL', Enter the URL of your GitHub repository.
-- For 'Repository Credentials', enter the Credentials name to access your GitHub Repository, created in 2.5. 
+- For 'Repository Credentials', enter the Credentials name to access your GitHub Repository, created in 8.5. 
 Leave empty if your GitHub repository is public.
-- For 'Branch', enter the GitHub branch from which you want to receive push events.
+- For 'Branch', enter the GitHub branch your project sources were pushed to. In this example, `main`.
 - For "Pipeline", choose `sap-ui5-cf`.
 ![UI Job](./images/CICD_UI_job.png)
 
 - Scroll down to the 'Tasks'. By default, the Build task is ‘ON’.
 ![UI Job Build Stage](./images/CICD_UI_job_build.png)
 
-- Change the Deploy State ‘ON’.
-Get the org name, space name and apiEndpoint values from your Cloud Platform Cockpit in your account and fill them in.
+- Change the Deploy State to `ON`.
+Get the org name, space name and API endpoint values from your Cloud Platform Cockpit in your account.
 ![Cockpit](./images/CP_API_Endpoint.png) 
-![UI Job Deploy Stage](./images/CICD_UI_job_deploy.png)
+
+- Fill in the information for the Deploy Stage.
 - Choose the cloud credentials created in the previous step named 'cfdeploy'.
+![UI Job Deploy Stage](./images/CICD_UI_job_deploy.png)
+
 - Choose 'Create'
 
 
@@ -167,7 +170,7 @@ Get the org name, space name and apiEndpoint values from your Cloud Platform Coc
 
 ## Exercise 8.8 Verify Build Success in SAP CP Contunuous Integration and Delivery.
 
-After completing these steps you will learn how to monitor the outcome of a job in `SAP Cloud Platform Continuous Integration and Delivery`.
+After completing these steps you will learn how to monitor the outcome of a job in `SAP Cloud Platform Continuous Integration and Delivery` and trigger a job manually if required.
 
 1. In the Jobs tab in `SAP Cloud Platform Continuous Integration and Delivery`, select your job and verify a new tile appears in the Builds view of your job marked as 'Running'.
 ![Job](./images/CICD_running_job.png)
