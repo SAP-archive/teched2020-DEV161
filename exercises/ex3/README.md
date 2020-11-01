@@ -3,7 +3,7 @@
 - How to create an SAP Fiori application using an application template
 - How to test-run the app locally in the dev space
 
-## Exercise 2.1 Sub Exercise 1 Create new SAP Fiori project
+## Exercise 3.1 - Launch Yeoman UI Generator
 
 After completing these steps you will have created an SAP Fiori app that follows the SAP Fiori Worklist floorplan.
 
@@ -15,6 +15,8 @@ After completing these steps you will have created an SAP Fiori app that follows
 
 2. Type *yeo* in the Command Palette* dialog to filter the *Yeoman UI Generators* command. Press [ENTER] to execute the command.
     <br><br>![](images\2020-10_BAS_Command_Palette_Yeo_.jpg)<br><br>
+
+## Exercise 3.2 - Install SAP Fiori tools for SAP Fiori freestyle app development
 
 3. Click *Explore and Install Generators...* to find and istall the SAP Fiori freestyle app templates. You may need to accept the legal terms.
     <br><br>![](images\2020-10_BAS_Install_UI_Generators-1_.jpg)<br><br>
@@ -34,6 +36,8 @@ After completing these steps you will have created an SAP Fiori app that follows
     >To exit the wizard without generating the project, close the *Yeoman UI* tab.
 
     >Using the UI wizard you can click the `Back` button to go back to the previous step, or click the specific wizard step to go back to that step.
+
+## Exercise 3.3 - Create Project Using SAP Fiori Worklist Application template
 
 6. Select the *SAP Fiori Worklist Application* template, and click *Next*.
     <br><br>![](images\2020-10_BAS_Template_Selection_.jpg)<br><br>
@@ -57,15 +61,18 @@ After completing these steps you will have created an SAP Fiori app that follows
 
     | Step | Parameter | Value |
     |:-----|:----------|:------|
-    | A | What is the module name for your application? | **productsinventory** |
-    | B | What is the title for your application? | **product Inventory** |
-    | C | What is the namespace for your application? | **products.inventory** |
-    | D | Whart is the descripeiom for your application? | **An SAP Fiori freestyle app to manage products inventory (demo)** |
-    | E | Choose your project folder  | **/home/user/projects/products-inventory** |
-    | F | Do you want to cinfigure advacned options?  | **No** (default) |
+    | A | Module name | **productsinventory** |
+    | B | Application title | **product Inventory** |
+    | C | Application namespace | **products.inventory** |
+    | D | Description | **An SAP Fiori freestyle app to manage products inventory (demo)** |
+    | E | Project folder path | **/home/user/projects/products-inventory** |
+    | F | Configure advanced options?  | **No** (default) |
+
+## Exercise 3.4 - Open the Project's Workspace
 
 10. Wait for the project to generate. Once it is generated, the *Yeoman UI* tab closes, and a popup notification appears at the bottom right of SAP Business Application Studio asking what would you like to do with it. Click *Open in New Workspace*.
     <br><br>![](images\2020-10_BAS_Project_Generated_.jpg)<br><br>
+    >If the popup notification does not appear, in the main menu select *File | Open Workspace...*, select *products-inventory*, and click *Open*. Wait for SAP Business Application Studio to reload.
 
 11. SAP Business Applications reloads with an open workspace containing the *products-inventory* project. You can click *>* / *V* in the *Explorer* pane to expand/collapse the folders and files display.
     <br><br>![](images\2020-10_BAS_Workspace_Open_.jpg)<br><br>
@@ -77,6 +84,8 @@ After completing these steps you will have created an SAP Fiori app that follows
 
 ## Summary
 
-You've now ...
+You've now successfully completed the development of an SAP Fiori app using SAP Business Application Studio.
 
-Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
+In this exercise, you learned about high productivity tools that are available out-of-the-box in SAP Business Applications Studio, such as: templates and wizards, command palette, and more.
+
+Continue to - [Exercise 4 - Test the Application with Mock Data ](../ex4/README.md)
