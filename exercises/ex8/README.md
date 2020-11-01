@@ -1,218 +1,59 @@
-# Exercise 8 - Connect your project to SAP CP Continuous Integration and Delivery 
+# Useful CF Commands
 
-In this exercise we will create a project in the public GitHub where you can store the source code, enable `SAP CP Continuous Integration and Delivery` to configure and run predefined continuous integration and delivery (CI/CD) pipeline that automatically test, build, and deploy your code changes to speed up your development and delivery cycles.
+In this exercise, you will go through a basic set of CF commands that are useful in the context of SAP Fiori development.
 
-## Exercise 8.1 Create a GitHub Project 
+## Logon
 
-After completing these steps you will have created a repository in the public GitHub where you can store the source code of your project. You need to have a user in the public GitHub to execute the steps below.
+After completing these steps you will know which CF commands are available, what they do and try out a few of the available commands.
 
-1. Open https://github.com/ and sign in with your user.
+1. Open a new terminal using *Terminal | New Terminal* or *[CTRL] + ~* keyboard shortcut.
+<br><br>![](images\2020-10_BAS_Terminal_Open_.jpg)<br><br>
 
-2. Click on *New* in the 'Repository' tab to create a new repository.
-![Create Github Repo](./images/GH_newRepository.png)
-   
-3. Enter the name of the repository. Use 'products-inventory'. Do not check the checkbox 'Intialize this repository with a README'.
-4. Click on create repository.
-![Create Github Repo](./images/GH_createGitRepo.png)
+2. Double click the terminal tab to maximize it.
+<br><br>![](images\2020-10_BAS_Terminal_Maximize_.jpg)<br><br>
 
-5. Copy the github url of the newly created Git repository.
-![Copy GitHub URL](./images/GH_copyGitHubURL.png)
+3. Execute *cf help* to get the list of all available commands.
+<br><br>![](images\2020-10_BAS_CF_Help_.jpg)<br><br>
 
+4. To show a list of all available commands with a single line description for each command execute *cf help -a*.
+<br><br>![](images\2020-10_BAS_CF_Help_-a_.jpg)<br><br>
 
-## Exercise 8.2 Create Personal Access Token for GitHub
+    >Tip 1: Execute the *clear* command to cealr the terminal
 
-After completing these steps you will have created a personal access token to authenticate against GitHub.
+    >Tip 2: Instead of executing *cf help -a*, execute *cf help -a | more. the commands will be printed to the terminal one screen at a time. To see the next line press the [ENTER] button. To see the next screen press the [SPACE] button.
 
+5. Digging one level deeper, getting help for a spcific command, execute *cf help [COMMAND]* e.g. *cf help login*.
+<br><br>![](images\2020-10_BAS_CF_Help_Login_.jpg)<br><br>
 
-1. Refer to the public Git Hub link and create a [Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
+6. In a previous exercise we saw how to log in to CF using the *command palette*. In the last step we saw how to log in to CF using the command line. To log out from CF use *cf logout*. You'll get indication of successful log out both in the terminal as well as in the *status bar* at the bottom left of the screen.
+<br><br>![](images\2020-10_BAS_CF_Logout_.jpg)<br><br>
 
-## Exercise 8.3 Add Git repository to Fiori project
+7. To get the list of SAP Fiori / SAPUI5 deployed to the CF space you're logged in to, execute *cf html5-list*.
+<br><br>![](images\2020-10_BAS_CF_html5-list_.jpg)<br><br>
+    >You need to be logged in to your CF space to perform this command.
 
-After completing these steps you will have added your project sources to a GitHub Repository.
+8. To undeploy a multi-target applications (MTA) deployed to the CF space you're logged in to, such as the app you've just deployed, execute *cf undeploy [mta id] --delete-services --delete-service-keys -f*. The *mta id* of the app you've just deployed appear in the output of the command you performed in the previous step. Therefore, if you want to undeploy the app, execute *cf undeploy products-inventory --delete-services --delete-service-keys -f*
+<br><br>![](images\2020-10_BAS_CF_Undeploy_.jpg)<br><br>
+    >In the SCP Cockpit, in the CF space, you can see that the app and all its bound sevice instances were removed.
 
-1. Login to your SAP Cloud Platform account.
-2. Goto your Subaccount and click on Subscriptions.
-3. Search for **Business Application Studio** and click on 'Go to Application'.
+    ><br><br>![](images\2020-10_SCP_CF_Space_After_Undeploy_Applications_.jpg)<br><br>
 
-![Open Biz App Studio](./images/openBizAppStudio.png)
+    ><br><br>![](images\2020-10_SCP_CF_Space_After_Undeploy_Service_Instances_.jpg)<br><br>
 
-4. You would be prompted with a login screen of the custom Identity Provider what you have configured.
-5. Login to the Application using your custom Identity Provider credentials.
-6. Open the previously created workspace with the Fiori application.
-7. Open a new terminal and navigate to project root folder.
-![Open Terminal](./images/openTerminal.png)
+9. To deploy (or re-deploy) your MTA, execute *cf deploy MTA*. For this demo the MTA reside within the mta_archives folder. Therefore, execute *cf deploy mta_archives/products-inventory-0.0.1.mtar*.
+<br><br>![](images\2020-10_BAS_CF_Deploy_.jpg)<br><br>
+    >In the SCP Cockpit, in the CF space, you can see that the app was deployed and all its sevice instances were created and binded.
 
-8. Enter your email address and User name to be used by Git. You can use the email address which you have used to register the Git account.
-   ```
-   git config --global user.email "you@example.com"
-   git config --global user.name "Your Name"
-   ```
-7. Perform the following commands to initialize a Git repository and add the sources to it:
+    >![](images\2020-10_SCP_CF_Space_After_Deploy_Applications_.jpg)<br><br>
 
-	```
-    git init
-    git add .
-    git commit -m "Push project content to github"
-    ```
+    >![](images\2020-10_SCP_CF_Space_After_Deploy_Service_Instances_.jpg)<br><br>
 
-8. Now take the copied Git Repository URL which you created and copied in step 'Create a GitHub Project' and add this URL pointing as the remote repository.
-
-   ```
-   git remote add origin <copied Git repository url.git>
-   ```
-
-9. Let us push the commit with project contents to this Git Repository.
-
-   ```
-   git push -u origin main
-   ```
-
-10. When prompted, enter your Git Username and Password (or Token).
-
-## Exercise 8.4 Enable SAP CP Continuous Integration and Delivery
-
-After completing these steps you will have subscribed to SAP Cloud Platform Continuous Integration and Delivery and will have asigned the `Administrator` role to your user.
-
-1.	Open-up your SAP Cloud Platform trial account.
-You will see the SAP Cloud Platform Continuous Integration and Delivery in the Subscriptions Tab.
-![Service Tile](./images/CICD_ServiceTile.png)
-
-2. Click on the service and subscribe to it.
-![Service Tile](./images/CICD_subscribe_service.png)
-
-3. Grant your user the `CICD Service Administrator` role by executing the following steps:
-- In your subaccount in the SAP Cloud Platform cockpit, choose `Security`, then click on `Trust Configuration`.
-- Choose the name of your identity provider.
-- Enter your e-mail address.
-- Choose `Show Assignments`.
-If the user is new to the subaccount, choose Add User in the Confirmation dialog.
-- Choose `Assign Role Collection`.
-- From the dropdown list, select the `CICD Service Administrator` role.
-
-## Exercise 8.5 Configure Credentials in SAP CP Continuous Integration and Delivery
-
-After completing these steps you will have created credentials for connecting `SAP Cloud Platform Continuous Integration and Delivery` to other services.
-
-1. Access SAP Cloud Platform Continuous Integration and Delivery in the SAP Cloud Platform cockpit.
-
-- In your subaccount in the SAP Cloud Platform cockpit, choose 'Subscriptions'.
-- In the 'Extension Suite - Development Efficiency' category, choose Continuous Integration & Delivery.
-- Choose Go to Application.
-- Use your credentials to log on to the application.
-![CICD](./images/CICD_access.png)
-
-2. Create Credentials to connect to GitHub to clone the sources. This step is only needed if your GitHub repository is `private` else you can skip this step.
-
-- Choose the ‘Credentials’ tab and click '+'. 
-  ![Credentials](./images/CICD_credentials.png)
-  - For 'Name', freely choose a name for your credential, which is unique in your subaccount on SAP Cloud Platform. In this example - 'github' 
-  - For 'Type', select 'Basic Authentication'.
-  - For 'Username', enter your Github user name.
-  - For 'Password', use the personal access token which you created in the Github in step 8.2.
-![Credentials GitHub](./images/CICD_credentials_github.png)
-
-3. Create Credentials to deploy to CP, Cloud Foundry Environment.
-- Choose the ‘Credentials’ tab and click '+'. 
-![Credentials](./images/CICD_credentials.png)
-  - For 'Name', freely choose a name for your credential, which is unique in your subaccount on SAP Cloud Platform. In this example - 'cfdeploy' 
-  - For 'Type', select 'Basic Authentication'.
-  - For 'Username', enter your Cloud Platform Cockpit user name.
-  - For 'Password', enter your Cloud Platform Cockpit password .
-![Credentials GitHub](./images/CICD_credentials_cfdeploy.png)
-
-## Exercise 8.6 Configure a job in SAP Cloud Platform Continuous Integration and Delivery
-
-After completing these steps you will have configured a job in `SAP Cloud Platform Continuous Integration and Delivery`.
-
-1. In the Jobs tab in `SAP Cloud Platform Continuous Integration and Delivery`, choose '+' (Create Job).
-![Jobs](./images/CICD_jobs.png)
-
-2. Fill in the general information
-- For 'Job Name', Freely choose a job name that is unique in your subaccount on SAP Cloud Platform - for in this example 'Procurement'.
-- For 'Repository URL', Enter the URL of your GitHub repository.
-- For 'Repository Credentials', enter the Credentials name to access your GitHub Repository, created in 8.5. 
-Leave empty if your GitHub repository is public.
-- For 'Branch', enter the GitHub branch your project sources were pushed to. In this example, `main`.
-- For "Pipeline", choose `sap-ui5-cf`.
-![UI Job](./images/CICD_UI_job.png)
-
-- Scroll down to the 'Tasks'. By default, the Build task is ‘ON’.
-![UI Job Build Stage](./images/CICD_UI_job_build.png)
-
-- Change the Deploy State to `ON`.
-Get the org name, space name and API endpoint values from your Cloud Platform Cockpit in your account.
-![Cockpit](./images/CP_API_Endpoint.png) 
-
-- Fill in the information for the Deploy Stage.
-- Choose the cloud credentials created in the previous step named 'cfdeploy'.
-![UI Job Deploy Stage](./images/CICD_UI_job_deploy.png)
-
-- Choose 'Create'
-
-
-3. Whenever you create the first job in a GitHub repository, the Webhook Creation pop-up appears, which provides you with the data needed to define a webhook in GitHub. Alternatively, in the Jobs tab in SAP Cloud Platform Continuous Integration and Delivery, open the detail view of an existing job and under General Information, choose Webhook Data.
-![Webhook](./images/CICD_webhook.png)
-
-4. In your project in GitHub, open the Settings tab.
-5. From the navigation pane, choose Webhooks.
-6. Choose Add webhook.
-[Webhook](./images/GH_webhook.png)
-7. Enter the Payload URL, Content type, and Secret from the Webhook Creation pop-up in SAP Cloud Platform Continuous Integration and Delivery. For all other settings, leave the default values.
-8. Choose Add webhook.
-![Webhook Details](./images/GH_webhook_details.png)
-
-
-## Exercise 8.7 Make a Change in the Project.
-
-1. Go to your development space in 'Business Application Studio'.
-2. Make a small change - for example navigate to `productsinventory/webapp/i18n/i18n.properties` file.
-and change the `appDescription`.
-![Change Description](./images/change_description.png).
-
-4. Open the Source Control: Git
-![Git](./images/bas_git.png).
-
-5. Stage the changed file to the commit.
-![Stage File](./images/bas_add_file_commit.png).
-
-6. Specify commit message. 
-![Changed File](./images/bas_commit_message.png).
-
-7. Commit the change.
-![Changed File](./images/bas_commit.png).
-
-8. Push the changes to 'GitHub'
-![Push Changes](./images/git_push_bas.png).
-
-## Exercise 8.8 Verify Build Success in SAP CP Contunuous Integration and Delivery.
-
-After completing these steps you will learn how to monitor the outcome of a job in `SAP Cloud Platform Continuous Integration and Delivery` and trigger a job manually if required.
-
-1. In the Jobs tab in `SAP Cloud Platform Continuous Integration and Delivery`, select your job and verify a new tile appears in the Builds view of your job marked as 'Running'.
-![Job](./images/CICD_running_job.png)
-
-- In other case, trigger manually the job by pressing the 'Trigger Build' button.
-![Trigger Job](./images/CICD_trigger_job.png)
-
-2. Wait until the job has finished and verify the build tile has been marked as 'Successful'.
-![Successful Build](./images/CICD_successful_build.png)
-
-## Exercise 8.9 Access the Application.
-
-1. Go to 'Cloud Foundry' tab for your trial account,  select the 'Spaces' and enter your soace.
-![CP Spaces](./images/CP_cloudfoundry.png)
-
-2. Verify the `products-inventory-router` application is runnung. Click on the `products-inventory-router` link.
-![CP Apps](./images/CP_apps.png) 
-
-3. Click on the application routes link to access the application.
-![CP Apps](./images/CP_app_routes.png) 
-
-4. Verify the deployed application is running and showing the change made.
-![Fiori App](./images/fiori_app.png) 
-
+10. You're welcome to test-run the app deployed on CF as you did in a previous exercise.
 
 ## Summary
 
-You've now created a project in the public GitHub where you stored the source code, successfully configured and ran predefined continuous integration and delivery pipeline that automatically build, test and deploy your code changes.
+Congratulations, you completed the [Useful CF Commands](#useful-cf-commands) exercise!
 
+This is a set of very powerful tools that lets you interact with SAP Cloud Platform without leaving SAP Business Application Studio. This can save you a lot of time!
+
+Continue to [Exercise 1 - Project Setup Using Business Application Studio](../ex1/README.md).
