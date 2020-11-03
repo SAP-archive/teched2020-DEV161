@@ -37,12 +37,12 @@ After completing these steps you will know how to prepare the app to deployment 
     | C | Enter MTA ID | *products-inventory* (default) |
     | D | Enter MTA Description | *SAP Fiori Freestyle Demo* |
     | E | Enter MTA Version | *0.0.1* (default) |
-    | F | Destination name | *northwind* |
+    | F | Destination name | *northwind* (case sensitive) |
 
     <br><br>![](images/2020-10_BAS_NPX-2_.jpg)<br><br>
 
     >After you complete the above, a script will run, and you'll enter the SAP Fiori launchpad configuration step.
-    >![](images/2020-10_BAS_NPX-3_.jpg)<br><br>
+    ><br>![](images/2020-10_BAS_NPX-3_.jpg)<br><br>
 
 5. To configure the SAP Fiori launchpad (FLP), select the following:
 
@@ -57,10 +57,10 @@ After completing these steps you will know how to prepare the app to deployment 
     <br><br>![](images/2020-10_BAS_NPX-4_.jpg)<br><br>
 
     >After you complete the above, a script will run and an FLP is added to the project.
-    >![](images/2020-10_BAS_NPX-5_.jpg)<br><br>
+    ><br>![](images/2020-10_BAS_NPX-5_.jpg)<br><br>
 
     >As a result of executing the *npx* command, you'll see that the project structure was updated accordingly.
-    >![](images/2020-10_BAS_Project_After_Config_Deploy_.jpg)<br><br>
+    ><br>![](images/2020-10_BAS_Project_After_Config_Deploy_.jpg)<br><br>
 
 ## Exercise 7.2 - Build for the CF Runtime
 
@@ -68,10 +68,10 @@ After completing these steps you will know how to prepare the app to deployment 
     <br><br>![](images/2020-10_BAS_Build_MTA_.jpg)<br><br>
 
     >The task is run in a new tab *Task: Build MTA*.
-    >![](images/2020-10_BAS_Build_MTA_Task_.jpg)<br><br>
+    ><br>![](images/2020-10_BAS_Build_MTA_Task_.jpg)<br><br>
 
     >When the build task completes, additional artifacts are added to the project. The artifact that is used for deployment is the MTA archive *product-inventory_0.0.1.mtar*.
-    >![](images/2020-10_BAS_Project_After_Build_MTA_.jpg)<br><br>
+    ><br>![](images/2020-10_BAS_Project_After_Build_MTA_.jpg)<br><br>
 
 ## Exercise 7.3 - Log in to CF
 
@@ -92,7 +92,7 @@ After completing these steps you will know how to prepare the app to deployment 
 10. When prompted, provide your credentials, select the API endpoint, organization, and space for your project.
 
     >The Cloud Foundry organization and space appear in the status line at the bottom left part of the screen.
-    >![](images/2020-10_BAS_CF_Login-2_.jpg)<br><br>
+    ><br>![](images/2020-10_BAS_CF_Login-2_.jpg)<br><br>
 
 ## Exercise 7.4 - Deploy to CF
 
@@ -100,7 +100,7 @@ After completing these steps you will know how to prepare the app to deployment 
     <br><br>![](images/2020-10_BAS_Deploy_MTA_Archive_.jpg)<br><br>
 
     >The task is re-using *Task: Build MTA* tab and changes its title to *Task: Deploy MTA Archive*.
-    >![](images/2020-10_BAS_Deploy_MTA_Task_.jpg)<br><br>
+    ><br>![](images/2020-10_BAS_Deploy_MTA_Task_.jpg)<br><br>
 
     >You can follow the deployment progress both in the *Task: Deploy MTA Archive* tab as well as in the *SCP Cockpit*.
 
@@ -127,4 +127,4 @@ With this, you have successfully completed the deployment of your SAP Fiori app 
 
 In this exercise, you used high productivity tools that are available out-of-the-box in SAP Business Applications Studio that make it easy to build and deploy applications as well as work in the Cloud Foundry environment.
 
-- [Exercise 8 - Useful CF Commands](../ex8/README.md).
+Continue to - [Exercise 8 - Useful CF Commands](../ex8/README.md).

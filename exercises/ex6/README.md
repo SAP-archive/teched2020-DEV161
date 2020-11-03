@@ -103,6 +103,20 @@ After completing these steps you will have tested the app with data fetched from
 
     >You can observe that the data is different than the mock data you provided. It contains more products, and their inventory level is different, i.e. the products when filtered are the same.
 
+## Exercise 6.5 - Remove the data "project" from the Workspace
+
+1. Right-click the *data* "project" folder and select *Remove Folder from Workspace*.
+    <br><br>![](images\2020-10_BAS_Multi-Root_Remove-1_.jpg)<br><br>
+
+2. A confirmation popup appears. Verify that only the *data* folder appears in the message. Click *OK*.
+    <br><br>![](images\2020-10_BAS_Multi-Root_Remove-2_.jpg)<br><br>
+
+    >The data "project" was removed from the workspace. The multi-root workspace is still there.
+    ><br><br>![](images\2020-10_BAS_Multi-Root_Remove-3_.jpg)<br><br>
+
+    >Since you did not save the workspace configuration, if you open the app project as a workspace (*File | Open Workspace > products-inventory > Open*), the multi-root workspace is removed.
+    ><br><br>![](images\2020-10_BAS_Multi-Root_Remove-4_.jpg)<br><br>
+
 
 ## Summary
 
