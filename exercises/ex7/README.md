@@ -1,8 +1,8 @@
-# Deploy to CF
+# Exercise 7 - Run the app on CF
 
 In this exercise, you will create the deployment artifacts, deploy the app to CF, and test run the app on CF.
 
-## Logon
+## Exercise 7.1 - Configure the App to Use the CF Runtime
 
 After completing these steps you will know how to prepare the app to deployment to the CF runtime, and use CF command line tools as well as SCP Cockpit.
 
@@ -21,7 +21,7 @@ After completing these steps you will know how to prepare the app to deployment 
     > Tip: You can use auto-complete to enhance your productivity, e.g. in the terminal type *cd pro* and press [TAB] to auto-complete.
 
 
- 3. You will now prepare teh app for deployment to CF. The preparation includes two steps: (1) Generating the deployment artifacts and turning the app into a multi-target application (MTA); and (2) Generating the SAP Fiori launchpad. Both part are executed using the following command:
+ 3. You will now prepare the app for deployment to CF. The preparation includes two steps: (1) Generating the deployment artifacts and turning the app into a multi-target application (MTA); and (2) Generating the SAP Fiori launchpad. Both part are executed using the following command:
 <br><br>![](images\2020-10_BAS_NPX-1_.jpg)<br><br>
 
     ```Shell/Bash
@@ -65,6 +65,8 @@ After completing these steps you will know how to prepare the app to deployment 
 
     >![](images\2020-10_BAS_Project_After_Config_Deploy_.jpg)<br><br>
 
+## Exercise 7.2 - Build for the CF Runtime
+
 6. To build the app for deployment, right-click *mta.yaml* and select *Build MTA*.
     <br><br>![](images\2020-10_BAS_Build_MTA_.jpg)<br><br>
 
@@ -75,6 +77,8 @@ After completing these steps you will know how to prepare the app to deployment 
     >When the build task completes, additional artifacts are added to the project. The artifact that is used for deployment is the MTA archive *product-inventory_0.0.1.mtar*.
 
     >![](images\2020-10_BAS_Project_After_Build_MTA_.jpg)<br><br>
+
+## Exercise 7.3 - Log in to CF
 
 7. Beofre deploying the app to CF, take a look at how your CF space looks like. Log in to your trial accuont and go enter your CF organization (SCP subaccount) and the space you'll deploy the app to. A new CF space should like the following:
     <br><br>![](images\2020-10_SCP_CF_Space_Applications_Before_Deployment_.jpg)<br><br>
@@ -96,6 +100,8 @@ After completing these steps you will know how to prepare the app to deployment 
 
     >![](images\2020-10_BAS_CF_Login-2_.jpg)<br><br>
 
+## Exercise 7.4 - Deploy to CF
+
 11. To deploy the app to CF, right-click *products-inventory_0.0.1.mtar*, and select *Deploy MTA Archive*.
     <br><br>![](images\2020-10_BAS_Deploy_MTA_Archive_.jpg)<br><br>
 
@@ -109,6 +115,8 @@ After completing these steps you will know how to prepare the app to deployment 
     <br><br>![](images\2020-10_SCP_CF_Space_Service_Instances_After_Deployment_.jpg)<br><br>
     <br><br>![](images\2020-10_SCP_CF_Space_Applications_After_Deployment_.jpg)<br><br>
 
+## Exercise 7.4 - Run the App on CF
+
 13. To run the application on CF, in the CF space *Applications* tab, click *products-inventory-router*, and then click the link in the *Application Routes* section.
     <br><br>![](images\2020-10_SCP_CF_Space_Application_Routes_.jpg)<br><br>
 
@@ -120,10 +128,10 @@ After completing these steps you will know how to prepare the app to deployment 
 
 ## Summary
 
-Congratulations, you completed the [Getting Started](#deploy-to-cf) exercise!
+Congratulations, you completed the [Run the app on CF](#Run-the-app-on-CF) exercise!
 
 With this, you have successfully completed the deployment of your SAP Fiori app to SAP Cloud Platform using SAP Business Application Studio.
 
-In this tutorial, you used high productivity tools that are available out-of-the-box in SAP Business Applications Studio that make it easy to build and deploy applications as well as work in the Cloud Foundry environment.
+In this exercise, you used high productivity tools that are available out-of-the-box in SAP Business Applications Studio that make it easy to build and deploy applications as well as work in the Cloud Foundry environment.
 
-Continue to [Exercise 1 - Project Setup Using Business Application Studio](../ex1/README.md).
+- [Exercise 8 - Useful CF Commands](../ex8/README.md).

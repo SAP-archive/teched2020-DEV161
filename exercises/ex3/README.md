@@ -1,4 +1,4 @@
-# Exercise 3 - Exercise 2 Description
+# Exercise 3 - Create a New Application from Template
 
 - How to create an SAP Fiori application using an application template
 - How to test-run the app locally in the dev space

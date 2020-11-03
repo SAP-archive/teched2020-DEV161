@@ -1,173 +1,206 @@
-# Exercise 4 - Exercise 2 Modify the app
-
-In this exercise, we will create...
-
-## Exercise 2.1 Sub Exercise 1 Open the layout editor
-
-Open the layout editor in SAP Business Application Studio to easily make a few changes. In this case, you will make changes so that data from the backend service is displayed when the app is running.
-
-1. Choose **`FioriDemo` > `BusinessPartners` > `webapp` > `view`** and right-click the `Suppliers.view.xml` file that you created with the template in a previous step.
-
-2. Choose **Open With > Layout Editor**.
-
-    ![Open with Layout Editor](images/04-01&#32;AppStudio&#32;Open&#32;Layout&#32;Editor_.jpg)
-
-    >To have the Layout Editor option available after opening the workspace, you may need to wait a bit for the Layout Editor extension to be loaded.
-
-    >The **Suppliers** view is opened in the **Layout Editor**.
-
-    >![Layout Editor Opened](images/04-01-02&#32;AppStudio&#32;Open&#32;Layout&#32;Editor.jpg)
-
-3. You can optionally choose to open it with the code editor and see how modifications in the Layout Editor are manifested in the code editor.
-
-    ![Open code editor](images/04-03&#32;AppStudio&#32;Open&#32;Code&#32;Editor-XML_.jpg)
-
-    >The **Suppliers** view is opened in the code editor in a tab next to the **Layout Editor**.
-
-    >![Code editor opened](images/04-03-02&#32;AppStudio&#32;Open&#32;Code&#32;Editor-XML.jpg)
-
-4. For convenience, place the code editor below the Layout Editor. Use the drag & drop functionality.
-
-    ![Drag-Drop editor](images/04-04&#32;AppStudio&#32;Drag-Drop&#32;Code&#32;Editor.jpg)
-
-    >The **Layout Editor** and code editor are stacked so you can see how making changes to one will be reflected on the other.
-
-    >![Editor dropped](images/04-04-02&#32;AppStudio&#32;Drag-Drop&#32;Code&#32;Editor.jpg)
-
-
-
-## Exercise 2.2 Sub Exercise 2 Make changes to the UI
-
-Make some changes using the layout editor, with no need to do any coding.
-
-1. In the **Controls** pane, enter `List` to filter the controls list in the search box.
-
-    ![Filter List control](images/05-01&#32;AppStudio&#32;Layout&#32;Editor&#32;Filter&#32;Controls-List.jpg)
-
-2. Drag the **List** control and drop it on the **View** control in the canvas.
-
-    ![Drag and drop](images/05-02&#32;AppStudio&#32;Layout&#32;Editor&#32;List&#32;Dropped_.jpg)
-
-3. Select the **Standard List Item** control by clicking it (the breadcrumb indicates which control is selected) and, in the **Entity Set** property in the **Properties** pane, click the Bind icon.
-
-    ![Open entity set bind window](images/05-03&#32;AppStudio&#32;Layout&#32;Editor&#32;Bind&#32;to&#32;Entity&#32;Set_.jpg)
-
-    >The **Select Entity Set** view is displayed.
-
-4. Select the **Define entity set and set the selected control as template** option, and in the **Entity Set** dropdown list, choose the `BusinessPartnerSet` entity set. Click **Bind** to complete the operation.
-
-    ![entity set bind window](images/05-04&#32;AppStudio&#32;Layout&#32;Editor&#32;Bind&#32;to&#32;Entity&#32;Set_.jpg)
-
-    >The space of the **Select Entity Set** view may be to narrow to show all options. In case you do not see the **Define entity set and set the selected control as template** option, scroll down in the **Select Entity Set** view to make it available.
-
-    >The bind operation is reflected in both the **Layout Editor** and the code editor.
-
-    >![entity set bind window](images/05-04-02&#32;AppStudio&#32;Layout&#32;Editor&#32;Bind&#32;to&#32;Entity&#32;Set_.jpg)
-
-5. In the **Properties** pane, in the **Title** property, click the **Bind** icon.
-
-    ![open Title bind window](images/05-05&#32;AppStudio&#32;Layout&#32;Editor&#32;Bind&#32;Title_.jpg)
-
-    >The **Data Binding** view is displayed.
-
-6. Click the **Clear expression** (eraser) icon to clear the default text, and in the data fields double click  `CompanyName`. Click **Bind** to complete the operation.
-
-    ![Title bound](images/05-06&#32;AppStudio&#32;Layout&#32;Editor&#32;Bind&#32;Title_.jpg)
-
-7. Repeat the last two steps for the **Description** property in the **Properties** pane. Choose  `BusinessPartnerID`.
-
-    ![Bind Description](images/05-07&#32;AppStudio&#32;Layout&#32;Editor&#32;Bind&#32;Description_.jpg)
-
-
-## Exercise 2.2 Sub Exercise 2 Test run the application
-
-Run your new application to test it.
-
-1. Open the **Run Configurations** view.
-
-    ![Open Run Configurations](images/06-01&#32;AppStudio&#32;Run&#32;Configurations_.jpg)
-
-2. Click **+** to create a new **Run Configurations**.
-
-    ![Create new run configuration](images/06-02&#32;AppStudio&#32;Run&#32;Configurations_.jpg)
-
-    >Creating a new **Run Configuration** launches the command palette, a text-based mini wizard. The command palette is opened at the top-center of the SAP Business Application Studio window.
-
-3. When "What would you like to run?" question appears, select **`BusinessPartners`**.
-
-    >![run configuration select BusinessPartners](images/06-02-01&#32;AppStudio&#32;Run&#32;Configurations_.jpg)
-
-4. For the next steps of the wizard, select the following:
-
-    | Step | Parameter | Value |
-    |:-----|:----------|:------|
-    | A | Select a runnable file | **`index.html`** |
-    | B | Select a UI5 version | **latest** |
-    | C | Enter a name | `Run BusinessPartners (ES5)` |
-
-    >A new run configuration is generated for the `FioriDemo` project.
-
-5. Expand the run configuration to display the services that can be bound.
-
-    ![Bindable objects](images/06-04&#32;AppStudio&#32;Run&#32;Configurations_.jpg)
-
-    >SAP Business Application Studio allows you to test your app with resources.
-
-6. To bind to the destination, click the **Bind** icon to the right of the destination resource to get a list of available destinations.
-
-    ![Bind to Destination](images/06-05&#32;AppStudio&#32;Run&#32;Configurations&#32;Bind&#32;Destination_.jpg)
-
-7. Select the `ES5` destination from the list.
-
-    ![Select Destination](images/06-05-02&#32;AppStudio&#32;Run&#32;Configurations&#32;Bind&#32;Destination_.jpg)
-
-    >Once the destination has been bound, the **Bind** icon turns green.
-
-    >To unbind the destination, click the **Unbind** icon.
-
-    >![Destination is bound](images/06-05-03&#32;AppStudio&#32;Run&#32;Configurations&#32;Bind&#32;Destination_.jpg)
-
-8. Hover over the run configuration and click the Run Module icon.  
-
-    ![Running the app locally](images/06-06&#32;AppStudio&#32;Run&#32;Configurations&#32;Run_.jpg)
-
-9. Wait for the **A service is listening to port 6004** notification and then click the button to open the app.
-
-    >The left side view changes to the debug view and the status bar color changes to orange to indicate that the app is running in debug mode.
-
-    >If you are running the app for the first time, the button in the notification will say **Expose and Open**. Otherwise it will say **Open in New Tab**.
-
-    ![App is running locally](images/06-07&#32;AppStudio&#32;Run&#32;Configurations&#32;Run_.jpg)
-
-    >Some of the notifications appear on the screen for a short period of time.
-
-    >You may optionally add a port description.
-
-    >You may need to authenticate yourself to access the backend. Use your ES5 username and password.
-
-    The app is opened in a new tab and a list of suppliers is displayed.
-
-    ![SAP Fiori app is running](images/AppStudio&#32;Run&#32;Configurations-16.jpg)
-
-
-## Exercise 2.2 Sub Exercise 2 Stop the running application
-
-After completing these steps you will have...
-
-1. Return to the SAP Business Application Studio tab.
-
-2. In the **Debug** view click the Stop icon.
-
-    ![Stop running app](images/05-02&#32;AppStudio&#32;Stop&#32;Running&#32;App_.jpg)
-
-    >The status bar background color changes from orange to blue.
-
-    >You can re-run the app clicking the Start Debugging icon in the **Debug** view or clicking the Run Module icon in the **Run Configurations** view.
-
+# Exercise 5 - Add Data Filters
+
+In this exercise, we will add filters to the app that will filter the list of products according to their invetory level - Shortage, Low, and Normal. This requires changes to the UI (view) and also to the view's logic.
+
+## Exercise 5.1 UI Modifications
+
+After completing these steps you will have modified the worklist view of the app to include filters. Some of the modifications are also needed in order for the logic to execute accordingly.
+
+It is recommended that you type in most the code in order to experience the code editor's capabilities.
+
+1. Choose *webapp > view* and click the *Worklist.view.xml* file.
+    <br><br>![](images\2020-10_BAS_Worklist_View_Code_Editor_Open_.jpg)<br><br>
+    >The *Worklist.view.xml* file is opened in a code editor tab.
+    >![](images\2020-10_BAS_Worklist_View_Code_Editor_Opened_.jpg)<br><br>
+
+    >Tip 1: You can get more screen real-estate for the code editor tab by closing the *Explorer* pane. You can get even more real-estate by double clicking the tab's title.
+
+    >Tip 2: Hovering over a control or a control property pops up a tooltip with information on it as well as link to its API Reference, which is opened on a new browser tab.
+    >![](images\2020-10_BAS_Worklist_View_Code_Editor_Code_Completion_Control_.jpg)<br><br>
+
+2. Add an *IconTabBar* conotrlbefore the *Table*control.
+```XML
+            <IconTabBar id="iconTabBar" select=".onFilterSelect" class="sapUiResponsiveContentPadding">
+                <items>
+                </items>
+            </IconTabBar>
+```
+
+3. Between `<items>` and `</items>` type `<`. The code completion kicks in.
+    <br><br>![](images\2020-10_BAS_Worklist_View_Code_Editor_Open_.jpg)<br><br>
+
+    >Tip 1: You can select which control to use using the mouese or by using the arrow keys on the keyboard.
+
+    >Tip 2: You can get more information on a control by clicking the (i) icon to the right of the control or using [CTRL] + [SPACE] on the keyboard.
+
+4. Select the *IconTabFilter* control, and use [CTRL] + [SPACE] to view a list of its properties.
+    <br><br>![](images\2020-10_BAS_Worklist_View_Code_Editor_Control_Properties_List_.jpg)<br><br>
+
+    >Tip 1: You can filter the list of properties by typing part of it.
+
+    >Tip 2: You can select which property to use using the mouese or by using the arrow keys on the keyboard.
+
+    >Tip 3: You can get more information on a property by clicking the (i) icon to the right of the control or using [CTRL] + [SPACE] on the keyboard.
+
+5. Select the *showAll* property.
+    <br><br>![](images\2020-10_BAS_Worklist_View_Code_Editor_Code_Completion_Property_showAll_.jpg)<br><br>
+
+6. Even control properties can have their value selected from a list. Delete the *false* value and use [CTRL] + [SPACE] to present the list of avialble values.
+    <br><br>![](images\2020-10_BAS_Worklist_View_Code_Editor_Code_Completion_Property_showAll_Values_.jpg)<br><br>
+
+7. Proceed until you have the following code in place:
+```XML
+            <IconTabBar>
+                <items>
+                    <IconTabFilter showAll="true" count="{worklistView>/productsCount}" text="i18n>productTitle" key="all"></IconTabFilter>
+                    <IconTabSeparator ></IconTabSeparator>
+                    <IconTabFilter icon="sap-icon://complete" iconColor="Positive" text="Normal" key="Normal"></IconTabFilter>
+                    <IconTabFilter icon="sap-icon://message-warning" iconColor="Critical" text="Low" key="Low"></IconTabFilter>
+                    <IconTabFilter icon="sap-icon://message-error" iconColor="Negative" text="Shortage" key="Shortage"></IconTabFilter>
+                </items>
+            </IconTabBar>
+
+```
+
+   <br><br>![](images\2020-10_BAS_Worklist_View_Code_Editor_Filters_Added_.jpg)<br><br>
+
+8. You probably noticed that the *Worklist.view.xml* file is marked as error, including its folders hierarchy, as well as indications in the *Status Bar*.
+   <br><br>![](images\2020-10_BAS_Worklist_View_Code_Editor_Error_Explorer_.jpg)<br><br>
+
+   <br><br>![](images\2020-10_BAS_Worklist_View_Code_Editor_Error_Status_Bar_.jpg)<br><br>
+
+9. Open the *Problems* tab by either clicking the problems indication area in the status bar or from the menu bar selecting *View | Problems*.
+   <br><br>![](images\2020-10_BAS_Worklist_View_Problems_Pane_.jpg)<br><br>
+
+10. According to the problem description "The aggregation \"content\" has cardinality of 0..1 and may only contain one element". Therefore, wrap the *IconTabBar* and *Table* controls in a `<VBox>` element, and indent accordingly.
+```XML
+        <semantic:content>
+            <VBox>
+                <IconTabBar>
+                    <items>
+                        <IconTabFilter showAll="true" count="{worklistView>/productsCount}" text="i18n>productTitle" key="all"></IconTabFilter>
+                        <IconTabSeparator ></IconTabSeparator>
+                        <IconTabFilter icon="sap-icon://complete" iconColor="Positive" text="Normal" key="Normal"></IconTabFilter>
+                        <IconTabFilter icon="sap-icon://message-warning" iconColor="Critical" text="Low" key="Low"></IconTabFilter>
+                        <IconTabFilter icon="sap-icon://message-error" iconColor="Negative" text="Shortage" key="Shortage"></IconTabFilter>
+                    </items>
+                </IconTabBar>
+                <Table id="table" width="auto" items="{
+                        path: '/Products',
+                        sorter: {
+                            path: 'ProductName',
+                            descending: false
+                        }
+                    }" noDataText="{worklistView>/tableNoDataText}" busyIndicatorDelay="{worklistView>/tableBusyDelay}" growing="true" growingScrollToLoad="true" updateFinished=".onUpdateFinished">
+
+                    <headerToolbar>
+                        <OverflowToolbar>
+                            <Title id="tableHeader" text="{worklistView>/worklistTableTitle}" level="H3"/>
+                            <ToolbarSpacer />
+                            <SearchField id="searchField" tooltip="{i18n>worklistSearchTooltip}" search=".onSearch">
+                                <layoutData>
+                                    <OverflowToolbarLayoutData maxWidth="200px" priority="NeverOverflow"/>
+                                </layoutData>
+                            </SearchField>
+                        </OverflowToolbar>
+                    </headerToolbar>
+
+                    <columns>
+                        <Column id="nameColumn">
+                            <Text text="{i18n>tableNameColumnTitle}" id="nameColumnTitle"/>
+                        </Column>
+                        <Column id="unitNumberColumn" hAlign="End">
+                            <Text text="{i18n>tableUnitNumberColumnTitle}" id="unitNumberColumnTitle"/>
+                        </Column>
+                    </columns>
+
+                    <items>
+                        <ColumnListItem type="Navigation" press=".onPress">
+                            <cells>
+                                <ObjectIdentifier title="{ProductName}"/>
+                                <ObjectNumber number="{
+                                        path: 'UnitPrice',
+                                        formatter: '.formatter.numberUnit'
+                                    }" unit="{QuantityPerUnit}"/>
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+                </Table>
+            </VBox>
+        </semantic:content>
+```
+
+11. Test-tun the app locally to see the UI changes. All you need to do is to refresh the tab where the app is already running.
+   <br><br>![](images\2020-10_BAS_App_After_UI_Changes_.jpg)<br><br>
+
+    >Clicking the filters has no impact as the logic was not implemented. This will be the next step in the exercise.
+
+
+## Exercise 5.2 Logic Modifications (Controller)
+
+After completing these steps you will have modified the logic of the worklist view of the app to present the list of products according to the selected filter.
+
+It is recommended that you type in most the code in order to experience the code editor's capabilities.
+
+12. Choose *webapp > controller* and click the *Worklist.controller.js* file.
+    <br><br>![](images\2020-10_BAS_Worklist_Controller_Code_Editor_Open_.jpg)<br><br>
+    >The *Worklist.controller.js* file is opened in a code editor tab.
+    >![](images\2020-10_BAS_Worklist_Controller_Code_Editor_Opened_.jpg)<br><br>
+
+13. Click *Outline* button at the top-right of the window to open the oudaline pane. locate the *onUpdateFinished* function and click it in order fo rthe code editor to focus on this function.
+    <br><br>![](images\2020-10_BAS_Worklist_Controller_Outline_.jpg)<br><br>
+
+14. The following code will add the total products count as a property to the model. This property is presented at the top left of the view when clicking the *showAll* filter. Add it just below the end of the *var* statement.
+```javascript
+            //set products count
+            this.getModel("worklistView").setProperty("/productsCount", iTotalItems);
+```
+
+   <br><br>![](images\2020-10_BAS_Worklist_Controller_onUpdatedFinished_Updated_.jpg)<br><br>
+
+15. Refresh the app to see the effect of this change.
+   <br><br>![](images\2020-10_BAS_Worklist_Controller_onUpdatedFinished_Updated_App_.jpg)<br><br>
+
+16. Now it's time to handle the user action of clicking the filters. In the Outline pane click the *onRefresh* function, and add the following code above this function.
+
+```javascript
+        onFilterSelect: function(oEvent){
+            var oTable = this.byId("table")
+            var sKey = oEvent.getParameter("key");
+            var oFilter = this._createFilterByTabKey(sKey);
+            var oBinding = oTable.getBinding("items");
+            oBinding.filter(oFilter);
+        },
+
+        _createFilterByTabKey: function(sKey){
+            switch(sKey) {
+                case "Normal":
+                    return new Filter("UnitsInStock", FilterOperator.GT, 15);
+                case "Low":
+                    return new Filter("UnitsInStock", FilterOperator.BT, 1, 15);
+                case "Shortage":
+                    return new Filter("UnitsInStock", FilterOperator.LE, 0);
+                default: 
+                return [];
+            }
+        },
+
+```
+
+   <br><br>![](images\2020-10_BAS_Worklist_Controller_Filters_.jpg)<br><br>
+
+## Exercise 5.3 - Run the App Locally in the Dev Space
+
+15. Refresh the app's tab for the changes to take effect. Click the various filters and see how the list of products changes according to the selected filter.
+   <br><br>![](images\2020-10_BAS_Worklist_Controller_Filters_Low_.jpg)<br><br>
+
+16. Close the *Outline* pane and all open tabs in the editors section.
+
+    >Tip: To close all open tabs, right-click one of the tab's titile and select *Close All*. Explore this to see additional options.
 
 
 ## Summary
 
-With this, you have successfully completed the development of an SAP Fiori app using SAP Business Application Studio, including test-running the app locally in the dev space. In this tutorial, you learned about high productivity tools that are available out-of-the-box in SAP Business Applications Studio, such as: templates and wizards, command palette, Layout Editor, local run, and more.
+With this, you have successfully completed the development of an SAP Fiori app using SAP Business Application Studio, including test-running the app locally in the dev space. In this exercise, you learned about high productivity tools that are available out-of-the-box in SAP Business Applications Studio, such as: code completion, API reference, outline, problems view, and more.
 
-Continue to - [Exercise 3 - Excercise 3 ](images/../ex3/README.md)
+Continue to - [Exercise 6 - Connect to Backend](../ex6/README.md)

@@ -1,102 +1,111 @@
-# Exercise 2 - Exercise 2 Build, Deploy, and Test
+# Exercise 6 - Connect to Backend
 
-- How to build and deploy an application to SAP Cloud Platform, Cloud Foundry environment
-- How to configure Cloud Foundry settings in SAP Business Application Studio
-- How to run the deployed app from your space on SAP Cloud Platform, Cloud Foundry environment
+In this exercise, we will connect the app to a real backend. We will use the *Northwind* demo service that is available from the OData organization.
 
-## Exercise 2.1 Sub Exercise 1 Build the application
 
-After completing these steps you will have created...
+## Exercise 6.1 Preparations
 
-1. Click the **Explorer** view icon to open the **Explorer** view.
+1.	Right-click an empty space in the *Explorer* pane *Add Folder to Workspace...*.
+    <br><br>![](images\2020-10_BAS_Multi-Root-1_.jpg)<br><br>
 
-    ![Open explorer view](images/01-01&#32;AppStudio&#32;Explorer&#32;View&#32;Open_.jpg)
+2. Select *projects > data*, and click *Open*.
+    <br><br>![](images\2020-10_BAS_Multi-Root-2_.jpg)<br><br>
 
-2. In the menu bar, select **View | Find Command**.
+3. Click *No* for the popup "A workspace with multiple roots was created. Do you want to save your workspace configuration as a file?". 
+    <br><br>![](images\2020-10_BAS_Multi-Root-3_.jpg)<br><br>
 
-    ![Open command palette](images/01-02&#32;AppStudio&#32;Command&#32;Palette&#32;Open_.jpg)
+    >In the *Explorer* pane you can see that the name of the workspace changed to *UNTITLED (WORKSPACE)* and an additional "project" *data* was added to this workspace. Expand the *data* project. It contains the files we uploaded at the end of ex1, and which we are going to use in this exerices.
+    ><br><br>![](images\2020-10_BAS_Multi-Root-4_.jpg)<br><br>
+
+    > TBD: EXplain a bit on multi-root
+
+## Exercise 6.1 - Modify ui5.yaml
+
+4. Select the two ui5.yaml files, the one in the app and the one in the data projects, by pressing [CTRL] + click on each of them. Make sure that only these two files are selected.
+    <br><br>![](images\2020-10_BAS_ui5-yaml_Compare-1_.jpg)<br><br>
+
+5. To compare the two files side-by-side, right-click one of the selected ui5.yaml files and select *Compare with Each Other*.
+    <br><br>![](images\2020-10_BAS_ui5-yaml_Compare-2_.jpg)<br><br>
+
+6. A file compare editor with both files is opened.
+    <br><br>![](images\2020-10_BAS_ui5-yaml_Compare-3_.jpg)<br><br>
+
+    >Tip 1: The order you selected the files affects which file appears on the left-hand side and which file appears on the right-hand side.
+
+    >Tip 2: Mouse hover over the tab's title provides a tooltip that indicates which file is opened where.
+
+    >Tip 3: The gutter on the right-hand side indicates which part of the file is presented, the cursor's location, and where diffs between the files exist.
+
+7. Copy the following lines from the file in the data project to the file in the app.
+    ```json
+        - path: /V2
+            url: https://services.odata.org
+    ```
     
-3. Select the command **Build MTA**.
+    >As the files are now identical, there are no indications on diffs.
+    ><br><br>![](images\2020-10_BAS_ui5-yaml_Compare-5_.jpg)<br><br>
 
-    ![Command palette build mta](images/01-03&#32;AppStudio&#32;Command&#32;Palette&#32;Build&#32;MTA-1_.jpg)
+## Exercise 6.2 - Modify package.json
 
-    >The build process creates a multitarget archive (`MTAR`) file in your project that packages all the project modules for deployment. You can find the `MTAR` file in the `DemoFiori/mta_archives` folder.
+8. Perform the same steps as in the previous sub-exercise, but for *package.json*. The only diff is the *start* script. Following is how the updated scripts section should be for the app's *package.json*.
+    ```json
+        "scripts": {
+                "start": "fiori run --open test/flpSandbox.html",
+                "start-mock": "fiori run --open test/flpSandboxMockServer.html",
+                "start-local": "fiori run --config ./ui5-local.yaml --open test/flpSandboxMockServer.html",
+                "unit-tests": "fiori run --open test/unit/unitTests.qunit.html",
+                "int-tests": "fiori run --open test/integration/opaTests.qunit.html",
+                "build": "rimraf dist && ui5 build -a --include-task=generateManifestBundle generateCachebusterInfo",
+                "deploy": "fiori add deploy-config"
+        },
+    ```
 
-    ![terminal mbt build results](images/07-02-02&#32;AppStudio&#32;Terminal&#32;MBT&#32;Build_.jpg)
+## Exercise 6.3 - Modify webapp/manifest.json
+
+8. Perform the same steps as in the previous sub-exercise, but for *manifest.json*. The only diff is the *uri* for the *mainService* in the *dataSources* section. Following is how the updated *dataSources** section should be for the app's *manifest.json*.
+    ```json
+		"dataSources": {
+			"mainService": {
+				"uri": "/here/goes/your/serviceurl/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/metadata.xml"
+				}
+			}
+		}
+    ```
+
+## Exercise 6.4 - Run the App Locally in the Dev Space
+
+After completing these steps you will have tested the app with data fetched from a real backend.
+
+!!!If the preview does not response - probably need to unexpose ports.
+
+1.	Right-click any folder within the productsinventory folder, e.g. *webapp* folder, and select *Preview Application*.
+    <br><br>![](images\2020-10_BAS_Preview_Application_start-1_.jpg)<br><br>
+
+2.	The *command palette* is opened with a list of npm scripts. Click *start* to run this script.
+    <br><br>![](images\2020-10_BAS_Preview_Application_start-2_.jpg)<br><br>
+
+    >A new browser tab is opened, where the FLP is run.
+
+    >A new tab is opened in SAP Business Application Studio, where the log of running the app is presented.
+
+    ><br><br>![](images\2020-10_BAS_Preview_Application_start-3_.jpg)<br><br>
 
 
+3. Click the *Products Inventory* tile to launch the app.
+    <br><br>![](images\2020-10_BAS_Preview_Application_start-4_.jpg)<br><br>
 
-## Exercise 2.2 Sub Exercise 2 Set Cloud Foundry preferences
+4. The app is run with data coming from the demo Northwind OData service that is provided by the OData organization.
+    <br><br>![](images\2020-10_BAS_Preview_Application_start-5_.jpg)<br><br>
 
-Before you can deploy your new application, set your Cloud Foundry preferences.
-
-1. In the menu bar, select **View | Find Command** to open the **command palette**.
-
-    ![Command Palette-Login to CF](images/08-01&#32;AppStudio&#32;CF&#32;Login_.jpg)
-
-2. Select the command **CF: Login to cloud foundry**.
-
-    >Type `cf` to filter commands.
-
-    ![Command Palette-Login to CF](images/08-01-02&#32;AppStudio&#32;CF&#32;Login_.jpg)
-
-3. When prompted, provide your credentials, select the API endpoint, organization, and space for your project.
-
-    >The Cloud Foundry organization and space appear in the status line at the bottom left part of the screen.
-
-    ![Logged in to CF](images/02-03&#32;AppStudio&#32;CF&#32;Login_.jpg)
-
-
-## Exercise 2.2 Sub Exercise 2 Deploy the application
-
-After completing these steps you will have...
-
-Deploy your application to SAP Cloud Platform, Cloud Foundry environment.
-
-Right-click the `mtar` file and select **Deploy MTA Archive**.
-
-![deploy mtar](images/03&#32;AppStudio&#32;Fiori&#32;Project&#32;Deploy_.jpg)
-
->The application deployment to the space you are connected to starts and a notification appears. The deployment process takes a few minutes. You can see that the deployment is still in progress in the **Task: Deploy** console at the bottom right of your screen.
-
->When the deployment process is complete, a notification will temporarily appear at the bottom-right part of the screen.
-
->![deploy success notification](images/03&#32;AppStudio&#32;Fiori&#32;Project&#32;Deploy&#32;Success&#32;Notification_.jpg)
-
-
-## Exercise 2.2 Sub Exercise 2 Get URL to access the application
-
-This step is only applicable to apps that use **Standalone Approuter** (see [Create an SAP Fiori App Using SAP Business Application Studio](images/appstudio-fioriapps-create) > Create new SAP Fiori project > **HTML5 Applications**).
-
-Access your deployed application in the SAP Cloud Platform cockpit. The steps below show you how to create a URL that you can use to access your new application.
-
-1. Access the space to where the app is deployed and go to the **Applications** tab.
-
-    ![Application's space](images/04-01&#32;SCP&#32;Space&#32;Applications_.jpg)
-
-2. Make sure your application is in **Started** state, and  click its name (`fioridemo_approuter`). The **`Application: fioridemo-approuter - Overview`** page opens.
-
-3. Right-click the URL under **Application Routes** and save the URL in a text file.
-
-    ![Get application base URL](images/10-03&#32;SCP&#32;Space&#32;Application&#32;URL_.jpg)
-
-4. Locate the `sap.app id` from the `manifest.json` file located in your HTML5 module, and add it to the copied link after removing the periods.
-
-    ![app id from manifest](images/10-04&#32;AppStudio&#32;SAP&#32;Fiori&#32;Project&#32;Manifest_.jpg)
-
-    > For future reference, this is the construct of the final URL: `<URL_from_application_overview_page>/<mynamespace><project_name>/index.html`.
-
-    >Example: `https://SUBACCOUNT-SPACE-fioridemo-approuter.cfapps.eu10.hana.ondemand.com/nsBusinessPartners/index.html`
-
-    You can use this URL in any browser to access your new application in your space on SAP Cloud Platform, Cloud Foundry environment.
-
+    >You can observe that the data is different than the mock data you provided. It contains more products, and their inventory level is different, i.e. the products when filtered are the same.
 
 
 ## Summary
 
-With this, you have successfully completed the deployment of your SAP Fiori app to SAP Cloud Platform using SAP Business Application Studio.
+With this, you have successfully completed to add the ability to test-run the app against a real backend. 
 
-In this tutorial, you used high productivity tools that are available out-of-the-box in SAP Business Applications Studio that make it easy to build and deploy applications as well as work in the Cloud Foundry environment.
-
-
-Continue to - [Exercise 3 - Excercise 3 ](images/../ex3/README.md)
+Continue to - [Exercise 7 - Run the app on CF](../ex7/README.md)
