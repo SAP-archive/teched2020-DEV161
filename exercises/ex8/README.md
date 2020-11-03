@@ -68,6 +68,6 @@ After completing these steps you will know which CF commands are available, what
 
 Congratulations, you completed the [Useful CF Commands](#useful-cf-commands) exercise!
 
-This is a set of very powerful tools that lets you interact with SAP Cloud Platform without leaving SAP Business Application Studio. This can save you a lot of time!
+It is a set of powerful tools that lets you interact with SAP Cloud Platform without leaving SAP Business Application Studio. This can save you a lot of time!
 
 Continue to [Exercise 1 - Project Setup Using Business Application Studio](../ex1/README.md).
