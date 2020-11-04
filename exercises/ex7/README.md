@@ -79,10 +79,10 @@ After completing these steps you will know how to prepare the app to deployment 
     <br><br>![](images/2020-10_SCP_CF_Space_Applications_Before_Deployment_.jpg)<br><br>
     ![](images/2020-10_SCP_CF_Space_Service_Instances_Before_Deployment_.jpg)<br><br>
 
-8. Login to the CF space to which you'll deploy the app. From the menu bar select *View | Find Command* to open the *command palette*.
+8. Log in to the CF space to which you'll deploy the app. From the menu bar select *View | Find Command* to open the *command palette*.
 <br><br>![](images/2020-10_BAS_Command_Palette_Open_.jpg)<br><br>
 
-    >You can also login to CF using the terminal: Execute the *cf login* command and follow the same steps.
+    >You can also log in to CF by clicking the home icon at the lefthand side of the status bar or by using the terminal: Execute the *cf login* command and follow the same steps.
 
 9. Select the command *CF: Login to cloud foundry*.
 <br><br>![](images/2020-10_BAS_CF_Login-1_.jpg)<br><br>
@@ -126,5 +126,9 @@ Congratulations, you completed the [Run the app on CF](#Run-the-app-on-CF) exerc
 With this, you have successfully completed the deployment of your SAP Fiori app to SAP Cloud Platform using SAP Business Application Studio.
 
 In this exercise, you used high productivity tools that are available out-of-the-box in SAP Business Applications Studio that make it easy to build and deploy applications as well as work in the Cloud Foundry environment.
+
+You reached a major milestone of this session - the full lifecycle from creating an app, enhancing, connecting to a backend system, testing with mock data and real data, building, deploying to CF, and running the app on CF. 
+
+You're awesomw!
 
 Continue to - [Exercise 8 - Useful CF Commands](../ex8/README.md).

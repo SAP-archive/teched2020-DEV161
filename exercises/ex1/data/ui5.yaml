@@ -9,8 +9,8 @@ server:
     afterMiddleware: compression
     configuration:
       backend:
-      - path: /sap/opu/odata
-        url: http://localhost
+      - path: /V2
+        url: https://services.odata.org
         scp: false
         #destination: my_destination
       ui5:

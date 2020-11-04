@@ -12,7 +12,7 @@ It is recommended that you type in most the code in order to experience the code
 
 1. In the locally running app, click a product to get to its details view.
 
-    <br><br>![](images\2020-10_BAS_App_Object_View_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_App_Object_View_.jpg)<br><br>
 
 2. In SAP business Application Studio, open the file that contains the product's details - *Object.view.xml*.
 
@@ -21,7 +21,7 @@ It is recommended that you type in most the code in order to experience the code
         xmlns:form="sap.ui.layout.form"
     ```
 
-    <br><br>![](images\2020-10_BAS_Object_View_xmlns_form_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_Object_View_xmlns_form_.jpg)<br><br>
 
 4. Below the `<semantic:headerContent>` section add a `<semantic:content>` section and in it a `<VBox>` element that contains a *SimpleForm* control, which will have the supplier details. 
     ```xml
@@ -46,14 +46,14 @@ It is recommended that you type in most the code in order to experience the code
 
     ```
 
-    <br><br>![](images\2020-10_BAS_Object_View_Supplier_Info_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_Object_View_Supplier_Info_.jpg)<br><br>
 
 ## Exercise 10.2 - Run the App Locally in the Dev Space
 
 After completing these steps you will have tested the view look & feel.
 
 5.	Go to the tab where the app is running and refresh it (press [F5]). You can see the look & feel of how the supplier info will appear when you complete this exercise.
-    <br><br>![](images\2020-10_BAS_App_Object_View_After_View_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_App_Object_View_After_View_.jpg)<br><br>
 
 ## Exercise 10.3 - Logic Modifications (Controller)
 
@@ -63,11 +63,11 @@ It is recommended that you type in most the code in order to experience the code
 
 6. In SAP business Application Studio, open the file that contains the product's details logic - *Object.controller.js*.
 
-    <br><br>![](images\2020-10_BAS_Object_Controller-1_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_Object_Controller-1_.jpg)<br><br>
 
 7. Using the *Outline* pane, locate the *_bindView* fundction.
 
-    <br><br>![](images\2020-10_BAS_Object_Controller-2_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_Object_Controller-2_.jpg)<br><br>
 
 8. Use OData's $expand option to retrieve the product's supplier and order details. You'll use the order_details information in a following exercise.
     ```javascript
@@ -76,14 +76,14 @@ It is recommended that you type in most the code in order to experience the code
                 },
     ```
 
-    <br><br>![](images\2020-10_BAS_Object_Controller-3_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_Object_Controller-3_.jpg)<br><br>
 
 ## Exercise 10.4 - Run the App Locally in the Dev Space
 
 After completing these steps you will have tested the view look & feel.
 
 1.	Go to the tab where the app is running and refresh it (press [F5]). You can see the result of adding the supplier info to the product's details view.
-    <br><br>![](images\2020-10_BAS_Object_Controller-4_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_Object_Controller-4_.jpg)<br><br>
 
 
 ## Summary

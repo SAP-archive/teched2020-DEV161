@@ -22,14 +22,14 @@ It is recommended that you type in most the code in order to experience the code
 
     ```
 
-    <br><br>![](images\2020-10_BAS_Object_View_Breadcrumbs_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_Object_View_Breadcrumbs_.jpg)<br><br>
 
 ## Exercise 11.2 - Run the App Locally in the Dev Space
 
 After completing these steps you will have tested the view look & feel.
 
 4.	Go to the tab where the app is running and refresh it (press [F5]). You can see that the breadcrumbs appear in the view, and you can use them to navigate back to the products worklist view.
-    <br><br>![](images\2020-10_BAS_App_Object_View_After_Breadcrumbs_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_App_Object_View_After_Breadcrumbs_.jpg)<br><br>
 
 
 ## Summary

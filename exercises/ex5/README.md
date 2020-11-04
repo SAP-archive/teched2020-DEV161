@@ -1,6 +1,6 @@
 # Exercise 5 - Add Data Filters
 
-In this exercise, we will add filters to the app that will filter the list of products according to their invetory level - Shortage, Low, and Normal. This requires changes to the UI (view) and also to the view's logic.
+In this exercise, you will add filters to the app that will filter the list of products according to their invetory level - Shortage, Low, and Normal. This requires changes to the UI (view) and also to the view's logic.
 
 ## Exercise 5.1 UI Modifications
 
@@ -9,16 +9,16 @@ After completing these steps you will have modified the worklist view of the app
 It is recommended that you type in most the code in order to experience the code editor's capabilities.
 
 1. Choose *webapp > view* and click the *Worklist.view.xml* file.
-    <br><br>![](images\2020-10_BAS_Worklist_View_Code_Editor_Open_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Open_.jpg)<br><br>
     >The *Worklist.view.xml* file is opened in a code editor tab.
-    >![](images\2020-10_BAS_Worklist_View_Code_Editor_Opened_.jpg)<br><br>
+    >![](images/2020-10_BAS_Worklist_View_Code_Editor_Opened_.jpg)<br><br>
 
-    >Tip 1: You can get more screen real-estate for the code editor tab by closing the *Explorer* pane. You can get even more real-estate by double clicking the tab's title.
+    >Tip 1: You can get additional screen real-estate for the code editor tab by closing the *Explorer* pane. You can get even more real-estate by double clicking the tab's title.
 
     >Tip 2: Hovering over a control or a control property pops up a tooltip with information on it as well as link to its API Reference, which is opened on a new browser tab.
-    >![](images\2020-10_BAS_Worklist_View_Code_Editor_Code_Completion_Control_.jpg)<br><br>
+    >![](images/2020-10_BAS_Worklist_View_Code_Editor_Code_Completion_Control_.jpg)<br><br>
 
-2. Add an *IconTabBar* conotrlbefore the *Table*control.
+2. Add an *IconTabBar* conotrl before the *Table* control.
 ```XML
             <IconTabBar id="iconTabBar" select=".onFilterSelect" class="sapUiResponsiveContentPadding">
                 <items>
@@ -27,14 +27,14 @@ It is recommended that you type in most the code in order to experience the code
 ```
 
 3. Between `<items>` and `</items>` type `<`. The code completion kicks in.
-    <br><br>![](images\2020-10_BAS_Worklist_View_Code_Editor_Open_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Open_.jpg)<br><br>
 
     >Tip 1: You can select which control to use using the mouese or by using the arrow keys on the keyboard.
 
     >Tip 2: You can get more information on a control by clicking the (i) icon to the right of the control or using [CTRL] + [SPACE] on the keyboard.
 
 4. Select the *IconTabFilter* control, and use [CTRL] + [SPACE] to view a list of its properties.
-    <br><br>![](images\2020-10_BAS_Worklist_View_Code_Editor_Control_Properties_List_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Control_Properties_List_.jpg)<br><br>
 
     >Tip 1: You can filter the list of properties by typing part of it.
 
@@ -43,10 +43,10 @@ It is recommended that you type in most the code in order to experience the code
     >Tip 3: You can get more information on a property by clicking the (i) icon to the right of the control or using [CTRL] + [SPACE] on the keyboard.
 
 5. Select the *showAll* property.
-    <br><br>![](images\2020-10_BAS_Worklist_View_Code_Editor_Code_Completion_Property_showAll_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Code_Completion_Property_showAll_.jpg)<br><br>
 
 6. Even control properties can have their value selected from a list. Delete the *false* value and use [CTRL] + [SPACE] to present the list of avialble values.
-    <br><br>![](images\2020-10_BAS_Worklist_View_Code_Editor_Code_Completion_Property_showAll_Values_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Code_Completion_Property_showAll_Values_.jpg)<br><br>
 
 7. Proceed until you have the following code in place:
 ```XML
@@ -62,17 +62,17 @@ It is recommended that you type in most the code in order to experience the code
 
 ```
 
-   <br><br>![](images\2020-10_BAS_Worklist_View_Code_Editor_Filters_Added_.jpg)<br><br>
+   <br><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Filters_Added_.jpg)<br><br>
 
 8. You probably noticed that the *Worklist.view.xml* file is marked as error, including its folders hierarchy, as well as indications in the *Status Bar*.
-   <br><br>![](images\2020-10_BAS_Worklist_View_Code_Editor_Error_Explorer_.jpg)<br><br>
+   <br><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Error_Explorer_.jpg)<br><br>
 
-   <br><br>![](images\2020-10_BAS_Worklist_View_Code_Editor_Error_Status_Bar_.jpg)<br><br>
+   <br><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Error_Status_Bar_.jpg)<br><br>
 
 9. Open the *Problems* tab by either clicking the problems indication area in the status bar or from the menu bar selecting *View | Problems*.
-   <br><br>![](images\2020-10_BAS_Worklist_View_Problems_Pane_.jpg)<br><br>
+   <br><br>![](images/2020-10_BAS_Worklist_View_Problems_Pane_.jpg)<br><br>
 
-10. According to the problem description "The aggregation \"content\" has cardinality of 0..1 and may only contain one element". Therefore, wrap the *IconTabBar* and *Table* controls in a `<VBox>` element, and indent accordingly.
+10. According to the problem description *The aggregation \"content\" has cardinality of 0..1 and may only contain one element*. Therefore, wrap the *IconTabBar* and *Table* controls in a `<VBox>` element, and indent accordingly.
 ```XML
         <semantic:content>
             <VBox>
@@ -131,7 +131,7 @@ It is recommended that you type in most the code in order to experience the code
 ```
 
 11. Test-tun the app locally to see the UI changes. All you need to do is to refresh the tab where the app is already running.
-   <br><br>![](images\2020-10_BAS_App_After_UI_Changes_.jpg)<br><br>
+   <br><br>![](images/2020-10_BAS_App_After_UI_Changes_.jpg)<br><br>
 
     >Clicking the filters has no impact as the logic was not implemented. This will be the next step in the exercise.
 
@@ -143,23 +143,23 @@ After completing these steps you will have modified the logic of the worklist vi
 It is recommended that you type in most the code in order to experience the code editor's capabilities.
 
 12. Choose *webapp > controller* and click the *Worklist.controller.js* file.
-    <br><br>![](images\2020-10_BAS_Worklist_Controller_Code_Editor_Open_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_Worklist_Controller_Code_Editor_Open_.jpg)<br><br>
     >The *Worklist.controller.js* file is opened in a code editor tab.
-    >![](images\2020-10_BAS_Worklist_Controller_Code_Editor_Opened_.jpg)<br><br>
+    >![](images/2020-10_BAS_Worklist_Controller_Code_Editor_Opened_.jpg)<br><br>
 
-13. Click *Outline* button at the top-right of the window to open the oudaline pane. locate the *onUpdateFinished* function and click it in order fo rthe code editor to focus on this function.
-    <br><br>![](images\2020-10_BAS_Worklist_Controller_Outline_.jpg)<br><br>
+13. Click *Outline* button at the top-right of the window to open the oudaline pane. locate the *onUpdateFinished* function and click it in order for the code editor to focus on this function.
+    <br><br>![](images/2020-10_BAS_Worklist_Controller_Outline_.jpg)<br><br>
 
-14. The following code will add the total products count as a property to the model. This property is presented at the top left of the view when clicking the *showAll* filter. Add it just below the end of the *var* statement.
+14. The following code will add the total products count as a property to the model. This property is presented at the top left of the view when clicking the *showAll* filter. Add it just below the end of the variables declaration section (*var* statement).
 ```javascript
             //set products count
             this.getModel("worklistView").setProperty("/productsCount", iTotalItems);
 ```
 
-   <br><br>![](images\2020-10_BAS_Worklist_Controller_onUpdatedFinished_Updated_.jpg)<br><br>
+   <br><br>![](images/2020-10_BAS_Worklist_Controller_onUpdatedFinished_Updated_.jpg)<br><br>
 
 15. Refresh the app to see the effect of this change.
-   <br><br>![](images\2020-10_BAS_Worklist_Controller_onUpdatedFinished_Updated_App_.jpg)<br><br>
+   <br><br>![](images/2020-10_BAS_Worklist_Controller_onUpdatedFinished_Updated_App_.jpg)<br><br>
 
 16. Now it's time to handle the user action of clicking the filters. In the Outline pane click the *onRefresh* function, and add the following code above this function.
 
@@ -187,12 +187,12 @@ It is recommended that you type in most the code in order to experience the code
 
 ```
 
-   <br><br>![](images\2020-10_BAS_Worklist_Controller_Filters_.jpg)<br><br>
+   <br><br>![](images/2020-10_BAS_Worklist_Controller_Filters_.jpg)<br><br>
 
 ## Exercise 5.3 - Run the App Locally in the Dev Space
 
 15. Refresh the app's tab for the changes to take effect. Click the various filters and see how the list of products changes according to the selected filter.
-   <br><br>![](images\2020-10_BAS_Worklist_Controller_Filters_Low_.jpg)<br><br>
+   <br><br>![](images/2020-10_BAS_Worklist_Controller_Filters_Low_.jpg)<br><br>
 
 16. Close the *Outline* pane and all open tabs in the editors section.
 

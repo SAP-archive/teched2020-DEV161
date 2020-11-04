@@ -60,7 +60,7 @@ This requires changes to the UI (view) and also some formatting enhancements.
                 </Table>
     ```
 
-    <br><br>![](images\2020-10_BAS_Object_View_Orders_Table_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_Object_View_Orders_Table_.jpg)<br><br>
 
 ## Exercise 12.2 - Formatter Modifications
 
@@ -76,14 +76,14 @@ After completing these steps you will have modified the way a number represeting
 
     ```
 
-    <br><br>![](images\2020-10_BAS_Formatter_Percent_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_Formatter_Percent_.jpg)<br><br>
 
 ## Exercise 12.3 - Run the App Locally in the Dev Space
 
 After completing these steps you will have tested the fully developed app locally in your dev space.
 
 1.	Go to the tab where the app is running and refresh it (press [F5]). You can see the result of adding the supplier info to the product's details view.
-    <br><br>![](images\2020-10_BAS_App_Object_View_After_Orders_Table_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_App_Object_View_After_Orders_Table_.jpg)<br><br>
 
     >Adding a shipment details view is out of scope of this workshop. You're encouraged to try it on your own.
 

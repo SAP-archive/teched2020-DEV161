@@ -18,8 +18,6 @@ The requirements to follow the exercises in this repository are:
 
 ## Exercises
 
-Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
-
 - [Getting Started](exercises/ex0/)
     - [Exercise 0.1 - Customization](exercises/ex1#exercise-11-sub-exercise-1-description)
     - [Exercise 0.2 - Tips & Tricks (dotfiles, ...)](exercises/ex1#exercise-11-sub-exercise-1-description)
