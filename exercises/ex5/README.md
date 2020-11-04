@@ -6,7 +6,7 @@ In this exercise, you will add filters to the app that will filter the list of p
 
 After completing these steps you will have modified the worklist view of the app to include filters. Some of the modifications are also needed in order for the logic to execute accordingly.
 
-It is recommended that you type in most the code in order to experience the code editor's capabilities.
+It is recommended that you type in most of the code in order to experience the code editor's capabilities.
 
 1. Choose *webapp > view* and click the *Worklist.view.xml* file.
     <br><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Open_.jpg)<br><br>
@@ -16,7 +16,7 @@ It is recommended that you type in most the code in order to experience the code
     >Tip 1: You can get additional screen real-estate for the code editor tab by closing the *Explorer* pane. You can get even more real-estate by double clicking the tab's title.
 
     >Tip 2: Hovering over a control or a control property pops up a tooltip with information on it as well as link to its API Reference, which is opened on a new browser tab.
-    >![](images/2020-10_BAS_Worklist_View_Code_Editor_Code_Completion_Control_.jpg)<br><br>
+    ><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Code_Completion_Control_.jpg)<br><br>
 
 2. Add an *IconTabBar* conotrl before the *Table* control.
 ```XML
@@ -27,9 +27,9 @@ It is recommended that you type in most the code in order to experience the code
 ```
 
 3. Between `<items>` and `</items>` type `<`. The code completion kicks in.
-    <br><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Open_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Code_Completion_Control_.jpg)<br><br>
 
-    >Tip 1: You can select which control to use using the mouese or by using the arrow keys on the keyboard.
+    >Tip 1: You can select which control to use using the mouse or by using the arrow keys on the keyboard.
 
     >Tip 2: You can get more information on a control by clicking the (i) icon to the right of the control or using [CTRL] + [SPACE] on the keyboard.
 
@@ -38,7 +38,7 @@ It is recommended that you type in most the code in order to experience the code
 
     >Tip 1: You can filter the list of properties by typing part of it.
 
-    >Tip 2: You can select which property to use using the mouese or by using the arrow keys on the keyboard.
+    >Tip 2: You can select which property to use using the mouse or by using the arrow keys on the keyboard.
 
     >Tip 3: You can get more information on a property by clicking the (i) icon to the right of the control or using [CTRL] + [SPACE] on the keyboard.
 
@@ -147,7 +147,7 @@ It is recommended that you type in most the code in order to experience the code
     >The *Worklist.controller.js* file is opened in a code editor tab.
     >![](images/2020-10_BAS_Worklist_Controller_Code_Editor_Opened_.jpg)<br><br>
 
-13. Click *Outline* button at the top-right of the window to open the oudaline pane. locate the *onUpdateFinished* function and click it in order for the code editor to focus on this function.
+13. Click *Outline* button at the top-right of the window to open the outline pane. locate the *onUpdateFinished* function and click it in order for the code editor to focus on this function.
     <br><br>![](images/2020-10_BAS_Worklist_Controller_Outline_.jpg)<br><br>
 
 14. The following code will add the total products count as a property to the model. This property is presented at the top left of the view when clicking the *showAll* filter. Add it just below the end of the variables declaration section (*var* statement).
@@ -165,7 +165,7 @@ It is recommended that you type in most the code in order to experience the code
 
 ```javascript
         onFilterSelect: function(oEvent){
-            var oTable = this.byId("table")
+            var oTable = this.byId("table");
             var sKey = oEvent.getParameter("key");
             var oFilter = this._createFilterByTabKey(sKey);
             var oBinding = oTable.getBinding("items");

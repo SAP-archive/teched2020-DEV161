@@ -8,12 +8,17 @@ After completing these steps you will know how to access SAP Business Applicatio
 
 1. Open a browser of your choice (Google Chrome, Microsoft Edge, Apple Safari, etc).
 
-2. Go to [SAP Cloud Platform Landing Page](https://www.sap.com/products/cloud-platform.html?btp=10a432f3-a259-46c4-aebc-79c090a69b22), and click *Log in to trial* to log in to your SAP Cloud Platform cockpit. If the log in doesn't work, make sure you fulfill the [requirements](../../README.md#requirements).
-<br><br>![](images/2020-10_SCP_Trial_Landing_Page_.jpg)<br><br>
+2. Go to [SAP Cloud Platform Landing Page](https://www.sap.com/products/cloud-platform.html?btp=10a432f3-a259-46c4-aebc-79c090a69b22), and click *Log in to trial* to log in to your SAP Cloud Platform cockpit. 
+    >If the log in doesn't work, make sure you fulfill the [requirements](../../README.md#requirements).
 
-3. Click **SAP Business Application Studio** to launch SAP Business Application Studio, and log in with your credentials (You may need to accept the legal terms). If the log in doesn't work, make sure you fulfill the [requirements](../../README.md#requirements).
+    <br>![](images/2020-10_SCP_Trial_Landing_Page_.jpg)<br><br>
+
+3. Click **SAP Business Application Studio** to launch SAP Business Application Studio, and log in with your credentials. 
     >You may need to accept the legal terms.
-<br><br>![](images/2020-10&#32;SCP&#32;Access&#32;AppStudio.jpg)<br><br>
+
+    >If the log in doesn't work, make sure you fulfill the [requirements](../../README.md#requirements).
+
+    <br>![](images/2020-10&#32;SCP&#32;Access&#32;AppStudio.jpg)<br><br>
 
 ## Exercise 1.2 - Create Dev Space
 
@@ -46,7 +51,7 @@ This simplifies and saves time in setting up the development environment as ther
 9. Click *Open Workspace*.
     <br><br>![](images/2020-10_BAS_Open_Workspace_.jpg)<br><br>
 
-10. Select *projects*, and click *OK*.
+10. Select *projects*, and click *Open*.
     <br><br>![](images/2020-10_BAS_Open_Workspace-2_.jpg)<br><br>
     >Wait for SAP Business Application Studio to re-load.
 
@@ -57,17 +62,18 @@ This simplifies and saves time in setting up the development environment as ther
     <br><br>![](images/2020-10_BAS_New_Folder_.jpg)<br><br>
 
 
-13. Click the following [link](data/metadata.xml?raw=true){target="_blank"} to access the *metadata.xml* file.
+13. Click the following [link](data/metadata.xml?raw=true) to access the *metadata.xml* file.
 
 14. Right-click the data area, and select *save as...*.
     >You'll save the file to your local machine.
 
 15. Choose the folder to where the file will be saved (*Downloads* is the default folder). Use *metadata.xml* as the *File name*, and click *Save*.
+    >The default file extension using this method is *txt*. Make sure you modify it accordingly.
 
 16. Open the folder to where you saved the file, and drag and drop it to the *data* folder you created in SAP Business Application Studio.
     <br><br>![](images/2020-10_BAS_App_Mock_Uploaded_.jpg)<br><br>
 
-    >Follow the same steps for [ui5.yaml](data/ui5.yaml?raw=true){target="_blank"}, [package.json](data/package.json?raw=true){target="_blank"}, [manifest.json](data/manifest.json?raw=true){target="_blank"}, which will be used in a later stage of the workshop.
+    >Follow the same steps for [ui5.yaml](data/ui5.yaml?raw=true), [package.json](data/package.json?raw=true), [manifest.json](data/manifest.json?raw=true), which will be used in a later stage of the workshop.
 
 ## Summary
 

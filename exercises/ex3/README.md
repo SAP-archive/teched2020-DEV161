@@ -31,7 +31,7 @@ SAP Fiori tools include high productivity tools, such as templates, wizards, edi
     >You may need to accept the legal terms.
     >![](images/2020-10_BAS_Yeoman_Generators_Lagal_Terms_.jpg)<br><br>
     
-4. Search for *fiori* yeoman generators, locate the *@sap/generator-fiori-freestyle generator, and click *Install*. Wait until the installation is completed.
+4. Search for *fiori* yeoman generators, locate the *@sap/generator-fiori-freestyle* generator, and click *Install*. Wait until the installation is completed.
     <br><br>![](images/2020-10_BAS_Install_UI_Generators-2_.jpg)<br><br>
 
     installing:
@@ -64,6 +64,7 @@ You'll use the worklist template available from SAP fiori tools to create the ap
 9. Click *Next*.
 
 8. For *Floorplan Customization*, select the following, and click *Next*.
+    >You can start typing the value to filter the list of options.
 
     | Step | Parameter | Value |
     |:-----|:----------|:------|
@@ -75,12 +76,12 @@ You'll use the worklist template available from SAP fiori tools to create the ap
 
     <br><br>![](images/2020-10_BAS_Floorplan_Customization_.jpg)<br><br>
 
-9. For *Project Attributes*, select the following, and click *Finish*.
+9. For *Project Attributes*, select the following, and click *Next*.
 
     | Step | Parameter | Value |
     |:-----|:----------|:------|
     | A | Module name | **productsinventory** |
-    | B | Application title | **product Inventory** |
+    | B | Application title | **Products Inventory** |
     | C | Application namespace | **products.inventory** |
     | D | Description | **An SAP Fiori freestyle app to manage products inventory (demo)** |
     | E | Project folder path | **/home/user/projects/products-inventory** |
@@ -93,13 +94,14 @@ You'll use the worklist template available from SAP fiori tools to create the ap
 11. From the menu bar select *File | Open Workspace...*, select *products-inventory*, and click *Open*.
     <br><br>![](images/2020-10_BAS_Project_Workspace_Open_.jpg)<br><br>
 
-11. SAP Business Applications reloads with an open workspace containing the *products-inventory* project. You can click *>* / *V* in the *Explorer* pane to expand/collapse the folders.
-    <br><br>![](images/2020-10_BAS_Workspace_Open_.jpg)<br><br>
+11. SAP Business Applications reloads with an open workspace containing the *products-inventory* project. 
+    >Tip 1: You can click *>* / *V* in the *Explorer* pane to expand/collapse the folders.
+    ><br>![](images/2020-10_BAS_Workspace_Open_.jpg)<br><br>
 
-    > Tip: You can click the *Explorer* button, or any other pane button, e.g. Search, git, to expand/collapse its pane. This gives additional screen real-estate when needed. Only one pane can be open.
-    > <br><br>![](images/2020-10_BAS_Pane_Closed_.jpg)<br><br>
+    >Tip 2: You can click the *Explorer* button, or any other pane button, e.g. Search, git, to expand/collapse its pane. This gives additional screen real-estate when needed. Only one pane can be open.
+    ><br>![](images/2020-10_BAS_Pane_Closed_.jpg)<br><br>
 
-    > You can also create a project from the terminal using Yeoman.
+    >You can also create a project from the terminal using Yeoman.
 
 ## Summary
 

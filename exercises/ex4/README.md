@@ -50,12 +50,12 @@ After completing these steps you will have tested the app with mock data that yo
 5.	Expand the webapp folder, right-click the *localService* folder and select *New Folder*.
     <br><br>![](images/2020-10_BAS_Mock_Data_Folder_.jpg)<br><br>
 
-6. Name the folder *mockdata*, and click *OK*.
+6. Name the folder *mockdata*, and click *OK* or press [ENTER].
     <br><br>![](images/2020-10_BAS_Mock_Data_Folder-2_.jpg)<br><br>
 
 7. Expand the *localService* folder.
 
-8. Click the following [link](data/Products.json?raw=true){target="_blank"} to access the *Products* collection mock data.
+8. Click the following [link](data/Products.json?raw=true) to access the *Products* collection mock data.
 
 9. Right-click the data area, and select *save as...*.
 
@@ -65,7 +65,7 @@ After completing these steps you will have tested the app with mock data that yo
 11. Open the folder to where you saved the file, and drag and drop it to the *mockdata* folder you created in SAP Business Application Studio.
     <br><br>![](images/2020-10_BAS_App_Mock_Uploaded_.jpg)<br><br>
 
-    >You can follow the same steps for [Order_Details](data/Order_Details.json?raw=true){target="_blank"}, [Orders](data/Orders.json?raw=true){target="_blank"}, [Suppliers](data/Suppliers.json?raw=true){target="_blank"}, which will be used in a later stage of the workshop.
+    >You can follow the same steps for [Order_Details](data/Order_Details.json?raw=true), [Orders](data/Orders.json?raw=true), [Suppliers](data/Suppliers.json?raw=true), which will be used in a later stage of the workshop.
 
 12. Go to the app's tab and refresh it (F5). The app presents the mock data you provided.
     <br><br>![](images/2020-10_BAS_App_Mock_Provided_.jpg)<br><br>
