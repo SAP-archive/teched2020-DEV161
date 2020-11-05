@@ -85,7 +85,7 @@ After completing these steps you will have tested the app with data fetched from
 !!!If the preview does not response - probably need to unexpose ports.
 
 1.	Right-click any folder within the productsinventory folder, e.g. *webapp* folder, and select *Preview Application*.
-    <br><br>![](images/2020-10_BAS_Preview_Application_start-1_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_Preview_Application_Start-1_.jpg)<br><br>
 
 2.	The *command palette* is opened with a list of options. Click *start* to run this script.
     <br><br>![](images/2020-10_BAS_Preview_Application_start-2_.jpg)<br><br>
