@@ -1,8 +1,8 @@
-# Exercise 8 - Connect Your Project to SAP Cloud Platform Continuous Integration and Delivery
+# Exercise 14 - Connect Your Project to SAP Cloud Platform Continuous Integration and Delivery
 
 In this exercise, we will create a project in a public GitHub repository in which to store your source code, enable SAP Cloud Platform Continuous Integration and Delivery, and configure and run a predefined continuous integration and delivery (CI/CD) pipeline that automatically tests, builds, and deploys your code changes.
 
-## Exercise 8.1 Create a GitHub Repository
+## Exercise 14.1 Create a GitHub Repository
 
 After completing these steps, you will have created a public GitHub repository, in which you can store the source code of your project. **Note:** For this execise, you need to have a GitHub user.
 
@@ -20,14 +20,14 @@ After completing these steps, you will have created a public GitHub repository, 
 ![Copy GitHub URL](./images/GH_copyGitHubURL.png)
 
 
-## Exercise 8.2 Create a Personal Access Token for GitHub
+## Exercise 14.2 Create a Personal Access Token for GitHub
 
 After completing these steps, you will have created a personal access token to authenticate against GitHub.
 
 To create a personal access token, which you can use instead of a password, follow the steps described in [Creating a personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
 
 
-## Exercise 8.3 Connect Your GitHub Repository with Your SAP Fiori Project
+## Exercise 14.3 Connect Your GitHub Repository with Your SAP Fiori Project
 
 After completing these steps, you will have added your SAP Fiori project sources to your GitHub repository.
 
@@ -74,7 +74,7 @@ As a result, you're prompted to log in through your custom identity provider.
 10. When prompted, enter your GitHub username and password (or your personal access token).
 
 
-## Exercise 8.4 Enable SAP Cloud Platform Continuous Integration and Delivery
+## Exercise 14.4 Enable SAP Cloud Platform Continuous Integration and Delivery
 
 After completing these steps, will have subscribed to SAP Cloud Platform Continuous Integration and Delivery and assigned the *Administrator* role to your user.
 
@@ -99,7 +99,7 @@ If your user is new to your subaccount, choose **Add User** in the confirmation 
 8. From the drop-down list, choose **CICD Service Administrator**.
 
 
-## Exercise 8.5 Configure Credentials in SAP Cloud Platform Continuous Integration and Delivery
+## Exercise 14.5 Configure Credentials in SAP Cloud Platform Continuous Integration and Delivery
 
 After completing these steps, you will have configured credentials for connecting SAP Cloud Platform Continuous Integration and Delivery to other services.
 
@@ -139,7 +139,7 @@ After completing these steps, you will have configured credentials for connectin
 ![Credentials GitHub](./images/CICD_credentials_cfdeploy.png)
 
 
-## Exercise 8.6 Configure a CI/CD Job
+## Exercise 14.6 Configure a CI/CD Job
 
 After completing these steps, you will have configured a job in SAP Cloud Platform Continuous Integration and Delivery.
 
@@ -186,7 +186,7 @@ After completing these steps, you will have configured a job in SAP Cloud Platfo
 ![Webhook Details](./images/GH_webhook_details.png)
 
 
-## Exercise 8.7 Make a Change in Your Project
+## Exercise 14.7 Make a Change in Your Project
 
 After completing these steps, you will have made a change in your project and thereby triggered SAP Cloud Platform Continuos Integration and Delivery.
 
@@ -210,7 +210,7 @@ After completing these steps, you will have made a change in your project and th
 This push event automatically triggers SAP Cloud Platform Continuous Integration and Delivery.
 
 
-## Exercise 8.8 Verify the Success of Your Build
+## Exercise 14.8 Verify the Success of Your Build
 
 After completing these steps, you will have monitored the outcome of your job in SAP Cloud Platform Continuous Integration and Delivery.
 
@@ -223,7 +223,7 @@ After completing these steps, you will have monitored the outcome of your job in
 ![Successful Build](./images/CICD_successful_build.png)
 
 
-## Exercise 8.9 Access the Deployed Application.
+## Exercise 14.9 Access the Deployed Application.
 
 After completing these steps, you will have accessed your deployed application trough the SAP Cloud Platform cockpit.
 

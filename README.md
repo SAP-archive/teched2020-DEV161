@@ -83,7 +83,7 @@ The requirements to follow the exercises in this repository are:
     - [Exercise 2.2 - Run the App Locally in the Dev Space](exercises/ex2#exercise-22-sub-exercise-2-description)
 
 - [Exercise 14 - Apply CI/CD to SAP Fiori Development on SAP Cloud Platform](exercises/ex14/)
-    - [Exercise 14.1 - Create a GitHub Project](exercises/ex8#exercise-141-Create-a-GitHub-Project)
+    - [Exercise 14.1 - Create a GitHub Project](exercises/ex14#exercise-141-Create-a-GitHub-Project)
     - [Exercise 14.2 - Create Personal Access Token for GitHub](exercises/ex14#exercise-142-Create-Personal-Access-Token-for-GitHub)
     - [Exercise 14.3 - Add Git repository to Fiori project](exercises/ex14#exercise-143-Add-Git-repository-to-Fiori-project)
     - [Exercise 14.4 - Enable SAP CP Contunuous Integration and Delivery](exercises/ex14#exercise-144-Enable-SAP-CP-Contunuous-Integration-and-Delivery)
