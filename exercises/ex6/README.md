@@ -88,7 +88,7 @@ After completing these steps you will have tested the app with data fetched from
     <br><br>![](images/2020-10_BAS_Preview_Application_Start-1_.jpg)<br><br>
 
 2.	The *command palette* is opened with a list of options. Click *start* to run this script.
-    <br><br>![](images/2020-10_BAS_Preview_Application_start-2_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_Preview_Application_Start-2_.jpg)<br><br>
 
     >You may receive notifications at the bottom right of the screen asking you to expose ports. click *Yes*.
 
@@ -98,14 +98,14 @@ After completing these steps you will have tested the app with data fetched from
 
     >A new tab is opened in SAP Business Application Studio, where the log of running the app is presented.
 
-    >![](images/2020-10_BAS_Preview_Application_start-3_.jpg)<br><br>
+    >![](images/2020-10_BAS_Preview_Application_Start-3_.jpg)<br><br>
 
 
 3. Click the *Products Inventory* tile to launch the app.
-    <br><br>![](images/2020-10_BAS_Preview_Application_start-4_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_Preview_Application_Start-4_.jpg)<br><br>
 
 4. The app is run with data coming from the demo Northwind OData service that is provided by the OData organization.
-    <br><br>![](images/2020-10_BAS_Preview_Application_start-5_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_Preview_Application_Start-5_.jpg)<br><br>
 
     >You can observe that the data is different than the mock data you provided. It contains more products, and their inventory level is different, i.e. the products when filtered are the same.
 
