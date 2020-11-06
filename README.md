@@ -26,7 +26,7 @@ The requirements to follow the exercises in this repository are:
     - [Exercise 1.2 - Create Dev Space](exercises/ex1#exercise-12---Create-Dev-Space)
     - [Exercise 1.3 - Launch the Development Environment](exercises/ex1#exercise-13---Launch-the-Development-Environment)
     - [Exercise 1.4 - Preparations for the next exercises](exercises/ex1#exercise-14---Preparations-for-the-next-exercises)
-- [Exercise 2 -  Customization](exercises/ex2/)
+- [Exercise 2 - Customization](exercises/ex2/)
     - [Exercise 2.1 - Customization](exercises/ex2#exercise-21-sub-exercise-1-description)
     - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description(dotfiles, ...)](exercises/ex2#exercise-22-sub-exercise-2-description)
 - [Exercise 3 - Project Setup](exercises/ex3/)

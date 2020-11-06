@@ -1,70 +1,122 @@
-# Exercise 9 - Add Columns to Worklist
+# Exercise 9 - Connect Your Project to SAP Cloud Platform Continuous Integration and Delivery Service - Setup the Service
 
-In this exercise, we will add columns to the products list view. This requires changes to the UI (view) and also to the view's logic.
+In this exercise, we will create a project in a public GitHub repository in which to store your source code, enable SAP Cloud Platform Continuous Integration and Delivery, and configure and run a predefined continuous integration and delivery (CI/CD) pipeline that automatically tests, builds, and deploys your code changes.
 
-## Exercise 9.1 UI Modifications
+## Exercise 9.4 Enable SAP Cloud Platform Continuous Integration and Delivery
 
-After completing these steps you will have modified the worklist view of the app to include filters. Some of the modifications are also needed in order for the logic to execute accordingly.
+After completing these steps, will have subscribed to SAP Cloud Platform Continuous Integration and Delivery and assigned the *Administrator* role to your user.
 
-It is recommended that you type in most the code in order to experience the code editor's capabilities.
+1. In your SAP Cloud Platform trial account, navigate to the **Subscriptions** tab.
+Here, you can find the Continuous Integration & Delivery service:
+![Service Tile](./images/CICD_ServiceTile.png)
 
-1. This time you'll use a new way of searching for a file using the *command palette*. From the main menu select *View | Find Command*, delete the `>`, and type *worklist*. A list of files that their name starts with *worklist* appears.
-    <br><br>![](images/2020-10_BAS_Command_Palette_Search_File_.jpg)<br><br>
+2. Choose the service tile and then choose **Subscribe**.
+![Service Tile](./images/CICD_subscribe_service.png)
 
-2. Click *Worklist.view.xml* to open the file in the code editor. 
-    <br><br>![](images/2020-10_BAS_Command_Palette_Search_File_Opened_.jpg)<br><br>
+3. In your SAP Cloud Platform subaccount, choose **Security** → **Trust Configuration**.
 
-3. Add the *Units Ordered* and *Units In Stock* columns to the table, and remove the `hAlign` property from the *unitNumberColumn* column (hover over the property to view its description). In the file locate the `<columns>` section and add/modify the following code:
-    ```xml
-                        <Column id="unitNumberColumn">
-                            <Text text="{i18n>tableUnitNumberColumnTitle}" id="unitNumberColumnTitle"/>
-                        </Column>
-                        <Column>
-                            <Text text="{i18n>tableUnitsOrderedColumnTitle}"/>
-                        </Column>
-                        <Column>
-                            <Text text="{i18n>tableUnitsInStockColumnTitle}"/>
-                        </Column>
-    ```
+4. Choose the name of your identity provider.
 
-    <br><br>![](images/2020-10_BAS_Worklist_Columns_Added_.jpg)<br><br>
+5. Enter your email address.
 
-4. So far you added the columns titles. Now it's time to add the data. Locate the `<items>` section below the `<columns>` section, and add the following code.
-    ```xml
-                                <ObjectNumber number="{path: 'UnitsOnOrder', formatter: 'formatter.numberUnit'}" unit="PC"></ObjectNumber>
-                                <ObjectNumber number="{path: 'UnitsInStock', formatter: 'formatter.numberUnit'}" unit="PC"></ObjectNumber>
-    ```
+6. Choose **Show Assignments**.
+If your user is new to your subaccount, choose **Add User** in the confirmation dialog.
 
-    <br><br>![](images/2020-10_BAS_Worklist_Cells_Added_.jpg)<br><br>
+7. Choose **Assign Role Collection**.
 
-## Exercise 9.2 - Run the App Locally in the Dev Space
+8. From the drop-down list, choose **CICD Service Administrator**.
 
-After completing these steps you will have tested the app with data fetched from a real backend.
 
-!!!If the preview does not response - probably need to unexpose ports.
+## Exercise 9.5 Configure Credentials in SAP Cloud Platform Continuous Integration and Delivery
 
-1.	Right-click any folder within the productsinventory folder, e.g. *webapp* folder, and select *Preview Application*.
-    <br><br>![](images/2020-10_BAS_Preview_Application_start-1_.jpg)<br><br>
+After completing these steps, you will have configured credentials for connecting SAP Cloud Platform Continuous Integration and Delivery to other services.
 
-2.	The *command palette* is opened with a list of npm scripts. Click *start* to run this script.
-    <br><br>![](images/2020-10_BAS_Preview_Application_start-2_.jpg)<br><br>
+1. In your SAP Cloud Platform subaccount, choose **Subscriptions**.
 
-    >A new browser tab is opened, where the FLP is run.
+2. In the **Extension Suite - Development Efficiency** category, choose **Continuous Integration & Delivery**.
 
-    >A new tab is opened in SAP Business Application Studio, where the log of running the app is presented.
+3. Choose **Go to Application**.
 
-    ><br><br>![](images/2020-10_BAS_Preview_Application_start-3_.jpg)<br><br>
+4. Use your credentials to log in to the application.
 
-3. Click the *Products Inventory* tile to launch the app.
-    <br><br>![](images/2020-10_BAS_Preview_Application_start-4_.jpg)<br><br>
+5. If your GitHub repository is private, configure credentials for it, so that the Continuous Integration & Delivery service can connect to it. **Note:** If your GitHub repository isn't private, you can skip this step.
 
-4. The app is run with data coming from the demo Northwind OData service that is provided by the OData organization.
-    <br><br>![](images/2020-10_BAS_Preview_Application_start-5_.jpg)<br><br>
+    - In the **Credentials** tab in SAP Cloud Platform Continuous Integration and Delivery, choose **+** *(Create Credentials)*.
+  ![Credentials](./images/CICD_credentials.png)
+  
+    - For **Name**, enter a freely chosen name for your credential, which is unique in your SAP Cloud Platform subaccount. In this example, the name of the credential is *github*.
+  
+    - As **Type**, select **Basic Authentication**.
+
+    - For **Username**, enter your Github username.
+  
+    - For **Password**, use the personal access token, which you've created in GitHub in exercise 8.2.
+     ![Credentials GitHub](./images/CICD_credentials_github.png)
+
+
+6. To create credentials for deploying to the SAP Cloud Platform Cloud Foundry environment, go to the **Credentials** tab and choose **+** *(Create Credentials)*.
+![Credentials](./images/CICD_credentials.png)
+
+7. For **Name**, enter a freely chosen name for your credentials, which is unique in your SAP Cloud Platform subaccount. In this example, the name of the credentials is *cfdeploy*.
+
+8. As **Type**, select **Basic Authentication**.
+
+9. For **Username**, enter your username for the SAP Cloud Platform cockpit.
+
+10. For **Password**, use your password for the SAP Cloud Platform cockpit.
+![Credentials GitHub](./images/CICD_credentials_cfdeploy.png)
+
+
+## Exercise 9.6 Configure a CI/CD Job
+
+After completing these steps, you will have configured a job in SAP Cloud Platform Continuous Integration and Delivery.
+
+1. In the **Jobs** tab in SAP Cloud Platform Continuous Integration and Delivery, choose **+** *(Create Job)*.
+![Jobs](./images/CICD_jobs.png)
+
+2. For **Job Name**, enter a freely chosen name for your job, which is unique in your SAP Cloud Platform subaccount. In this example, the name of the job is *Procurement*.
+
+3. For **Repository URL**, enter the URL of your GitHub repository.
+
+4. If your GitHub repository is private, for **Repository Credentials**, enter the name of the credentials to access your GitHub Repository, which you've created in exercise 8.5. If your GitHub repository isn't private, leave this field empty.
+
+5. For **Branch**, enter the GitHub branch from which you want to receive push events.
+
+6. As **Pipeline**, choose **sap-ui5-cf**.
+![UI Job](./images/CICD_UI_job.png)
+
+7. Scroll down to the **Tasks**. By default, the **Build** task is **ON**.
+
+8. Switch the **Deploy** task on.
+![UI Job Build Stage](./images/CICD_UI_job_build.png)
+
+9. Provide the needed information for the **Deploy** task. You can get the your org name, space name, and API endpoint from your subaccount overview in the SAP Cloud Platform cockpit:
+![Cockpit](./images/CP_API_Endpoint.png)
+
+10. Choose the *cfdeploy* credentials that you'vecreated in the previous step.
+![UI Job Deploy Stage](./images/CICD_UI_job_deploy.png)
+
+11. Choose **Create**.
+
+12. Whenever you create the first job for a GitHub repository, the **Webhook Creation** pop-up appears, which provides you with the data needed to define a webhook in GitHub. Alternatively, you can open the detail view of an existing job in the **Jobs** tab and under **General Information**, choose **Webhook Data**.
+![Webhook](./images/CICD_webhook.png)
+
+13. In your project in GitHub, go to the **Settings** tab.
+
+14. From the navigation pane, choose **Webhooks**.
+
+15. Choose **Add webhook**.
+![Webhook](./images/GH_webhook.png)
+
+16. Enter the **Payload URL**, **Content type**, and **Secret** from the **Webhook Creation** pop-up in SAP Cloud Platform Continuous Integration and Delivery. For all other settings, leave the default values.
+
+8. Choose **Add webhook**.
+![Webhook Details](./images/GH_webhook_details.png)
 
 
 
 ## Summary
 
-With this, you have successfully completed adding columns to an SAPUI5 *Table* control. 
+You've created a project in GitHub to store your source code and successfully configured and run a predefined continuous integration and delivery pipeline that automatically builds, tests and deploys your code changes.
 
-Continue to - [Exercise 10 - Add Supplier Info to Details Page](../ex10/README.md)
+Continue to - [Exercise 10 - Useful CF Commands](../ex10/README.md).

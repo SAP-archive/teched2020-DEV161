@@ -3,7 +3,7 @@
 In this exercise, we will connect the app to a real backend. We will use the *Northwind* demo service that is available from the OData organization.
 
 
-## Exercise 6.1 Preparations
+## Exercise 6.0 Preparations
 
 1.	Right-click an empty space in the *Explorer* pane *Add Folder to Workspace...*.
     <br><br>![](images/2020-10_BAS_Multi-Root-1_.jpg)<br><br>

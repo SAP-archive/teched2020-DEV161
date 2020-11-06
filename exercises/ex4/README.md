@@ -4,18 +4,7 @@ In this exercise, we will test the application using mock data. This capability 
 
 ## Exercise 4.1 - Setup the Project to Auto-Refresh
 
-    - [Exercise 4.3 - Load Data to Mock Server](exercises/ex2#exercise-22-sub-exercise-2-description)
-    - [Exercise 4.4 - Run the app with User Provided Mock Data](exercises/ex2#exercise-22-sub-exercise-2-description)
-
-After completing these steps you will have created...
-
-1. Click here.
-<br>![](/exercises/ex2/images/02_01_0010.png)
-
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello ABAP World! | ). 
-```
+TBD
 
 ## Exercise 4.2 - Run the Application with Auto-Generated Mock Data
 

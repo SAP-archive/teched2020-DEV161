@@ -2,7 +2,7 @@
 
 In this exercise, you will learn how to  an SAP Fiori application for freestyle development. The application will follow the SAP Fiori Worklist floorplan.
 
-## Exercise 3.1 - Preparation
+## Exercise 3.0 - Preparation
 
 Create a folder that will contain the app's project.
 

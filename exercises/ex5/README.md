@@ -50,7 +50,7 @@ It is recommended that you type in most of the code in order to experience the c
 
 7. Proceed until you have the following code in place:
 ```XML
-            <IconTabBar>
+            <IconTabBar id="iconTabBar" select=".onFilterSelect" class="sapUiResponsiveContentPadding">
                 <items>
                     <IconTabFilter showAll="true" count="{worklistView>/productsCount}" text="i18n>productTitle" key="all"></IconTabFilter>
                     <IconTabSeparator ></IconTabSeparator>
@@ -76,7 +76,7 @@ It is recommended that you type in most of the code in order to experience the c
 ```XML
         <semantic:content>
             <VBox>
-                <IconTabBar>
+            <IconTabBar id="iconTabBar" select=".onFilterSelect" class="sapUiResponsiveContentPadding">
                     <items>
                         <IconTabFilter showAll="true" count="{worklistView>/productsCount}" text="i18n>productTitle" key="all"></IconTabFilter>
                         <IconTabSeparator ></IconTabSeparator>

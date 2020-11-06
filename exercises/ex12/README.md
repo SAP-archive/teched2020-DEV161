@@ -1,97 +1,70 @@
-# Exercise 12 - Add Orders List to Details Page
+# Exercise 12 - Add Columns to Worklist
 
-So far we you improved the view that presented the list of products and thie key properties related to the business scenario at hand. in the next few exercises you'll improve the product's details view.
+In this exercise, we will add columns to the products list view. This requires changes to the UI (view) and also to the view's logic.
 
-In this exercise, we will add a list of orders that include the product. This way the business user will immediately understand the business impact of the a product's inventory level.
-This requires changes to the UI (view) and also some formatting enhancements.
+## Exercise 12.1 UI Modifications
 
-## Exercise 12.1 - UI Modifications - Orders List
+After completing these steps you will have modified the worklist view of the app to include filters. Some of the modifications are also needed in order for the logic to execute accordingly.
 
-5. In SAP business Application Studio, go to *Object.view.xml* editor tab.
+It is recommended that you type in most the code in order to experience the code editor's capabilities.
 
-3. Add a *Table* control right below the *form* control you added in a previous exercise.
+1. This time you'll use a new way of searching for a file using the *command palette*. From the main menu select *View | Find Command*, delete the `>`, and type *worklist*. A list of files that their name starts with *worklist* appears.
+    <br><br>![](images/2020-10_BAS_Command_Palette_Search_File_.jpg)<br><br>
+
+2. Click *Worklist.view.xml* to open the file in the code editor. 
+    <br><br>![](images/2020-10_BAS_Command_Palette_Search_File_Opened_.jpg)<br><br>
+
+3. Add the *Units Ordered* and *Units In Stock* columns to the table, and remove the `hAlign` property from the *unitNumberColumn* column (hover over the property to view its description). In the file locate the `<columns>` section and add/modify the following code:
     ```xml
-                <Table inset="false"
-                    items="{Order_Details}"
-                    visible="{= ${objectView>/busy} ? false : true}">
-                    <headerToolbar>
-                        <OverflowToolbar>
-                            <Title id="tableHeader" text="Orders" level="H3"></Title>
-                            <ToolbarSpacer />
-                        </OverflowToolbar>
-                    </headerToolbar>
-                    <columns>
-                        <Column>
-                            <Text text="Order ID"></Text>
+                        <Column id="unitNumberColumn">
+                            <Text text="{i18n>tableUnitNumberColumnTitle}" id="unitNumberColumnTitle"/>
                         </Column>
                         <Column>
-                            <Text text="Unit Price"></Text>
+                            <Text text="{i18n>tableUnitsOrderedColumnTitle}"/>
                         </Column>
                         <Column>
-                            <Text text="Quantity"></Text>
+                            <Text text="{i18n>tableUnitsInStockColumnTitle}"/>
                         </Column>
-                        <Column>
-                            <Text text="Discount"></Text>
-                        </Column>
-                        <Column>
-                            <Text text="Shipment"></Text>
-                        </Column>
-                    </columns>
-                    <items>
-                        <ColumnListItem type="Inactive">
-                            <cells>
-                                <ObjectIdentifier title="{OrderID}"/>
-                                <ObjectNumber number="{
-                                    path: 'UnitPrice',
-                                    formatter: '.formatter.numberUnit'
-                                    }" unit="EUR"></ObjectNumber>
-                                <ObjectNumber number="{
-                                    path: 'Quantity',
-                                    formatter: '.formatter.numberUnit'
-                                    }" unit="EUR"></ObjectNumber>
-                                <ObjectNumber number="{
-                                    path: 'Discount',
-                                    formatter: '.formatter.percent'
-                                    }" unit="%"></ObjectNumber>
-                                <Link text="View shipment details"></Link>
-                            </cells>
-                        </ColumnListItem>
-                    </items>
-                </Table>
     ```
 
-    <br><br>![](images/2020-10_BAS_Object_View_Orders_Table_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_Worklist_Columns_Added_.jpg)<br><br>
 
-## Exercise 12.2 - Formatter Modifications
-
-After completing these steps you will have modified the way a number represeting percentile is presented on the view.
-
-6. In SAP business Application Studio, open the file that handles formatting - *webapp > model > formatter.js*, and add the following code:
-    ```javascript
-		},
-
-		percent : function (sValue) {
-			return sValue*100;
-		}
-
+4. So far you added the columns titles. Now it's time to add the data. Locate the `<items>` section below the `<columns>` section, and add the following code.
+    ```xml
+                                <ObjectNumber number="{path: 'UnitsOnOrder', formatter: 'formatter.numberUnit'}" unit="PC"></ObjectNumber>
+                                <ObjectNumber number="{path: 'UnitsInStock', formatter: 'formatter.numberUnit'}" unit="PC"></ObjectNumber>
     ```
 
-    <br><br>![](images/2020-10_BAS_Formatter_Percent_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_Worklist_Cells_Added_.jpg)<br><br>
 
-## Exercise 12.3 - Run the App Locally in the Dev Space
+## Exercise 12.2 - Run the App Locally in the Dev Space
 
-After completing these steps you will have tested the fully developed app locally in your dev space.
+After completing these steps you will have tested the app with data fetched from a real backend.
 
-1.	Go to the tab where the app is running and refresh it (press [F5]). You can see the result of adding the supplier info to the product's details view.
-    <br><br>![](images/2020-10_BAS_App_Object_View_After_Orders_Table_.jpg)<br><br>
+!!!If the preview does not response - probably need to unexpose ports.
 
-    >Adding a shipment details view is out of scope of this workshop. You're encouraged to try it on your own.
+1.	Right-click any folder within the productsinventory folder, e.g. *webapp* folder, and select *Preview Application*.
+    <br><br>![](images/2020-10_BAS_Preview_Application_start-1_.jpg)<br><br>
+
+2.	The *command palette* is opened with a list of npm scripts. Click *start* to run this script.
+    <br><br>![](images/2020-10_BAS_Preview_Application_start-2_.jpg)<br><br>
+
+    >A new browser tab is opened, where the FLP is run.
+
+    >A new tab is opened in SAP Business Application Studio, where the log of running the app is presented.
+
+    ><br><br>![](images/2020-10_BAS_Preview_Application_start-3_.jpg)<br><br>
+
+3. Click the *Products Inventory* tile to launch the app.
+    <br><br>![](images/2020-10_BAS_Preview_Application_start-4_.jpg)<br><br>
+
+4. The app is run with data coming from the demo Northwind OData service that is provided by the OData organization.
+    <br><br>![](images/2020-10_BAS_Preview_Application_start-5_.jpg)<br><br>
+
+
 
 ## Summary
 
-Congratulations!!!
+With this, you have successfully completed adding columns to an SAPUI5 *Table* control. 
 
-With this, you have successfully completed the app development.
-You're welcome to repeat the steps in exercise 7 to build, deploy, and run the app on your CF space.
-
-Continue to - [Exercise 11 - Add Supplier Info to Details Page](../ex10/README.md)
+Continue to - [Exercise 13 - Add Supplier Info to Details Page](../ex13/README.md)
