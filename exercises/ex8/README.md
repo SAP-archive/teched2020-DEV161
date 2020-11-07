@@ -79,4 +79,4 @@ As a result, you're prompted to log in through your custom identity provider.
 
 You've created a project in GitHub to store your source code and successfully configured and run a predefined continuous integration and delivery pipeline that automatically builds, tests and deploys your code changes.
 
-Continue to - [Exercise 9 - Useful CF Commands](../ex9/README.md).
+Continue to - [Exercise 9 - Connect Your Project to SAP Cloud Platform Continuous Integration and Delivery Service - Setup the Service](../ex9/README.md).

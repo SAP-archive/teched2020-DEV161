@@ -52,11 +52,11 @@ It is recommended that you type in most of the code in order to experience the c
 ```XML
             <IconTabBar id="iconTabBar" select=".onFilterSelect" class="sapUiResponsiveContentPadding">
                 <items>
-                    <IconTabFilter showAll="true" count="{worklistView>/productsCount}" text="i18n>productTitle" key="all"></IconTabFilter>
+                    <IconTabFilter showAll="true" count="{worklistView>/productsCount}" text="{i18n>worklistFilterAllProducts}" key="all"></IconTabFilter>
                     <IconTabSeparator ></IconTabSeparator>
-                    <IconTabFilter icon="sap-icon://complete" iconColor="Positive" text="Normal" key="Normal"></IconTabFilter>
-                    <IconTabFilter icon="sap-icon://message-warning" iconColor="Critical" text="Low" key="Low"></IconTabFilter>
-                    <IconTabFilter icon="sap-icon://message-error" iconColor="Negative" text="Shortage" key="Shortage"></IconTabFilter>
+                    <IconTabFilter icon="sap-icon://complete" iconColor="Positive" text="{i18n>worklistFilterNormalStockProducts}" key="Normal"></IconTabFilter>
+                    <IconTabFilter icon="sap-icon://message-warning" iconColor="Critical" text="{i18n>worklistFilterLowStockProducts}" key="Low"></IconTabFilter>
+                    <IconTabFilter icon="sap-icon://message-error" iconColor="Negative" text="{i18n>worklistFilterShortageStockProducts}" key="Shortage"></IconTabFilter>
                 </items>
             </IconTabBar>
 

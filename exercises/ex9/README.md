@@ -119,4 +119,4 @@ After completing these steps, you will have configured a job in SAP Cloud Platfo
 
 You've created a project in GitHub to store your source code and successfully configured and run a predefined continuous integration and delivery pipeline that automatically builds, tests and deploys your code changes.
 
-Continue to - [Exercise 10 - Useful CF Commands](../ex10/README.md).
+Continue to - [Exercise 10 - Connect Your Project to SAP Cloud Platform Continuous Integration and Delivery - Update Internationalization (i18n)](../ex10/README.md).

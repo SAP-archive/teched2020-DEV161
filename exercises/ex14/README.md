@@ -16,7 +16,7 @@ It is recommended that you type in most the code in order to experience the code
     ```xml
         <semantic:titleBreadcrumbs>
             <Breadcrumbs currentLocationText="{ProductName}">
-                <Link press=".onNavBack" text="Products"></Link>
+                <Link press=".onNavBack" text="i18n>breadcrumbsNavBackTitle"></Link>
             </Breadcrumbs>
         </semantic:titleBreadcrumbs>
 

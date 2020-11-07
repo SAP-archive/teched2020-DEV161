@@ -17,13 +17,13 @@ It is recommended that you type in most the code in order to experience the code
 3. Add the *Units Ordered* and *Units In Stock* columns to the table, and remove the `hAlign` property from the *unitNumberColumn* column (hover over the property to view its description). In the file locate the `<columns>` section and add/modify the following code:
     ```xml
                         <Column id="unitNumberColumn">
-                            <Text text="{i18n>tableUnitNumberColumnTitle}" id="unitNumberColumnTitle"/>
+                            <Text text="{i18n>worklistTableUnitNumberColumnTitle}" id="unitNumberColumnTitle"/>
                         </Column>
                         <Column>
-                            <Text text="{i18n>tableUnitsOrderedColumnTitle}"/>
+                            <Text text="{i18n>worklistTableUnitsOrderedColumnTitle}"/>
                         </Column>
                         <Column>
-                            <Text text="{i18n>tableUnitsInStockColumnTitle}"/>
+                            <Text text="{i18n>worklistTableUnitsInStockColumnTitle}"/>
                         </Column>
     ```
 

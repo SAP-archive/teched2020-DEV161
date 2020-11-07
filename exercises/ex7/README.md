@@ -50,9 +50,9 @@ After completing these steps you will know how to prepare the app to deployment 
     |:-----|:----------|:------|
     | A | Please choose the targetAdd FLP config and generate artifacts | *Y* |
     | B | Semantic Object | *prinSO* |
-    | C | Action | *display* |
-    | D | Title | *Products Inventory* |
-    | E | Subtitle (optional) | *Fiori Rocks!* |
+    | C | Action | *display* (default) |
+    | D | Title | *Products Inventory* (default) |
+    | E | Subtitle (optional) | *Fiori Rocks!* (default) |
 
     <br><br>![](images/2020-10_BAS_NPX-4_.jpg)<br><br>
 
@@ -131,4 +131,4 @@ You reached a major milestone of this session - the full lifecycle from creating
 
 You're awesomw!
 
-Continue to - [Exercise 8 - Useful CF Commands](../ex8/README.md).
+Continue to - [Exercise 8 - Exercise 8 - Connect Your Project to SAP Cloud Platform Continuous Integration and Delivery - Github Setup](../ex8/README.md).

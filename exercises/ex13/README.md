@@ -27,17 +27,17 @@ It is recommended that you type in most the code in order to experience the code
     ```xml
         <semantic:content>
             <VBox>
-                <form:SimpleForm title="Supplier Info" layout="ResponsiveGridLayout" singleContainerFullSize="false" columnsXL="1" columnsL="1" visible="{= ${objectView>/busy} ? false : true}">
+                <form:SimpleForm title="{i18n>objectSupplierInfo}" layout="ResponsiveGridLayout" singleContainerFullSize="false" columnsXL="1" columnsL="1" visible="{= ${objectView>/busy} ? false : true}">
                     <form:content>
-                        <Label text="Supplier ID"></Label>
+                        <Label text="{i18n>objectSupplierID}"></Label>
                         <Text text="{Supplier/SupplierID}"></Text>
-                        <Label text="Company Name"></Label>
+                        <Label text="{i18n>objectCompanyName}"></Label>
                         <Text text="{Supplier/CompanyName}"></Text>
-                        <Label text="Contact Name"></Label>
+                        <Label text="{i18n>objectContactName}"></Label>
                         <Text text="{Supplier/ContacName}"></Text>
-                        <Label text="Contact Title"></Label>
+                        <Label text="{i18n>objectContactTitle}"></Label>
                         <Text text="{Supplier/ContactTitle}"></Text>
-                        <Label text="Address"></Label>
+                        <Label text="{i18n>objectAddress}"></Label>
                         <Text text="{Supplier/Address}, {Supplier/City}, {Supplier/PostalCode}, {Supplier/Country}"></Text>
                     </form:content>
                 </form:SimpleForm>

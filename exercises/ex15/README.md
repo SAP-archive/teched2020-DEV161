@@ -16,25 +16,25 @@ This requires changes to the UI (view) and also some formatting enhancements.
                     visible="{= ${objectView>/busy} ? false : true}">
                     <headerToolbar>
                         <OverflowToolbar>
-                            <Title id="tableHeader" text="Orders" level="H3"></Title>
+                            <Title id="tableHeader" text="{i18n>objectTableTitle}" level="H3"></Title>
                             <ToolbarSpacer />
                         </OverflowToolbar>
                     </headerToolbar>
                     <columns>
                         <Column>
-                            <Text text="Order ID"></Text>
+                            <Text text="{i18n>objectTableOrderIDColumnTitle}"></Text>
                         </Column>
                         <Column>
-                            <Text text="Unit Price"></Text>
+                            <Text text="{i18n>objectTableUnitPriceColumnTitle}"></Text>
                         </Column>
                         <Column>
-                            <Text text="Quantity"></Text>
+                            <Text text="{i18n>objectTableQuantityColumnTitle}"></Text>
                         </Column>
                         <Column>
-                            <Text text="Discount"></Text>
+                            <Text text="{i18n>objectTableDiscountColumnTitle}"></Text>
                         </Column>
                         <Column>
-                            <Text text="Shipment"></Text>
+                            <Text text="{i18n>objectTableShipmentDetailsColumnTitle}"></Text>
                         </Column>
                     </columns>
                     <items>
@@ -94,4 +94,4 @@ Congratulations!!!
 With this, you have successfully completed the app development.
 You're welcome to repeat the steps in exercise 7 to build, deploy, and run the app on your CF space.
 
-Continue to - [Exercise 16 - Add Supplier Info to Details Page](../ex16/README.md)
+Continue to - [Exercise 16 - Useful CF Commands](../ex16/README.md)
