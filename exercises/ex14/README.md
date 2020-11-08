@@ -14,11 +14,11 @@ It is recommended that you type in most the code in order to experience the code
 
 3. Add a *Breadcrumbs* control right below the `<semantic:titleHeading>` element.
     ```xml
-        <semantic:titleBreadcrumbs>
-            <Breadcrumbs currentLocationText="{ProductName}">
-                <Link press=".onNavBack" text="i18n>breadcrumbsNavBackTitle"></Link>
-            </Breadcrumbs>
-        </semantic:titleBreadcrumbs>
+            <semantic:titleBreadcrumbs>
+                <Breadcrumbs currentLocationText="{ProductName}">
+                    <Link press=".onNavBack" text="{i18n>breadcrumbsNavBackTitle}"></Link>
+                </Breadcrumbs>
+            </semantic:titleBreadcrumbs>
 
     ```
 
@@ -28,7 +28,7 @@ It is recommended that you type in most the code in order to experience the code
 
 After completing these steps you will have tested the view look & feel.
 
-4.	Go to the tab where the app is running and refresh it (press [F5]). You can see that the breadcrumbs appear in the view, and you can use them to navigate back to the products worklist view.
+4.	Go to the tab where the app is running and refresh it (press [F5]). You can see that the breadcrumbs appear in the view, and you can use them to navigate back to the products worklist view. Try it out!
     <br><br>![](images/2020-10_BAS_App_Object_View_After_Breadcrumbs_.jpg)<br><br>
 
 

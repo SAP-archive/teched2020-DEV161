@@ -1,12 +1,12 @@
 # Exercise 3 - Create a New Application from Template
 
-In this exercise, you will learn how to  an SAP Fiori application for freestyle development. The application will follow the SAP Fiori Worklist floorplan.
+In this exercise, you will learn how to create an SAP Fiori application for freestyle development. The application will follow the SAP Fiori Worklist floorplan.
 
 ## Exercise 3.0 - Preparation
 
 Create a folder that will contain the app's project.
 
-1. From the main menu select *File | New Folder*.
+1. From SAP Business Application Studio main menu select *File | New Folder*.
 
 2. Name the folder *products-inventory*, and click *OK*.
     >Using information in the popup message verify that the new folder will be created in */home/user/projects*.
@@ -88,6 +88,7 @@ You'll use the worklist template available from SAP fiori tools to create the ap
     | F | Configure advanced options?  | **No** (default) |
 
 ## Exercise 3.4 - Open the Project's Workspace
+it's best practice to do your development either in a single project (single root) workspace or a multi-root workspace. In this exercise you'll develop using single project workspace. In a later exercise you'll learn about multi-root workspaces.
 
 10. Wait for the project to generate. Once it is generated, the *Yeoman UI* tab closes.
 

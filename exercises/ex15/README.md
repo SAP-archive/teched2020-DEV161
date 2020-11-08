@@ -11,53 +11,53 @@ This requires changes to the UI (view) and also some formatting enhancements.
 
 3. Add a *Table* control right below the *form* control you added in a previous exercise.
     ```xml
-                <Table inset="false"
-                    items="{Order_Details}"
-                    visible="{= ${objectView>/busy} ? false : true}">
-                    <headerToolbar>
-                        <OverflowToolbar>
-                            <Title id="tableHeader" text="{i18n>objectTableTitle}" level="H3"></Title>
-                            <ToolbarSpacer />
-                        </OverflowToolbar>
-                    </headerToolbar>
-                    <columns>
-                        <Column>
-                            <Text text="{i18n>objectTableOrderIDColumnTitle}"></Text>
-                        </Column>
-                        <Column>
-                            <Text text="{i18n>objectTableUnitPriceColumnTitle}"></Text>
-                        </Column>
-                        <Column>
-                            <Text text="{i18n>objectTableQuantityColumnTitle}"></Text>
-                        </Column>
-                        <Column>
-                            <Text text="{i18n>objectTableDiscountColumnTitle}"></Text>
-                        </Column>
-                        <Column>
-                            <Text text="{i18n>objectTableShipmentDetailsColumnTitle}"></Text>
-                        </Column>
-                    </columns>
-                    <items>
-                        <ColumnListItem type="Inactive">
-                            <cells>
-                                <ObjectIdentifier title="{OrderID}"/>
-                                <ObjectNumber number="{
-                                    path: 'UnitPrice',
-                                    formatter: '.formatter.numberUnit'
-                                    }" unit="EUR"></ObjectNumber>
-                                <ObjectNumber number="{
-                                    path: 'Quantity',
-                                    formatter: '.formatter.numberUnit'
-                                    }" unit="EUR"></ObjectNumber>
-                                <ObjectNumber number="{
-                                    path: 'Discount',
-                                    formatter: '.formatter.percent'
-                                    }" unit="%"></ObjectNumber>
-                                <Link text="View shipment details"></Link>
-                            </cells>
-                        </ColumnListItem>
-                    </items>
-                </Table>
+                    <Table inset="false"
+                        items="{Order_Details}"
+                        visible="{= ${objectView>/busy} ? false : true}">
+                        <headerToolbar>
+                            <OverflowToolbar>
+                                <Title id="tableHeader" text="{i18n>objectTableTitle}" level="H3"></Title>
+                                <ToolbarSpacer />
+                            </OverflowToolbar>
+                        </headerToolbar>
+                        <columns>
+                            <Column>
+                                <Text text="{i18n>objectTableOrderIDColumnTitle}"></Text>
+                            </Column>
+                            <Column>
+                                <Text text="{i18n>objectTableUnitPriceColumnTitle}"></Text>
+                            </Column>
+                            <Column>
+                                <Text text="{i18n>objectTableQuantityColumnTitle}"></Text>
+                            </Column>
+                            <Column>
+                                <Text text="{i18n>objectTableDiscountColumnTitle}"></Text>
+                            </Column>
+                            <Column>
+                                <Text text="{i18n>objectTableShipmentDetailsColumnTitle}"></Text>
+                            </Column>
+                        </columns>
+                        <items>
+                            <ColumnListItem type="Inactive">
+                                <cells>
+                                    <ObjectIdentifier title="{OrderID}"/>
+                                    <ObjectNumber number="{
+                                        path: 'UnitPrice',
+                                        formatter: '.formatter.numberUnit'
+                                        }" unit="EUR"></ObjectNumber>
+                                    <ObjectNumber number="{
+                                        path: 'Quantity',
+                                        formatter: '.formatter.numberUnit'
+                                        }" unit="EUR"></ObjectNumber>
+                                    <ObjectNumber number="{
+                                        path: 'Discount',
+                                        formatter: '.formatter.percent'
+                                        }" unit="%"></ObjectNumber>
+                                    <Link text="View shipment details"></Link>
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
     ```
 
     <br><br>![](images/2020-10_BAS_Object_View_Orders_Table_.jpg)<br><br>
@@ -68,11 +68,11 @@ After completing these steps you will have modified the way a number represeting
 
 6. In SAP business Application Studio, open the file that handles formatting - *webapp > model > formatter.js*, and add the following code:
     ```javascript
-		},
+            },
 
-		percent : function (sValue) {
-			return sValue*100;
-		}
+            percent : function (sValue) {
+                return sValue*100;
+            }
 
     ```
 

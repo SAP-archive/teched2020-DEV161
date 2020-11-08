@@ -65,6 +65,12 @@ As a result, you're prompted to log in through your custom identity provider.
    git remote add origin <copied Git repository url.git>
    ```
 
+8. Create the project's *main* branch in the remote repository:
+
+   ```
+   git branch -M main
+   ```
+
 9. Push the commit with your project content to this GitHub repository:
 
    ```

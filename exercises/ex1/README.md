@@ -1,6 +1,10 @@
-# Getting Started
+# Exercise 1 - Create SAP Fiori Dev Space
 
 In this exercise, you will learn how to access SAP Business Application Studio, and prepare it for development of an SAP Fiori app.
+
+SAP Business Application Studio provides turn-key solution based on what we call dev-spaces. Dev-Spaces are like isolated virtual machines in the cloud that can be instantly spinned up. 
+Each Dev-Space type contains tailored tools and pre-installed runtimes for a target scenario such as SAP Fiori or mobile development. 
+This simplifies and saves time in setting up the development environment as there’s no need to install anything or upgrade, letting developers to focus on their business domain, anytime, anywhere 
 
 ## Exercise 1.1 - Log in to SAP Business Application Studio
 
@@ -20,13 +24,11 @@ After completing these steps you will know how to access SAP Business Applicatio
 
     >If the log in doesn't work, make sure you fulfill the [requirements](../../README.md#requirements).
 
-    <br>![](images/2020-10&#32;SCP&#32;Access&#32;AppStudio.jpg)<br><br>
+    <br>![](images/2020-11_SCP_Trial_Access_BAS_.jpg)<br><br>
 
 ## Exercise 1.2 - Create Dev Space
 
-SAP Business Application Studio provides turn-key solution based on what we call dev-spaces. Dev-Spaces are like isolated virtual machines in the cloud that can be instantly spinned up. 
-Each Dev-Space type contains tailored tools and pre-installed runtimes for a target scenario such as SAP Fiori or mobile development. 
-This simplifies and saves time in setting up the development environment as there’s no need to install anything or upgrade, letting developers to focus on their business domain, anytime, anywhere 
+There are several dev space types that are available for you. Each dev space is tailored for a specific development scenario. In this session you're developing an SAP Fiori app. Hence, you'll create dev space of type SAP Fiori.
 
 4. Now you can create your dev space! Click *Create Dev Space*.
 <br><br>![](images/2020-10_BAS_Dev_Space_Manager_Empty_.jpg)<br><br>
@@ -52,9 +54,11 @@ This simplifies and saves time in setting up the development environment as ther
 
     <br><br>![](images/2020-10_BAS_Launched_.jpg)<br><br>
 
-    >Tip: If you want to go back to the dev space manager page, using the bookmark you made a few steps back or by removing the URL part after its *index.html*, and clicking [ENTER].
+    >Tip: If you want to go back to the dev space manager page, use the bookmark you saved a few steps back or remove the URL part after its *index.html*, and click [ENTER].
 
 ## Exercise 1.4 - Preparations for the next exercises
+
+After completing these steps you will upload to SAP Business Application Studio several files that you'll need later in this session.
 
 9. Click *Open Workspace*.
     <br><br>![](images/2020-10_BAS_Open_Workspace_.jpg)<br><br>
@@ -68,7 +72,6 @@ This simplifies and saves time in setting up the development environment as ther
 12. Name the folder *data*, and click *OK*.
     >Using information in the popup message verify that the new folder will be created in */home/user/projects*.
     <br><br>![](images/2020-10_BAS_New_Folder_.jpg)<br><br>
-
 
 13. Click the following [link](data/metadata.xml?raw=true) to access the *metadata.xml* file.
     >When working with github, if you want to open a link in a new tab, press [CTRL] and click the link.
@@ -88,6 +91,6 @@ This simplifies and saves time in setting up the development environment as ther
 
 ## Summary
 
-Congratulations, you completed the [Getting Started](#getting-started) exercise!
+Congratulations, you completed the [Exercise 1 - Create SAP Fiori Dev Space](#Exercise-1---Create-SAP-Fiori-Dev-Space) exercise!
 
 Continue to [Exercise 2 - Project Setup Using Business Application Studio](../ex2/README.md).

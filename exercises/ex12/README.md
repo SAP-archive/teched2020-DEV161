@@ -16,8 +16,12 @@ It is recommended that you type in most the code in order to experience the code
 
 3. Add the *Units Ordered* and *Units In Stock* columns to the table, and remove the `hAlign` property from the *unitNumberColumn* column (hover over the property to view its description). In the file locate the `<columns>` section and add/modify the following code:
     ```xml
+                    <columns>
+                        <Column id="nameColumn">
+                            <Text text="{i18n>tableNameColumnTitle}" id="nameColumnTitle"/>
+                        </Column>
                         <Column id="unitNumberColumn">
-                            <Text text="{i18n>worklistTableUnitNumberColumnTitle}" id="unitNumberColumnTitle"/>
+                            <Text text="{i18n>tableUnitNumberColumnTitle}" id="unitNumberColumnTitle"/>
                         </Column>
                         <Column>
                             <Text text="{i18n>worklistTableUnitsOrderedColumnTitle}"/>
@@ -25,6 +29,8 @@ It is recommended that you type in most the code in order to experience the code
                         <Column>
                             <Text text="{i18n>worklistTableUnitsInStockColumnTitle}"/>
                         </Column>
+                    </columns>
+
     ```
 
     <br><br>![](images/2020-10_BAS_Worklist_Columns_Added_.jpg)<br><br>
@@ -44,22 +50,22 @@ After completing these steps you will have tested the app with data fetched from
 !!!If the preview does not response - probably need to unexpose ports.
 
 1.	Right-click any folder within the productsinventory folder, e.g. *webapp* folder, and select *Preview Application*.
-    <br><br>![](images/2020-10_BAS_Preview_Application_start-1_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_Preview_Application_Start-1_.jpg)<br><br>
 
 2.	The *command palette* is opened with a list of npm scripts. Click *start* to run this script.
-    <br><br>![](images/2020-10_BAS_Preview_Application_start-2_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_Preview_Application_Start-2_.jpg)<br><br>
 
     >A new browser tab is opened, where the FLP is run.
 
     >A new tab is opened in SAP Business Application Studio, where the log of running the app is presented.
 
-    ><br><br>![](images/2020-10_BAS_Preview_Application_start-3_.jpg)<br><br>
+    ><br><br>![](images/2020-10_BAS_Preview_Application_Start-3_.jpg)<br><br>
 
 3. Click the *Products Inventory* tile to launch the app.
-    <br><br>![](images/2020-10_BAS_Preview_Application_start-4_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_Preview_Application_Start-4_.jpg)<br><br>
 
 4. The app is run with data coming from the demo Northwind OData service that is provided by the OData organization.
-    <br><br>![](images/2020-10_BAS_Preview_Application_start-5_.jpg)<br><br>
+    <br><br>![](images/2020-10_BAS_Preview_Application_Start-5_.jpg)<br><br>
 
 
 

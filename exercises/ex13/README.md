@@ -25,24 +25,24 @@ It is recommended that you type in most the code in order to experience the code
 
 4. Below the `<semantic:headerContent>` section add a `<semantic:content>` section and in it a `<VBox>` element that contains a *SimpleForm* control, which will have the supplier details. 
     ```xml
-        <semantic:content>
-            <VBox>
-                <form:SimpleForm title="{i18n>objectSupplierInfo}" layout="ResponsiveGridLayout" singleContainerFullSize="false" columnsXL="1" columnsL="1" visible="{= ${objectView>/busy} ? false : true}">
-                    <form:content>
-                        <Label text="{i18n>objectSupplierID}"></Label>
-                        <Text text="{Supplier/SupplierID}"></Text>
-                        <Label text="{i18n>objectCompanyName}"></Label>
-                        <Text text="{Supplier/CompanyName}"></Text>
-                        <Label text="{i18n>objectContactName}"></Label>
-                        <Text text="{Supplier/ContacName}"></Text>
-                        <Label text="{i18n>objectContactTitle}"></Label>
-                        <Text text="{Supplier/ContactTitle}"></Text>
-                        <Label text="{i18n>objectAddress}"></Label>
-                        <Text text="{Supplier/Address}, {Supplier/City}, {Supplier/PostalCode}, {Supplier/Country}"></Text>
-                    </form:content>
-                </form:SimpleForm>
-            </VBox>
-        </semantic:content>
+            <semantic:content>
+                <VBox>
+                    <form:SimpleForm title="{i18n>objectSupplierInfo}" layout="ResponsiveGridLayout" singleContainerFullSize="false" columnsXL="1" columnsL="1" visible="{= ${objectView>/busy} ? false : true}">
+                        <form:content>
+                            <Label text="{i18n>objectSupplierID}"></Label>
+                            <Text text="{Supplier/SupplierID}"></Text>
+                            <Label text="{i18n>objectCompanyName}"></Label>
+                            <Text text="{Supplier/CompanyName}"></Text>
+                            <Label text="{i18n>objectContactName}"></Label>
+                            <Text text="{Supplier/ContacName}"></Text>
+                            <Label text="{i18n>objectContactTitle}"></Label>
+                            <Text text="{Supplier/ContactTitle}"></Text>
+                            <Label text="{i18n>objectAddress}"></Label>
+                            <Text text="{Supplier/Address}, {Supplier/City}, {Supplier/PostalCode}, {Supplier/Country}"></Text>
+                        </form:content>
+                    </form:SimpleForm>
+                </VBox>
+            </semantic:content>
 
     ```
 
@@ -71,9 +71,9 @@ It is recommended that you type in most the code in order to experience the code
 
 8. Use OData's $expand option to retrieve the product's supplier and order details. You'll use the order_details information in a following exercise.
     ```javascript
-                parameters: {
-                    expand: "Supplier, Order_Details/Order"
-                },
+                    parameters: {
+                        expand: "Supplier, Order_Details/Order"
+                    },
     ```
 
     <br><br>![](images/2020-10_BAS_Object_Controller-3_.jpg)<br><br>
@@ -90,4 +90,4 @@ After completing these steps you will have tested the view look & feel.
 
 With this, you have successfully completed adding cothe product's supplier info to the product's details view using OData's expand option.
 
-Continue to - [Exercise 14 - Add Supplier Info to Details Page](../ex14/README.md)
+Continue to - [Exercise 14 - Add Breadcrumbs to the Details Page](../ex14/README.md)

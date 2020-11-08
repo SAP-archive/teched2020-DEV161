@@ -8,12 +8,21 @@ This repository contains the material for the SAP TechEd 2020 session called **D
 
 This session introduces attendees to the end-to-end development flow of an SAP Fiori freestyle application.
 
+Working in the IT department of your company, your mission, should you choose to accept it, is to develop an app that will help procurement to identify inventory levels of your company's products, and which orders will be impacted.
+
+After a bit of thinking, you decided that the best approach would be to create an SAP Fiori freestyle app that follows the Worklist floorplan. Its main view will include a list of products, their inventory level and the number of units on order. The details page will include the supplier informatio, and a list of orders the product is part of.
+
+At the end of the session your application will look like this:
+
+| Main View (Worklist) | Details View (Object)|
+|:-----|:----------|:------|
+| <br>![](exercises/ex12/images/2020-10_BAS_Preview_Application_Start-5_.jpg)<br><br> | <br>![](exercises/ex15/images/2020-10_BAS_App_Object_View_After_Orders_Table_.jpg)<br><br> |
+
 ## Requirements
 
 The requirements to follow the exercises in this repository are:
 - Get a free trial account on SAP Cloud Platform; see this [tutorial](https://developers.sap.com/tutorials/hcp-create-trial-account.html).
-- Enable Cloud Foundry and create an organization e.g. *ui5-cloud-foundry*; see the [help portal](https://help.sap.com/viewer/a96b1df8525f41f79484717368e30626/Cloud/en-US/dc18bac42270468d84b6c030a668e003.html).
-- Set Up SAP Business Application Studio for development; see this [tutorial](https://developers.sap.com/tutorials/appstudio-onboarding.html).
+- Enable SAP Business Application Studio for development; see this [tutorial](https://developers.sap.com/tutorials/appstudio-onboarding.html).
 - Be excited about the power of SAP technologies to make your developer life easier.
 
 ## Exercises
@@ -93,14 +102,7 @@ The requirements to follow the exercises in this repository are:
     - [Exercise 14.8 - Verify Build Success in SAP CP Continuous Integration and Delivery](exercises/ex14#exercise-148-Verify-Build-Success-in-SAP-CP-Continuous-Integration-and-Delivery)
     - [Exercise 14.9 - Access the Application](exercises/ex14#exercise-149-Access-the-Application)
 
-
-**OR** Link to the PDF document stored in your github repo for example...
-
-Start the exercises [here](exercises/myPDFDoc.pdf).
-
-**OR** Link to the Tutorial Navigator for example...
-
-Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
+<br>Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).<br><br>
 
 **IMPORTANT**
 
