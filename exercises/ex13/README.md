@@ -1,20 +1,18 @@
-# Exercise 13 - Add Supplier Info to Details Page
+# Exercise 13 - Add the Supplier Info to the Details Page
 
-So far we you improved the view that presented the list of products and thie key properties related to the business scenario at hand. in the next few exercises you'll improve the product's details view.
-
-In this exercise, we will add supplier info to the product details view. This requires changes to the UI (view) and also to the view's logic.
+So far, you improved the view that presented the list of products and the key properties related to the business scenario at hand (inventory management). In the next few exercises, you'll improve the product's Details view.
 
 ## Exercise 13.1 - UI Modifications
 
-After completing these steps you will have modified the worklist view of the app to include filters. Some of the modifications are also needed in order for the logic to execute accordingly.
+After completing these steps, you will have added supplier info to the product's Details view. Some of the modifications are also needed for the logic to run accordingly.
 
-It is recommended that you type in most the code in order to experience the code editor's capabilities.
+It is recommended that you type most the code to experience the code editor's capabilities.
 
-1. In the locally running app, click a product to get to its details view.
+1. In the locally running app, click a product to view its details.
 
     <br><br>![](images/2020-10_BAS_App_Object_View_.jpg)<br><br>
 
-2. In SAP business Application Studio, open the file that contains the product's details - *Object.view.xml*.
+2. In SAP business Application Studio, open the file that contains the product's details, the `Object.view.xml` file.
 
 3. Add an XML namespace for "sap.ui.layout.form".
     ```xml
@@ -23,7 +21,7 @@ It is recommended that you type in most the code in order to experience the code
 
     <br><br>![](images/2020-10_BAS_Object_View_xmlns_form_.jpg)<br><br>
 
-4. Below the `<semantic:headerContent>` section add a `<semantic:content>` section and in it a `<VBox>` element that contains a *SimpleForm* control, which will have the supplier details. 
+4. Below the `<semantic:headerContent>` section, add a `<semantic:content>` section, and, in it, a `<VBox>` element that contains a `SimpleForm` control which will contain the supplier details. 
     ```xml
             <semantic:content>
                 <VBox>
@@ -50,26 +48,26 @@ It is recommended that you type in most the code in order to experience the code
 
 ## Exercise 13.2 - Run the App Locally in the Dev Space
 
-After completing these steps you will have tested the view look & feel.
+After completing these steps, you will have tested the view's look and feel.
 
-5.	Go to the tab where the app is running and refresh it (press [F5]). You can see the look & feel of how the supplier info will appear when you complete this exercise.
+5.	Go to the tab where the app is running and refresh it (press [F5]). You can see the look and feel of how the supplier info will appear when you complete this exercise.
     <br><br>![](images/2020-10_BAS_App_Object_View_After_View_.jpg)<br><br>
 
 ## Exercise 13.3 - Logic Modifications (Controller)
 
-After completing these steps you will have modified the logic of the worklist view of the app to present the list of products according to the selected filter.
+After completing these steps, you will have modified the logic of the app's product's Details view to present the product's supplier info.
 
-It is recommended that you type in most the code in order to experience the code editor's capabilities.
+It is recommended that you type most the code to experience the code editor's capabilities.
 
-6. In SAP business Application Studio, open the file that contains the product's details logic - *Object.controller.js*.
+6. In SAP business Application Studio, open the file that contains the product's details logic, the `Object.controller.js` file.
 
     <br><br>![](images/2020-10_BAS_Object_Controller-1_.jpg)<br><br>
 
-7. Using the *Outline* pane, locate the *_bindView* fundction.
+7. Using the *Outline* view, locate the `_bindView` function.
 
     <br><br>![](images/2020-10_BAS_Object_Controller-2_.jpg)<br><br>
 
-8. Use OData's $expand option to retrieve the product's supplier and order details. You'll use the order_details information in a following exercise.
+8. Use OData's `$expand` option to retrieve the product's supplier and order details. You'll use the `order_details` information in another exercise.
     ```javascript
                     parameters: {
                         expand: "Supplier, Order_Details/Order"
@@ -80,14 +78,14 @@ It is recommended that you type in most the code in order to experience the code
 
 ## Exercise 13.4 - Run the App Locally in the Dev Space
 
-After completing these steps you will have tested the view look & feel.
+After completing these steps, you will have tested the product's Details view with the product's supplier info included.
 
-1.	Go to the tab where the app is running and refresh it (press [F5]). You can see the result of adding the supplier info to the product's details view.
+1.	Go to the tab where the app is running, and refresh it (press [F5]). You can see the result of adding the supplier info to the product's Details view.
     <br><br>![](images/2020-10_BAS_Object_Controller-4_.jpg)<br><br>
 
 
 ## Summary
 
-With this, you have successfully completed adding cothe product's supplier info to the product's details view using OData's expand option.
+With this, you have successfully completed adding the product's supplier info to the product's Details view using the OData `expand` option.
 
 Continue to - [Exercise 14 - Add Breadcrumbs to the Details Page](../ex14/README.md)

@@ -1,24 +1,24 @@
 # Exercise 5 - Add Data Filters
 
-In this exercise, you will add filters to the app that will filter the list of products according to their invetory level - Shortage, Low, and Normal. This requires changes to the UI (view) and also to the view's logic.
+In this exercise, you will add filters to the app for the list of products, according to their inventory level: Shortage, Low, and Normal. This requires changes to the UI (view) and also to the view's logic (controller).
 
-## Exercise 5.1 UI Modifications
+## Exercise 5.1 - UI Modifications
 
-After completing these steps you will have modified the worklist view of the app to include filters. Some of the modifications are also needed in order for the logic to execute accordingly.
+After completing these steps, you will have modified the Worklist view of the app to include filters. Some of the modifications are also needed for the logic to execute accordingly.
 
-It is recommended that you type in most of the code in order to experience the code editor's capabilities.
+It is recommended that you type most of the code to experience the code editor's capabilities.
 
-1. Choose *webapp > view* and click the *Worklist.view.xml* file.
+1. Choose *webapp > view* and click the `Worklist.view.xml` file.
     <br><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Open_.jpg)<br><br>
-    >The *Worklist.view.xml* file is opened in a code editor tab.
+    >The `Worklist.view.xml` file is opened in a code editor tab.
     >![](images/2020-10_BAS_Worklist_View_Code_Editor_Opened_.jpg)<br><br>
 
-    >Tip 1: You can get additional screen real-estate for the code editor tab by closing the *Explorer* pane. You can get even more real-estate by double clicking the tab's title.
+    >Tip 1: You can get additional screen real estate for the code editor tab by closing the *Explorer* view. You can get even more real estate by double-clicking the tab's title.
 
-    >Tip 2: Hovering over a control or a control property pops up a tooltip with information on it as well as link to its API Reference, which is opened on a new browser tab.
+    >Tip 2: Hovering over a control or a control property pops up a tooltip with information on it, as well as a link to its API Reference. Click the API Reference link to open it in a new browser tab.
     ><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Code_Completion_Control_.jpg)<br><br>
 
-2. Add an *IconTabBar* conotrl before the *Table* control.
+2. Add an *IconTabBar* control before the *Table* control.
 ```XML
             <IconTabBar id="iconTabBar" select=".onFilterSelect" class="sapUiResponsiveContentPadding">
                 <items>
@@ -26,29 +26,29 @@ It is recommended that you type in most of the code in order to experience the c
             </IconTabBar>
 ```
 
-3. Between `<items>` and `</items>` type `<`. The code completion kicks in.
+3. Between `<items>` and `</items>`, enter `<`. The code completion is triggered.
     <br><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Code_Completion_Control_.jpg)<br><br>
 
-    >Tip 1: You can select which control to use using the mouse or by using the arrow keys on the keyboard.
+    >Tip 1: You can select which control to use with the mouse or by using the arrow keys on the keyboard.
 
     >Tip 2: You can get more information on a control by clicking the (i) icon to the right of the control or using [CTRL] + [SPACE] on the keyboard.
 
 4. Select the *IconTabFilter* control, and use [CTRL] + [SPACE] to view a list of its properties.
     <br><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Control_Properties_List_.jpg)<br><br>
 
-    >Tip 1: You can filter the list of properties by typing part of it.
+    >Tip 1: Filter the list of properties by typing part of it.
 
-    >Tip 2: You can select which property to use using the mouse or by using the arrow keys on the keyboard.
+    >Tip 2: You can select which property to use with the mouse or by using the arrow keys on the keyboard.
 
     >Tip 3: You can get more information on a property by clicking the (i) icon to the right of the control or using [CTRL] + [SPACE] on the keyboard.
 
 5. Select the *showAll* property.
     <br><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Code_Completion_Property_showAll_.jpg)<br><br>
 
-6. Even control properties can have their value selected from a list. Delete the *false* value and use [CTRL] + [SPACE] to present the list of avialble values.
+6. Control properties can also have their value selected from a list. Delete the *false* value and use [CTRL] + [SPACE] to present the list of available values.
     <br><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Code_Completion_Property_showAll_Values_.jpg)<br><br>
 
-7. Proceed until you have the following code in place:
+7. Proceed with entering the code until you have the following code in place:
 ```XML
             <IconTabBar id="iconTabBar" select=".onFilterSelect" class="sapUiResponsiveContentPadding">
                 <items>
@@ -64,42 +64,57 @@ It is recommended that you type in most of the code in order to experience the c
 
    <br><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Filters_Added_.jpg)<br><br>
 
-8. You probably noticed that the *Worklist.view.xml* file is marked as error, including its folders hierarchy, as well as indications in the *Status Bar*.
+8. You probably noticed that the `Worklist.view.xml` file, including its folders hierarchy, is marked as error. The *Status Bar* will show error too.
    <br><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Error_Explorer_.jpg)<br><br>
 
-   <br><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Error_Status_Bar_.jpg)<br><br>
+   ![](images/2020-10_BAS_Worklist_View_Code_Editor_Error_Status_Bar_.jpg)<br><br>
 
-9. Open the *Problems* tab by either clicking the problems indication area in the status bar or from the menu bar selecting *View | Problems*.
+9. Open the *Problems* tab by clicking the problems indication area in the status bar or by selecting *View | Problems* from the menu bar.
    <br><br>![](images/2020-10_BAS_Worklist_View_Problems_Pane_.jpg)<br><br>
 
-10. According to the problem description *The aggregation \"content\" has cardinality of 0..1 and may only contain one element*. Therefore, wrap the *IconTabBar* and *Table* controls in a `<VBox>` element, and indent accordingly.
+10. According to the problem description: *The aggregation \"content\" has a cardinality of 0..1 and may only contain one element*. Therefore, wrap the *IconTabBar* and *Table* controls in a `<VBox>` element, and indent accordingly.
 ```XML
-        <semantic:content>
             <VBox>
-            <IconTabBar id="iconTabBar" select=".onFilterSelect" class="sapUiResponsiveContentPadding">
+                <IconTabBar id="iconTabBar" select=".onFilterSelect" class="sapUiResponsiveContentPadding">
                     <items>
-                        <IconTabFilter showAll="true" count="{worklistView>/productsCount}" text="i18n>productTitle" key="all"></IconTabFilter>
+                        <IconTabFilter showAll="true" count="{worklistView>/productsCount}" text="{i18n>worklistFilterAllProducts}" key="all"></IconTabFilter>
                         <IconTabSeparator ></IconTabSeparator>
-                        <IconTabFilter icon="sap-icon://complete" iconColor="Positive" text="Normal" key="Normal"></IconTabFilter>
-                        <IconTabFilter icon="sap-icon://message-warning" iconColor="Critical" text="Low" key="Low"></IconTabFilter>
-                        <IconTabFilter icon="sap-icon://message-error" iconColor="Negative" text="Shortage" key="Shortage"></IconTabFilter>
+                        <IconTabFilter icon="sap-icon://complete" iconColor="Positive" text="{i18n>worklistFilterNormalStockProducts}" key="Normal"></IconTabFilter>
+                        <IconTabFilter icon="sap-icon://message-warning" iconColor="Critical" text="{i18n>worklistFilterLowStockProducts}" key="Low"></IconTabFilter>
+                        <IconTabFilter icon="sap-icon://message-error" iconColor="Negative" text="{i18n>worklistFilterShortageStockProducts}" key="Shortage"></IconTabFilter>
                     </items>
                 </IconTabBar>
-                <Table id="table" width="auto" items="{
+                <Table
+                    id="table"
+                    width="auto"
+                    items="{
                         path: '/Products',
                         sorter: {
                             path: 'ProductName',
                             descending: false
                         }
-                    }" noDataText="{worklistView>/tableNoDataText}" busyIndicatorDelay="{worklistView>/tableBusyDelay}" growing="true" growingScrollToLoad="true" updateFinished=".onUpdateFinished">
+                    }"
+                    noDataText="{worklistView>/tableNoDataText}"
+                    busyIndicatorDelay="{worklistView>/tableBusyDelay}"
+                    growing="true"
+                    growingScrollToLoad="true"
+                    updateFinished=".onUpdateFinished">
 
                     <headerToolbar>
                         <OverflowToolbar>
-                            <Title id="tableHeader" text="{worklistView>/worklistTableTitle}" level="H3"/>
+                            <Title
+                                id="tableHeader"
+                                text="{worklistView>/worklistTableTitle}"
+                                level="H3"/>
                             <ToolbarSpacer />
-                            <SearchField id="searchField" tooltip="{i18n>worklistSearchTooltip}" search=".onSearch">
+                            <SearchField
+                                id="searchField"
+                                tooltip="{i18n>worklistSearchTooltip}"
+                                search=".onSearch">
                                 <layoutData>
-                                    <OverflowToolbarLayoutData maxWidth="200px" priority="NeverOverflow"/>
+                                    <OverflowToolbarLayoutData
+                                        maxWidth="200px"
+                                        priority="NeverOverflow"/>
                                 </layoutData>
                             </SearchField>
                         </OverflowToolbar>
@@ -115,42 +130,45 @@ It is recommended that you type in most of the code in order to experience the c
                     </columns>
 
                     <items>
-                        <ColumnListItem type="Navigation" press=".onPress">
+                        <ColumnListItem
+                            type="Navigation"
+                            press=".onPress">
                             <cells>
-                                <ObjectIdentifier title="{ProductName}"/>
-                                <ObjectNumber number="{
+                                <ObjectIdentifier
+                                    title="{ProductName}"/>
+                                <ObjectNumber
+                                    number="{
                                         path: 'UnitPrice',
                                         formatter: '.formatter.numberUnit'
-                                    }" unit="{QuantityPerUnit}"/>
+                                    }"
+                                    unit="{QuantityPerUnit}"/>
                             </cells>
                         </ColumnListItem>
                     </items>
                 </Table>
             </VBox>
-        </semantic:content>
+		</semantic:content>
 ```
 
-11. Test-tun the app locally to see the UI changes. All you need to do is to refresh the tab where the app is already running.
+11. Test - Refresh the tab where the app is running to see the UI changes.
    <br><br>![](images/2020-10_BAS_App_After_UI_Changes_.jpg)<br><br>
 
     >Clicking the filters has no impact as the logic was not implemented. This will be the next step in the exercise.
 
 
-## Exercise 5.2 Logic Modifications (Controller)
+## Exercise 5.2 - Logic Modifications (Controller)
 
-After completing these steps you will have modified the logic of the worklist view of the app to present the list of products according to the selected filter.
+After completing these steps, you will have modified the logic of the Worklist view of the app to present the list of products according to the selected filter.
 
-It is recommended that you type in most the code in order to experience the code editor's capabilities.
-
-12. Choose *webapp > controller* and click the *Worklist.controller.js* file.
+12. Choose *webapp > controller* and click the `Worklist.controller.js` file.
     <br><br>![](images/2020-10_BAS_Worklist_Controller_Code_Editor_Open_.jpg)<br><br>
-    >The *Worklist.controller.js* file is opened in a code editor tab.
+    >The `Worklist.controller.js` file opens in a code editor tab.
     >![](images/2020-10_BAS_Worklist_Controller_Code_Editor_Opened_.jpg)<br><br>
 
-13. Click *Outline* button at the top-right of the window to open the outline pane. locate the *onUpdateFinished* function and click it in order for the code editor to focus on this function.
+13. Click *Outline* at the top-right corner of the page to open the outline view. Locate the *onUpdateFinished* function, and click it. The code editor focuses on this function.
     <br><br>![](images/2020-10_BAS_Worklist_Controller_Outline_.jpg)<br><br>
 
-14. The following code will add the total products count as a property to the model. This property is presented at the top left of the view when clicking the *showAll* filter. Add it just below the end of the variables declaration section (*var* statement).
+14. The following code will add the total product count as a property to the model. This property is presented at the top left corner of the view when clicking the *showAll* filter. Add it just below the end of the `variables` declaration section (*var* statement).
 ```javascript
             //set products count
             this.getModel("worklistView").setProperty("/productsCount", iTotalItems);
@@ -161,7 +179,7 @@ It is recommended that you type in most the code in order to experience the code
 15. Refresh the app to see the effect of this change.
    <br><br>![](images/2020-10_BAS_Worklist_Controller_onUpdatedFinished_Updated_App_.jpg)<br><br>
 
-16. Now it's time to handle the user action of clicking the filters. In the Outline pane click the *onRefresh* function, and add the following code above this function.
+16. Now it's time to handle the user action of clicking the filters. In the Outline view, click the *onRefresh* function, and add the following code above it.
 
 ```javascript
         onFilterSelect: function(oEvent){
@@ -194,13 +212,13 @@ It is recommended that you type in most the code in order to experience the code
 15. Refresh the app's tab for the changes to take effect. Click the various filters and see how the list of products changes according to the selected filter.
    <br><br>![](images/2020-10_BAS_Worklist_Controller_Filters_Low_.jpg)<br><br>
 
-16. Close the *Outline* pane and all open tabs in the editors section.
+16. Close the *Outline* view and all open tabs in the editors section, except the *Welcome* tab.
 
-    >Tip: To close all open tabs, right-click one of the tab's titile and select *Close All*. Explore this to see additional options.
+    >Tip: To close all open tabs except the *Welcome* tab, right-click the *Welcome* tab title and select *Close Others*. Explore this to see additional options.
 
 
 ## Summary
 
-With this, you have successfully completed the development of an SAP Fiori app using SAP Business Application Studio, including test-running the app locally in the dev space. In this exercise, you learned about high productivity tools that are available out-of-the-box in SAP Business Applications Studio, such as: code completion, API reference, outline, problems view, and more.
+You have successfully completed the development of an SAP Fiori app using SAP Business Application Studio, including test-running the app locally in the dev space. In this exercise, you learned about high productivity tools that are available out-of-the-box in SAP Business Applications Studio, such as code completion, API reference, outline, problems view.
 
 Continue to - [Exercise 6 - Connect to Backend](../ex6/README.md)

@@ -6,57 +6,57 @@ In this exercise, you will learn how to create an SAP Fiori application for free
 
 Create a folder that will contain the app's project.
 
-1. From SAP Business Application Studio main menu select *File | New Folder*.
+1. From the SAP Business Application Studio menu bar select *File | New Folder*.
 
 2. Name the folder *products-inventory*, and click *OK*.
-    >Using information in the popup message verify that the new folder will be created in */home/user/projects*.
+    >Using information in the popup message, verify that the new folder will be created under */home/user/projects*.
     <br><br>![](images/2020-10_BAS_App_Project_Folder_.jpg)<br><br>
 
 ## Exercise 3.1 - Launch Yeoman UI Generator
 
-The easiest way to creaete from scratch an SAP Fiori app for freestyle development is to create it from a template. To continue developing an existing application, the best practice is to use git source code management and clone the repository.
+The easiest way to create an SAP Fiori app for freestyle development from scratch is to create it from a template. To continue developing an existing application, the best practice is to use Git source code management and clone the repository.
 
-1. From the menu bar select *View | Find Command* to open the *Command Palette*.
+1. From the menu bar, select *View | Find Command* to open the Command Palette.
     <br><br>![](images/2020-10_BAS_Command_Palette_Open_.jpg)<br><br>
 
-2. Type *yeo* in the *Command Palette* dialog to filter the *Yeoman UI Generators* command. Press [ENTER] or click *Yeoman UI Generators* to execute the command.
+2. Type *yeo* in the Command Palette input field to filter the *Yeoman UI Generators* command. Press [ENTER] or click *Yeoman UI Generators* to execute the command.
     <br><br>![](images/2020-10_BAS_Command_Palette_Yeo_.jpg)<br><br>
 
 ## Exercise 3.2 - Install SAP Fiori tools for SAP Fiori freestyle app development
 
-SAP Fiori tools include high productivity tools, such as templates, wizards, editors, etc. for developing SAP Fiori apps, both fordevelopment of freestyle apps as well as for development of SAP Fiori elements apps.
+SAP Fiori tools include high productivity tools, such as templates, wizards, and editors for developing both freestyle and SAP Fiori elements apps.
 
-3. Click *Explore and Install Generators...* to find and istall the SAP Fiori freestyle app templates. 
+3. Click *Explore and Install Generators...* to find and install the SAP Fiori freestyle app templates. 
     <br><br>![](images/2020-10_BAS_Install_UI_Generators-1_.jpg)<br><br>
-    >You may need to accept the legal terms.
+    >You may be prompted to accept the legal terms.
     >![](images/2020-10_BAS_Yeoman_Generators_Lagal_Terms_.jpg)<br><br>
     
-4. Search for *fiori* yeoman generators, locate the *@sap/generator-fiori-freestyle* generator, and click *Install*. Wait until the installation is completed.
+4. Search for *fiori* yeoman generators, locate the *@sap/generator-fiori-freestyle* generator, and click *Install*. Wait until the installation is complete.
     <br><br>![](images/2020-10_BAS_Install_UI_Generators-2_.jpg)<br><br>
 
-    installing:
+    Installing:
     <br><br>![](images/2020-10_BAS_Install_UI_Generators-3_.jpg)<br><br>
 
-    installation complete:
+    Installation complete:
     <br><br>![](images/2020-10_BAS_Install_UI_Generators-4_.jpg)<br><br>
 
-5. Close the *Explore and Install Generators* tab, and in the *Yeoman UI* tab scroll down to find the *SAP Fiori freestyle SAPUI5 application* generator, select it, and click *Next*.
+5. Close the *Explore and Install Generators* tab and, in the *Yeoman UI* tab, scroll down to find the *SAP Fiori freestyle SAPUI5 application* generator. Select it, and click *Next*.
     <br><br>![](images/2020-10_BAS_Select_Generator_.jpg)<br><br>
 
-## Exercise 3.3 - Create Project Using SAP Fiori Worklist Application template
+## Exercise 3.3 - Create a Project Using the SAP Fiori Worklist Application Template
 
-You'll use the worklist template available from SAP fiori tools to create the app.
+You'll use the worklist template available from SAP Fiori tools to create the app.
    >To exit the wizard without generating the project, close the *Yeoman UI* tab.
 
-   >Using the UI wizard you can click the `Back` button to go back to the previous step, or click the specific wizard step to go back to that step.
+   >Using the Project Creation wizard, you can click *Back* to go back to the previous step, or you can click on a specific wizard step.
 
 6. Select the *SAP Fiori Worklist Application* floorplan, and click *Next*.
     <br><br>![](images/2020-10_BAS_Template_Selection_.jpg)<br><br>
 
-7. As datasource select *Upload a Metadata Document*.
+7. Select *Upload a Metadata Document* as the datasource.
     <br><br>![](images/2020-10_BAS_Datasource_and_Metadata_File_Path-1_.jpg)<br><br>
 
-8. To select the *Metadata file path*, click the *folder* icon, expand *home > user > projects > data*, select *metadata.xml*, and click *Open*.
+8. To select the *Metadata file path*, click the `folder` icon, expand `home > user > projects > data`, select `metadata.xml`, and click *Open*.
     <br><br>![](images/2020-10_BAS_Datasource_and_Metadata_File_Path-2_.jpg)<br><br>
     <br><br>![](images/2020-10_BAS_Datasource_and_Metadata_File_Path-3_.jpg)<br><br>
     <br><br>![](images/2020-10_BAS_Datasource_and_Metadata_File_Path-4_.jpg)<br><br>
@@ -76,7 +76,7 @@ You'll use the worklist template available from SAP fiori tools to create the ap
 
     <br><br>![](images/2020-10_BAS_Floorplan_Customization_.jpg)<br><br>
 
-9. For *Project Attributes*, select the following, and click *Next*.
+9. For *Project Attributes*, select the following, and click *Finish*.
 
     | Step | Parameter | Value |
     |:-----|:----------|:------|
@@ -84,30 +84,30 @@ You'll use the worklist template available from SAP fiori tools to create the ap
     | B | Application title | **Products Inventory** |
     | C | Application namespace | **products.inventory** |
     | D | Description | **An SAP Fiori freestyle app to manage products inventory (demo)** |
-    | E | Project folder path | **/home/user/projects/products-inventory** |
+    | E | Project folder path | `/home/user/projects/products-inventory` |
     | F | Configure advanced options?  | **No** (default) |
 
 ## Exercise 3.4 - Open the Project's Workspace
-it's best practice to do your development either in a single project (single root) workspace or a multi-root workspace. In this exercise you'll develop using single project workspace. In a later exercise you'll learn about multi-root workspaces.
+It's best practice to do your development either in a single project (single root) workspace or a multi-root workspace. In this exercise, you'll develop in a single project workspace environment. In a later exercise, you'll learn about multi-root workspaces.
 
 10. Wait for the project to generate. Once it is generated, the *Yeoman UI* tab closes.
 
-11. From the menu bar select *File | Open Workspace...*, select *products-inventory*, and click *Open*.
+11. From the menu bar, select *File | Open Workspace...*, select *products-inventory*, and click *Open*.
     <br><br>![](images/2020-10_BAS_Project_Workspace_Open_.jpg)<br><br>
 
 11. SAP Business Applications reloads with an open workspace containing the *products-inventory* project. 
-    >Tip 1: You can click *>* / *V* in the *Explorer* pane to expand/collapse the folders.
+    >Tip 1: You can click *>* or *V* in the *Explorer* view to expand or collapse the folders.
     ><br>![](images/2020-10_BAS_Workspace_Open_.jpg)<br><br>
 
-    >Tip 2: You can click the *Explorer* button, or any other pane button, e.g. Search, git, to expand/collapse its pane. This gives additional screen real-estate when needed. Only one pane can be open.
+    >Tip 2: Click on any icon in the side panel to expand or collapse the relevant view. This gives additional screen real estate when needed. Only one view can be open at a time.
     ><br>![](images/2020-10_BAS_Pane_Closed_.jpg)<br><br>
 
-    >You can also create a project from the terminal using Yeoman.
+    >You can also create a project using the Yeoman wizard from the terminal.
 
 ## Summary
 
 You've now successfully completed the development of an SAP Fiori app using SAP Business Application Studio.
 
-In this exercise, you learned about high productivity tools that are available out-of-the-box in SAP Business Applications Studio, such as: templates and wizards, command palette, and more.
+In this exercise, you learned about high productivity tools that are available out-of-the-box in SAP Business Applications Studio, such as templates and wizards, command palette, and more.
 
 Continue to - [Exercise 4 - Test the Application with Mock Data ](../ex4/README.md)
