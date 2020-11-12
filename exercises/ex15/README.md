@@ -1,15 +1,13 @@
 # Exercise 15 - Add Orders List to Details Page
 
-So far we you improved the view that presented the list of products and thie key properties related to the business scenario at hand. in the next few exercises you'll improve the product's details view.
-
-In this exercise, we will add a list of orders that include the product. This way the business user will immediately understand the business impact of the a product's inventory level.
-This requires changes to the UI (view) and also some formatting enhancements.
+In this exercise, we will add a list of orders that include the product. This allows the business user to immediately understand the business impact of the a product's inventory level.
+This requires changes to the UI (view) and also formatting enhancement.
 
 ## Exercise 15.1 - UI Modifications - Orders List
 
-5. In SAP business Application Studio, go to *Object.view.xml* editor tab.
+5. In SAP business Application Studio, go to `Object.view.xml` editor tab.
 
-3. Add a *Table* control right below the *form* control you added in a previous exercise.
+3. Add a `Table` control right below the `form` control you added in a previous exercise.
     ```xml
                     <Table inset="false"
                         items="{Order_Details}"
@@ -64,9 +62,9 @@ This requires changes to the UI (view) and also some formatting enhancements.
 
 ## Exercise 15.2 - Formatter Modifications
 
-After completing these steps you will have modified the way a number represeting percentile is presented on the view.
+After completing these steps, you will have modified the way a number represeting percentile is presented in the view.
 
-6. In SAP business Application Studio, open the file that handles formatting - *webapp > model > formatter.js*, and add the following code:
+6. In SAP business Application Studio, open the file that handles formatting, `webapp > model > formatter.js`, and add the following code:
     ```javascript
             },
 
@@ -80,18 +78,18 @@ After completing these steps you will have modified the way a number represeting
 
 ## Exercise 15.3 - Run the App Locally in the Dev Space
 
-After completing these steps you will have tested the fully developed app locally in your dev space.
+After completing these steps, you will have tested the fully developed app locally in your dev space.
 
-1.	Go to the tab where the app is running and refresh it (press [F5]). You can see the result of adding the supplier info to the product's details view.
+1.	Go to the tab where the app is running, and refresh it (press [F5]). You can see the result of adding the list of orders that include the product to the product's Details view.
     <br><br>![](images/2020-10_BAS_App_Object_View_After_Orders_Table_.jpg)<br><br>
 
-    >Adding a shipment details view is out of scope of this workshop. You're encouraged to try it on your own.
+    >Adding a shipment details view is out of scope of this workshop. You're encouraged to try it out on your own.
 
 ## Summary
 
 Congratulations!!!
 
 With this, you have successfully completed the app development.
-You're welcome to repeat the steps in exercise 7 to build, deploy, and run the app on your CF space.
+You're welcome to push the app to GitHub or repeat the steps in exercise 7 to build, deploy, and run the app in your CF space.
 
 Continue to - [Exercise 16 - Useful CF Commands](../ex16/README.md)

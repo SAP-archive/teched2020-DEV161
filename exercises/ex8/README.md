@@ -1,23 +1,24 @@
-# Exercise 8 - Connect Your Project to SAP Cloud Platform Continuous Integration and Delivery - Github Setup
+# Exercise 8 - Connect Your Project to SAP Cloud Platform Continuous Integration and Delivery - GitHub Setup
 
-In this exercise, we will create a project in a public GitHub repository in which to store your source code, enable SAP Cloud Platform Continuous Integration and Delivery, and configure and run a predefined continuous integration and delivery (CI/CD) pipeline that automatically tests, builds, and deploys your code changes.
+In the following exercises, you will create a project in a public GitHub repository to which you'll store your source code, enable SAP Cloud Platform Continuous Integration and Delivery, and configure and run a predefined continuous integration and delivery (CI/CD) pipeline that automatically tests, builds, and deploys your code changes.
 
 ## Exercise 8.1 Create a GitHub Repository
 
-After completing these steps, you will have created a public GitHub repository, in which you can store the source code of your project. **Note:** For this execise, you need to have a GitHub user.
+After completing these steps, you will have created a public GitHub repository, to which you'll store the source code of your project.          
+   >For this execise, you need to have a GitHub user.
 
 1. Open and sign in to https://github.com/.
 
-2. In the **Repositories** tab, choose **New** to create a new repository.
-![Create Github Repo](./images/GH_newRepository.png)
+2. In the *Repositories* tab, choose *New* to create a new repository.
+   <br><br>![Create GitHub Repo](./images/GH_newRepository.png)<br><br>
    
-3. As **Repository name**, enter *products-inventory*. Don't check any of the **Initialize this repository with** checkboxes.
+3. As *Repository name*, enter *products-inventory*. Don't check any of the *Initialize this repository with* checkboxes.
 
-4. Choose **Create repository**.
-![Create Github Repo](./images/GH_createGitRepo.png)
+4. Choose *Create repository*.
+   <br><br>![Create GitHub Repo](./images/GH_createGitRepo.png)<br><br>
 
 5. Copy the HTTPS URL of your newly created GitHub repository.
-![Copy GitHub URL](./images/GH_copyGitHubURL.png)
+   <br><br>![Copy GitHub URL](./images/GH_copyGitHubURL.png)<br><br>
 
 
 ## Exercise 8.2 Create a Personal Access Token for GitHub
@@ -31,58 +32,42 @@ To create a personal access token, which you can use instead of a password, foll
 
 After completing these steps, you will have added your SAP Fiori project sources to your GitHub repository.
 
-1. Log in to your SAP Cloud Platform account.
+6. In SAP Business Application Studio, open a new terminal, and navigate to your project's root folder.
+   <br><br>![Open Terminal](./images/openTerminal.png)<br><br>
 
-2. Navigate to your subaccount and choose **Subscriptions**.
-
-3. Search for *Business Application Studio* and choose **Go to Application**.
-![Open Biz App Studio](./images/openBizAppStudio.png)
-As a result, you're prompted to log in through your custom identity provider.
-
-4. Log in to the application using your custom identity provider credentials.
-
-5. Open the previously created workspace with your SAP Fiori application.
-
-6. Open a new terminal and navigate to your project root folder.
-![Open Terminal](./images/openTerminal.png)
-
-7. Enter your email address and username. You can use the email address that you've used to register your GitHub account:
+7. Configure your GitHub user information. Enter your email address and username. You can use the email address that you've used to register your GitHub account:
    ```
    git config --global user.email "you@example.com"
    git config --global user.name "Your Name"
    ```
-7. To initialize a GitHub repository and add the project sources to it, execute the following commands:
+
+7. Initialize a local GitHub repository and add the project sources to it. Run the following commands:
 
     ```
     git init
     git add .
-    git commit -m "Push project content to github"
+    git commit -m "Push project content to GitHub"
     ```
 
-8. Now, add your copied GitHub repository URL from exercise 8.1 as remote repository:
-
+8. Link the local git repository to the remote GitHub repository that you created in exercise 8.1 above. 
    ```
-   git remote add origin <copied Git repository url.git>
+   git remote add origin <remote Git repository url>
    ```
 
 8. Create the project's *main* branch in the remote repository:
-
    ```
    git branch -M main
    ```
 
-9. Push the commit with your project content to this GitHub repository:
-
+9. Push the commit with your project content to the remote GitHub repository:
    ```
    git push -u origin main
    ```
 
 10. When prompted, enter your GitHub username and password (or your personal access token).
 
-
-
 ## Summary
 
-You've created a project in GitHub to store your source code and successfully configured and run a predefined continuous integration and delivery pipeline that automatically builds, tests and deploys your code changes.
+You've created a project in GitHub and stored in it your app's source code.
 
 Continue to - [Exercise 9 - Connect Your Project to SAP Cloud Platform Continuous Integration and Delivery Service - Setup the Service](../ex9/README.md).

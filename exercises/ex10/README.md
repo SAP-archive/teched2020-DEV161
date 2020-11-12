@@ -1,6 +1,8 @@
 # Exercise 10 - Connect Your Project to SAP Cloud Platform Continuous Integration and Delivery - Update Internationalization (i18n)
 
-In this exercise, we will create a project in a public GitHub repository in which to store your source code, enable SAP Cloud Platform Continuous Integration and Delivery, and configure and run a predefined continuous integration and delivery (CI/CD) pipeline that automatically tests, builds, and deploys your code changes.
+In this exercise, you will make a simple change to your app and push the updated code to GitHub. This will trigger the pipeline that you configured ina previous exercise. 
+
+It is recommended that immediately after you push the code changes to GitHub you proceed with the next exercise to create a project in a public GitHub repository in which you'll store the app's source code, enable SAP Cloud Platform Continuous Integration and Delivery, and configure and run a predefined continuous integration and delivery (CI/CD) pipeline that automatically tests, builds, and deploys your code changes.
 
 ## Exercise 10.1 Make a Change in Your Project
 

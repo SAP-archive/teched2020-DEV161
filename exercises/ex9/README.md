@@ -1,122 +1,133 @@
 # Exercise 9 - Connect Your Project to SAP Cloud Platform Continuous Integration and Delivery Service - Setup the Service
 
-In this exercise, we will create a project in a public GitHub repository in which to store your source code, enable SAP Cloud Platform Continuous Integration and Delivery, and configure and run a predefined continuous integration and delivery (CI/CD) pipeline that automatically tests, builds, and deploys your code changes.
+In this exercise, you enable SAP Cloud Platform Continuous Integration and Delivery, and configure and run a predefined continuous integration and delivery (CI/CD) pipeline that automatically tests, builds, and deploys your code changes.
 
-## Exercise 9.4 Enable SAP Cloud Platform Continuous Integration and Delivery
+## Exercise 9.1 - Enable SAP Cloud Platform Continuous Integration and Delivery
 
 After completing these steps, will have subscribed to SAP Cloud Platform Continuous Integration and Delivery and assigned the *Administrator* role to your user.
 
-1. In your SAP Cloud Platform trial account, navigate to the **Subscriptions** tab.
+1. In your SAP Cloud Platform trial subaccount, navigate to the *Subscriptions* tab.
 Here, you can find the Continuous Integration & Delivery service:
-![Service Tile](./images/CICD_ServiceTile.png)
+  <br><br>![Service Tile](./images/CICD_ServiceTile.png)<br><br>
 
-2. Choose the service tile and then choose **Subscribe**.
-![Service Tile](./images/CICD_subscribe_service.png)
+2. Click the service tile and then click *Subscribe*.
+  <br><br>![Service Tile](./images/CICD_subscribe_service.png)<br><br>
 
-3. In your SAP Cloud Platform subaccount, choose **Security** → **Trust Configuration**.
+3. In your SAP Cloud Platform subaccount, click *Security* → *Trust Configuration*.
 
-4. Choose the name of your identity provider.
+4. Click the name of your identity provider.
 
 5. Enter your email address.
 
-6. Choose **Show Assignments**.
-If your user is new to your subaccount, choose **Add User** in the confirmation dialog.
+6. Click *Show Assignments*.
+  >If your user is new to your subaccount, click *Add User* in the confirmation dialog.
 
-7. Choose **Assign Role Collection**.
+7. Click *Assign Role Collection*.
 
-8. From the drop-down list, choose **CICD Service Administrator**.
+8. From the drop-down list, click *CICD Service Administrator*, and click *Assign Role Collection*. Verify that the *CICD Service Administrator* appears in the *Role Collections* list. 
 
 
-## Exercise 9.5 Configure Credentials in SAP Cloud Platform Continuous Integration and Delivery
+## Exercise 9.2 - Configure Credentials in SAP Cloud Platform Continuous Integration and Delivery
 
 After completing these steps, you will have configured credentials for connecting SAP Cloud Platform Continuous Integration and Delivery to other services.
 
-1. In your SAP Cloud Platform subaccount, choose **Subscriptions**.
+1. In your SAP Cloud Platform subaccount, click *Subscriptions*.
 
-2. In the **Extension Suite - Development Efficiency** category, choose **Continuous Integration & Delivery**.
+2. In the *Extension Suite - Development Efficiency* category, click *Continuous Integration & Delivery*.
 
-3. Choose **Go to Application**.
+3. Click *Go to Application*.
 
-4. Use your credentials to log in to the application.
+4. Use your SAP Cloud Platform credentials to log in to the application.
 
-5. If your GitHub repository is private, configure credentials for it, so that the Continuous Integration & Delivery service can connect to it. **Note:** If your GitHub repository isn't private, you can skip this step.
+5. If your GitHub repository is *private*, configure credentials for it.    
+  >If your GitHub repository isn't private, you can skip this step.
 
-    - In the **Credentials** tab in SAP Cloud Platform Continuous Integration and Delivery, choose **+** *(Create Credentials)*.
-  ![Credentials](./images/CICD_credentials.png)
+  >In the *Credentials* tab in SAP Cloud Platform Continuous Integration and Delivery, click *+* *(Create Credentials)*.
+  ><br><br>![Credentials](./images/CICD_credentials.png)
   
-    - For **Name**, enter a freely chosen name for your credential, which is unique in your SAP Cloud Platform subaccount. In this example, the name of the credential is *github*.
+  >| Parameter | Value |
+  >|:-----|:----------|
+  >| Name | github |
+  >| Type | Basic Authentication |
+  >| Username | your Github username |
+  >| Password | your GitHub personal access token |
+  ><br>![Credentials GitHub](./images/CICD_credentials_github.png)
+
+  >*Name* must be unique in your SAP Cloud Platform subaccount. In this example, the name is *github*.
   
-    - As **Type**, select **Basic Authentication**.
+6. Go to the *Credentials* tab and click *+* *(Create Credentials)* to create credentials for deploying to the SAP Cloud Platform Cloud Foundry environment.
+  <br><br>![Credentials](./images/CICD_credentials.png)<br><br>
 
-    - For **Username**, enter your Github username.
-  
-    - For **Password**, use the personal access token, which you've created in GitHub in exercise 8.2.
-     ![Credentials GitHub](./images/CICD_credentials_github.png)
+  >| Parameter | Value |
+  >|:-----|:----------|
+  >| Name | cfdeploy |
+  >| Type | Basic Authentication |
+  >| Username | your SAP Cloud Platform username |
+  >| Password | your SAP Cloud Platform password |
+  ><br>![Credentials GitHub](./images/CICD_credentials_cfdeploy.png)
 
+  >*Name* must be unique in your SAP Cloud Platform subaccount. In this example, the name is *cfdeploy*.
 
-6. To create credentials for deploying to the SAP Cloud Platform Cloud Foundry environment, go to the **Credentials** tab and choose **+** *(Create Credentials)*.
-![Credentials](./images/CICD_credentials.png)
-
-7. For **Name**, enter a freely chosen name for your credentials, which is unique in your SAP Cloud Platform subaccount. In this example, the name of the credentials is *cfdeploy*.
-
-8. As **Type**, select **Basic Authentication**.
-
-9. For **Username**, enter your username for the SAP Cloud Platform cockpit.
-
-10. For **Password**, use your password for the SAP Cloud Platform cockpit.
-![Credentials GitHub](./images/CICD_credentials_cfdeploy.png)
-
-
-## Exercise 9.6 Configure a CI/CD Job
+## Exercise 9.3 - Configure a CI/CD Job
 
 After completing these steps, you will have configured a job in SAP Cloud Platform Continuous Integration and Delivery.
 
-1. In the **Jobs** tab in SAP Cloud Platform Continuous Integration and Delivery, choose **+** *(Create Job)*.
-![Jobs](./images/CICD_jobs.png)
+1. In the *Jobs* tab in SAP Cloud Platform Continuous Integration and Delivery, click *+* to open the *Create Job* view.
+  <br><br>![Jobs](./images/CICD_jobs.png)
 
-2. For **Job Name**, enter a freely chosen name for your job, which is unique in your SAP Cloud Platform subaccount. In this example, the name of the job is *Procurement*.
+2. For *General Information*, select the following:
+  >| Parameter | Value | 
+  >|:-----|:----------|
+  >| Job Name | Procurement |
+  >| Repository URL | URL of your GitHub repository |
+  >| Repository Credentials * | URL of your GitHub repository |
+  >| Branch | main |
+  >| Pipeline | sap-ui5-cf |
+  >| Build | On |
+  >| Deploy | On |
 
-3. For **Repository URL**, enter the URL of your GitHub repository.
+2. For *Job Name*, enter a freely chosen name for your job, which is unique in your SAP Cloud Platform subaccount. In this example, the name of the job is *Procurement*.
 
-4. If your GitHub repository is private, for **Repository Credentials**, enter the name of the credentials to access your GitHub Repository, which you've created in exercise 8.5. If your GitHub repository isn't private, leave this field empty.
+  >If your GitHub repository is private, for *Repository Credentials*, enter the name of the credentials to access your GitHub Repository, which you've created in exercise 8.5. If your GitHub repository isn't private, leave this field empty.
 
-5. For **Branch**, enter the GitHub branch from which you want to receive push events.
+5. For *Branch*, enter the GitHub branch from which you want to receive push events.
 
-6. As **Pipeline**, choose **sap-ui5-cf**.
+6. As *Pipeline*, click *sap-ui5-cf*.
 ![UI Job](./images/CICD_UI_job.png)
 
-7. Scroll down to the **Tasks**. By default, the **Build** task is **ON**.
+7. In the *Stages* section, for the *Build* stage, verify that the *state* is set to *On*. It's the *Build* stage default value.
 
-8. Switch the **Deploy** task on.
-![UI Job Build Stage](./images/CICD_UI_job_build.png)
+8. Switch the *Deploy* task on.
+  <br><br>![UI Job Build Stage](./images/CICD_UI_job_build.png)<br><br>
 
-9. Provide the needed information for the **Deploy** task. You can get the your org name, space name, and API endpoint from your subaccount overview in the SAP Cloud Platform cockpit:
-![Cockpit](./images/CP_API_Endpoint.png)
+9. Provide the needed information for the *Deploy* task. You can get the your API endpoint (e.g. for EU trial ), org name, and space name from your subaccount overview in the SAP Cloud Platform cockpit:
+  <br><br>![Cockpit](./images/CP_API_Endpoint.png)<br><br>
 
-10. Choose the *cfdeploy* credentials that you'vecreated in the previous step.
-![UI Job Deploy Stage](./images/CICD_UI_job_deploy.png)
+  >EU trial API Endpoint: https://api.cf.eu10.hana.ondemand.com
+  >US trial API Endpoint: https://api.cf.us10.hana.ondemand.com
 
-11. Choose **Create**.
+10. Click the *cfdeploy* credentials that you've created in a previous step.
+  <br><br>![UI Job Deploy Stage](./images/CICD_UI_job_deploy.png)<br><br>
 
-12. Whenever you create the first job for a GitHub repository, the **Webhook Creation** pop-up appears, which provides you with the data needed to define a webhook in GitHub. Alternatively, you can open the detail view of an existing job in the **Jobs** tab and under **General Information**, choose **Webhook Data**.
-![Webhook](./images/CICD_webhook.png)
+11. Click *Create*.
 
-13. In your project in GitHub, go to the **Settings** tab.
+12. Whenever you create the first job for a GitHub repository, the *Webhook Creation* pop-up appears, which provides you with the data needed to define a webhook in GitHub. Alternatively, you can open the detail view of an existing job in the *Jobs* tab and under *General Information*, click *Webhook Data*.
+  <br><br>![Webhook](./images/CICD_webhook.png)<br><br>
 
-14. From the navigation pane, choose **Webhooks**.
+13. In your project's GitHub repository, go to the *Settings* tab.
 
-15. Choose **Add webhook**.
-![Webhook](./images/GH_webhook.png)
+14. In the navigation pane, click *Webhooks*.
 
-16. Enter the **Payload URL**, **Content type**, and **Secret** from the **Webhook Creation** pop-up in SAP Cloud Platform Continuous Integration and Delivery. For all other settings, leave the default values.
+15. Click *Add webhook*.
+  <br><br>![Webhook](./images/GH_webhook.png)<br><br>
 
-8. Choose **Add webhook**.
-![Webhook Details](./images/GH_webhook_details.png)
+16. Enter the *Payload URL*, *Content type*, and *Secret* from the *Webhook Creation* pop-up in SAP Cloud Platform Continuous Integration and Delivery. For all other settings, leave the default values.
 
-
+8. Click *Add webhook*.
+  <br><br>![Webhook Details](./images/GH_webhook_details.png)<br><br>
 
 ## Summary
 
-You've created a project in GitHub to store your source code and successfully configured and run a predefined continuous integration and delivery pipeline that automatically builds, tests and deploys your code changes.
+You've created a project in GitHub to store your source code, and successfully configured a predefined continuous integration and delivery pipeline that whenever the repository updates, the pipeline automatically builds, tests, and deploys your app to your SAP Cloud Platform, Cloud Foundry space.
 
 Continue to - [Exercise 10 - Connect Your Project to SAP Cloud Platform Continuous Integration and Delivery - Update Internationalization (i18n)](../ex10/README.md).

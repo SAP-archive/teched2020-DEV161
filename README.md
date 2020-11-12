@@ -15,7 +15,7 @@ After a bit of thinking, you decided that the best approach would be to create a
 At the end of the session, your application will look like this:
 
 | Main View (Worklist) | Details View (Object)|
-|:-----|:----------|:------|
+|:-----|:----------|
 | <br>![](exercises/ex12/images/2020-10_BAS_Preview_Application_Start-5_.jpg)<br><br> | <br>![](exercises/ex15/images/2020-10_BAS_App_Object_View_After_Orders_Table_.jpg)<br><br> |
 
 ## Requirements
