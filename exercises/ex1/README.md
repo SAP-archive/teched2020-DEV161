@@ -49,7 +49,7 @@ There are several dev space types that are available for you. Each dev space is 
 
 ## Exercise 1.3 - Launch the Development Environment
 
-7. Click on your dev space name, e.g. *Procurement*. You'll be redirected to your newly created SAP Business Application Studio dev space.
+8. Click on your dev space name, e.g. *Procurement*. You'll be redirected to your newly created SAP Business Application Studio dev space.
     >You may be prompted to accept the legal terms.
 
     <br><br>![](images/2020-10_BAS_Launched_.jpg)<br><br>
