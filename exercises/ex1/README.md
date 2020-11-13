@@ -74,7 +74,7 @@ After completing these steps, you will upload several files to SAP Business Appl
     <br><br>![](images/2020-10_BAS_New_Folder_.jpg)<br><br>
 
 13. Click the following [link](data/metadata.xml?raw=true) to access the `metadata.xml` file.
-    >When working with GitHug, if you want to open a link in a new tab, press [CTRL] and click the link.
+    >When working with GitHub, if you want to open a link in a new tab, press [CTRL] and click the link.
 
 14. Right-click the data area, and select *Save as...*.
     >You'll save the file to your local machine.
