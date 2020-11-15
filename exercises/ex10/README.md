@@ -1,8 +1,8 @@
 # Exercise 10 - Connect Your Project to SAP Cloud Platform Continuous Integration and Delivery - Update Internationalization (i18n)
 
-In this exercise, you will make a simple change to your app and push the updated code to GitHub. This will trigger the pipeline that you configured ina previous exercise. 
+In this exercise, you will make a simple change to your app and push the updated code to GitHub. This will trigger the pipeline that you configured previously. 
 
-It is recommended that immediately after you push the code changes to GitHub you proceed with the next exercise to create a project in a public GitHub repository in which you'll store the app's source code, enable SAP Cloud Platform Continuous Integration and Delivery, and configure and run a predefined continuous integration and delivery (CI/CD) pipeline that automatically tests, builds, and deploys your code changes.
+It is recommended that immediately after you push the code changes to GitHub, you proceed with the next exercise to create a project in a public GitHub repository in which you'll store the app's source code, enable SAP Cloud Platform Continuous Integration and Delivery, and configure and run a predefined continuous integration and delivery (CI/CD) pipeline that automatically tests, builds, and deploys your code changes.
 
 ## Exercise 10.1 - Make a Change in Your Project
 
@@ -11,12 +11,12 @@ After completing these steps, you will have made a change in your project and th
 1. Expand the *webapp > i18n* folder, and click the *i18n.properties* file to open it.
     <br><br>![Change Description](images/2020-10_BAS_i18n_Open_.jpg)<br><br>
 
-2. Click the following [link](data/i18n.properties?raw=true) to access the `i18n.properties` file. This file contains all the changes you need to internationalize the app's hard-coded strings.
+2. Click [here](data/i18n.properties?raw=true) to access the `i18n.properties` file. This file contains all the changes you need to internationalize the app's hard-coded strings.
     >When working with github, if you want to open a link in a new tab, press [CTRL] and click the link.
 
-3. Press [CTRL] + A and then [CTRAL] + C to copy the file's content to the clipboard.
+3. Press [CTRL] + [A] and then [CTRL] + [C] to copy the file's content to the clipboard.
 
-4. Go back to SAP Business Application Studio and replace the content of the `i18n.properties` file with the content of the `i18n.properties` file from github. Press [CTRL] + A to select the file's content in SAP Business Application Studio, Press [DELETE], and then press [CTRL] + V to paste the content of the file from the clipboard.
+4. Go back to SAP Business Application Studio and replace the content of the `i18n.properties` file with the content of the `i18n.properties` file from github. Press [CTRL] + [A] to select the file's content in SAP Business Application Studio, press [DELETE], and then press [CTRL] + [V] to paste the content of the file from the clipboard.
 
 2. Open the *Source Control: Git* view.
     <br><br>![Git](./images/bas_git.png)<br><br>
