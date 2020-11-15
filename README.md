@@ -77,7 +77,7 @@ The requirements to follow the exercises in this repository are:
     - [Exercise 11.1 - Verify Build Success in SAP CP Continuous Integration and Delivery](exercises/ex11#exercise-111-Verify-Build-Success-in-SAP-CP-Continuous-Integration-and-Delivery)
     - [Exercise 11.2 - Access the Application](exercises/ex11#exercise-112-Access-the-Application)
 - [Exercise 12 - Add Columns to Worklist](exercises/ex12/)
-    - [Exercise 9.1 - Add Columns to Worklist](exercises/ex12#exercise-121---Add-Columns-to-Worklist)
+    - [Exercise 12.1 - Add Columns to Worklist](exercises/ex12#exercise-121---Add-Columns-to-Worklist)
     - [Exercise 12.2 - Run the App Locally in the Dev Space](exercises/ex12#exercise-122---Run-the-App-Locally-in-the-Dev-Space)
 - [Exercise 13 - Add Supplier Info to Details Page](exercises/ex13/)
     - [Exercise 13.1 - UI Modifications](exercises/ex13#exercise-131---UI-Modifications)
@@ -101,11 +101,7 @@ The requirements to follow the exercises in this repository are:
     - [Exercise 16.6 - cf deploy](exercises/ex16#Exercise-166---cf-deploy)
     - [Exercise 16.7 - Run the App on CF](exercises/ex16#Exercise-167---Run-the-App-on-CF)
 
-<br>Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).<br><br>
-
-**IMPORTANT**
-
-Your repo must contain the .reuse and LICENSES folder and the License section below. DO NOT REMOVE the section or folders/files. Also, remove all unused template assets(images, folders, etc) from the exercises folder.
+<br>Start the exercises [here](exercises/ex1/).<br><br>
 
 ## How to obtain support
 
