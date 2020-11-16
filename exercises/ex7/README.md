@@ -40,7 +40,7 @@ Both parts are executed using the following command:
     | C | Enter MTA ID | *products-inventory* (default) |
     | D | Enter MTA Description | *SAP Fiori Freestyle Demo* |
     | E | Enter MTA Version | *0.0.1* (default) |
-    | F | Destination name | *northwind* (case sensitive) |
+    | F | Destination name | *Northwind* (case sensitive) |
 
     <br><br>![](images/2020-10_BAS_NPX-2_.jpg)<br><br>
 
