@@ -59,7 +59,7 @@ It is recommended that you type most of the code to experience the code editor's
                     <IconTabFilter icon="sap-icon://message-error" iconColor="Negative" text="{i18n>worklistFilterShortageStockProducts}" key="Shortage"></IconTabFilter>
                 </items>
             </IconTabBar>
-
+            
 ```
 
    <br><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Filters_Added_.jpg)<br><br>
@@ -73,6 +73,9 @@ It is recommended that you type most of the code to experience the code editor's
    <br><br>![](images/2020-10_BAS_Worklist_View_Problems_Pane_.jpg)<br><br>
 
 10. According to the problem description: *The aggregation \"content\" has a cardinality of 0..1 and may only contain one element*. Therefore, wrap the *IconTabBar* and *Table* controls in a `<VBox>` element, and indent accordingly.
+
+    >Don't forget to close the `<VBox>` tag with a `</VBox>` tag.
+    
 ```XML
             <VBox>
                 <IconTabBar id="iconTabBar" select=".onFilterSelect" class="sapUiResponsiveContentPadding">
@@ -155,6 +158,8 @@ It is recommended that you type most of the code to experience the code editor's
 
     >Clicking the filters has no impact as the logic was not implemented. This will be the next step in the exercise.
 
+    >You'll handle the texts in a later exercise.
+
 
 ## Exercise 5.2 - Logic Modifications (Controller)
 
@@ -172,6 +177,7 @@ After completing these steps, you will have modified the logic of the Worklist v
 ```javascript
             //set products count
             this.getModel("worklistView").setProperty("/productsCount", iTotalItems);
+
 ```
 
    <br><br>![](images/2020-10_BAS_Worklist_Controller_onUpdatedFinished_Updated_.jpg)<br><br>
@@ -202,7 +208,7 @@ After completing these steps, you will have modified the logic of the Worklist v
                 return [];
             }
         },
-
+        
 ```
 
    <br><br>![](images/2020-10_BAS_Worklist_Controller_Filters_.jpg)<br><br>

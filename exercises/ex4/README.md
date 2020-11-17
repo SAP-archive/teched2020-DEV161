@@ -21,6 +21,8 @@ After completing these steps, you will have tested the app with mock data that w
     >You may receive notifications at the bottom right of the screen asking you to expose ports. Click *Yes*.
     ><br><br>![](images/2020-10_BAS_Expose_Port_Notification_.jpg)<br><br>
 
+    >You may be prompted to allow pop-ups.
+
     >A new browser tab opens showing the FLP.
 
     >A new tab opens in SAP Business Application Studio where you can see the log of the running app.

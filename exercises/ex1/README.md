@@ -61,7 +61,7 @@ There are several dev space types that are available for you. Each dev space is 
 After completing these steps, you will upload several files to SAP Business Application Studio that you'll need later in this session.
 + `metadata.xml` will allow you to develop the app without connecting to a backend system.
 + `ui5.yaml`, `package.json`, and `manifest.json` will be used to:
-    + Demonstrate the file comparison finctionality.
+    + Demonstrate the file comparison functionality.
     + Connect the app to a backend system.
 
 9. Click *Open Workspace*.
@@ -92,6 +92,7 @@ After completing these steps, you will upload several files to SAP Business Appl
 
     >Follow the same steps for [ui5.yaml](data/ui5.yaml?raw=true), [package.json](data/package.json?raw=true), [manifest.json](data/manifest.json?raw=true), which will be used at a later stage of the workshop.
     >Do not forget to change the *Save as type* to *All Files (\*.\*)*, and for each file make sure you modify its extension to yaml or json.
+    ><br>![](images/2020-10_BAS_Files_Uploaded_.jpg)<br>
 
 ## Summary
 

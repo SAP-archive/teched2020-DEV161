@@ -14,7 +14,8 @@ Create a folder that will contain the app's project.
 
 ## Exercise 3.1 - Launch Yeoman UI Generator
 
-The easiest way to create an SAP Fiori app for freestyle development from scratch is to create it from a template. To continue developing an existing application, the best practice is to use Git source code management and clone the repository.
+The easiest way to create an SAP Fiori app for freestyle development from scratch is to create it from a template. In this step you'll install the extension that contains high-productivity tools for SAP Fiori freestyle development.
+   >In most cases you'll conitnue the development of an existing application.To continue developing an existing application, the best practice is to use Git source code management and clone the repository.
 
 1. From the menu bar, select *View | Find Command* to open the Command Palette.
     <br><br>![](images/2020-10_BAS_Command_Palette_Open_.jpg)<br><br>
@@ -54,6 +55,7 @@ You'll use the worklist template available from SAP Fiori tools to create the ap
     <br><br>![](images/2020-10_BAS_Template_Selection_.jpg)<br><br>
 
 7. Select *Upload a Metadata Document* as the datasource.
+    >*Upload a Metadata Document* option is used to present the capability to decouple development of an SAP Fiori app from its backend.
     <br><br>![](images/2020-10_BAS_Datasource_and_Metadata_File_Path-1_.jpg)<br><br>
 
 8. To select the *Metadata file path*, click the `folder` icon, expand `home > user > projects > data`, select `metadata.xml`, and click *Open*.
@@ -97,10 +99,10 @@ It's best practice to do your development either in a single project (single roo
 
 11. SAP Business Applications reloads with an open workspace containing the *products-inventory* project. 
     >Tip 1: You can click *>* or *V* in the *Explorer* view to expand or collapse the folders.
-    ><br>![](images/2020-10_BAS_Workspace_Open_.jpg)<br><br>
+    ><br><br>![](images/2020-10_BAS_Workspace_Open_.jpg)<br><br>
 
     >Tip 2: Click on any icon in the side panel to expand or collapse the relevant view. This gives additional screen real estate when needed. Only one view can be open at a time.
-    ><br>![](images/2020-10_BAS_Pane_Closed_.jpg)<br><br>
+    ><br><br>![](images/2020-10_BAS_Pane_Closed_.jpg)<br><br>
 
     >You can also create a project using the Yeoman wizard from the terminal.
 

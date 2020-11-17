@@ -47,20 +47,8 @@ Both parts are executed using the following command:
     >After you complete the above, a script runs and you'll enter the SAP Fiori launchpad configuration step.
     ><br>![](images/2020-10_BAS_NPX-3_.jpg)<br><br>
 
-5. To configure the SAP Fiori launchpad (FLP), select the following:
-
-    | Step | Parameter | Value |
-    |:-----|:----------|:------|
-    | A | Please choose the targetAdd FLP config and generate artifacts | *Y* |
-    | B | Semantic Object | *prinSO* |
-    | C | Action | *display* (default) |
-    | D | Title | *Products Inventory* (default) |
-    | E | Subtitle (optional) | *Fiori Rocks!* (default) |
-
+5. For *Add FLP config and generate artifacts?* type `n` (default), and press [ENTER].
     <br><br>![](images/2020-10_BAS_NPX-4_.jpg)<br><br>
-
-    >After you complete the above, a script runs and the FLP is added to the project.
-    ><br>![](images/2020-10_BAS_NPX-5_.jpg)<br><br>
 
     >As a result of executing the `npx` command, you'll see that the project structure was updated accordingly.
     ><br>![](images/2020-10_BAS_Project_After_Config_Deploy_.jpg)<br><br>
@@ -116,10 +104,7 @@ Both parts are executed using the following command:
 13. To run the application on Cloud Foundry, in the *SAP Cloud Platform Cockpit*, go to the Cloud Foundry space to which you deployed the app, and click the *Applications* tab. Click *products-inventory-router*, and then click the link in the *Application Routes* section.
     <br><br>![](images/2020-10_SCP_CF_Space_Application_Routes_.jpg)<br><br>
 
-14. SAP Fiori launchpad comes up with your application tile.
-    <br><br>![](images/2020-10_FLP_.jpg)<br><br>
-
-15. Click the application tile. You should see the app running on Cloud Foundry.
+15. You should see the app running on Cloud Foundry.
     <br><br>![](images/2020-10_App_on_CF_.jpg)<br><br>
 
 ## Summary
