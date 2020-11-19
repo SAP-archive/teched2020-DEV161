@@ -14,17 +14,26 @@ Here, you can find the Continuous Integration & Delivery service:
   <br><br>![Service Tile](./images/CICD_subscribe_service.png)<br><br>
 
 3. In your SAP Cloud Platform subaccount, click *Security* → *Trust Configuration*.
+  <br><br>![Trust Configuration](images/2020-10_CICD_Trust_Configuration-1_.jpg)<br><br>
 
 4. Click the name of your identity provider.
+  <br><br>![Trust Configuration](images/2020-10_CICD_Trust_Configuration-2_.jpg)<br><br>
 
-5. Enter your email address.
-
-6. Click *Show Assignments*.
+5. Enter your email address, and click *Show Assignments*.
   >If the user is new to your subaccount, click *Add User* in the confirmation dialog.
+  <br><br>![Trust Configuration](images/2020-10_CICD_Trust_Configuration-3_.jpg)<br><br>
 
-7. Click *Assign Role Collection*.
+6. Click *Assign Role Collection*.
+  <br><br>![Trust Configuration](images/2020-10_CICD_Trust_Configuration-4_.jpg)<br><br>
 
-8. From the drop-down list, click *CICD Service Administrator*, and click *Assign Role Collection*. Verify that the *CICD Service Administrator* appears in the *Role Collections* list. 
+7. From the drop-down list, select *CICD Service Administrator*.
+  <br><br>![Trust Configuration](images/2020-10_CICD_Trust_Configuration-5_.jpg)<br><br>
+
+8. Click *Assign Role Collection*.  
+  <br><br>![Trust Configuration](images/2020-10_CICD_Trust_Configuration-6_.jpg)<br><br>
+
+  >Verify that the *CICD Service Administrator* appears in the *Role Collections* list.
+  ><br>![Trust Configuration](images/2020-10_CICD_Trust_Configuration-7_.jpg)<br>
 
 
 ## Exercise 9.2 - Configure Credentials in SAP Cloud Platform Continuous Integration and Delivery
@@ -33,7 +42,7 @@ After completing these steps, you will have configured credentials for connectin
 
 1. In your SAP Cloud Platform subaccount, click *Subscriptions*.
 
-2. In the *Extension Suite - Development Efficiency* category, click *Continuous Integration & Delivery*.
+2. In the *Extension Suite - Development Efficiency* category, locate the *Continuous Integration & Delivery* tile.
 
 3. Click *Go to Application*.
 
@@ -50,7 +59,7 @@ After completing these steps, you will have configured credentials for connectin
   >| Name | github |
   >| Type | Basic Authentication |
   >| Username | Your Github username |
-  >| Password | Uour GitHub personal access token |
+  >| Password | Your GitHub personal access token |
   ><br>![Credentials GitHub](./images/CICD_credentials_github.png)
 
   >*Name* must be unique in your SAP Cloud Platform subaccount. In this example, the name is *github*.
@@ -78,40 +87,40 @@ After completing these steps, you will have configured a job in SAP Cloud Platfo
 2. For *General Information*, select the following:
   >| Parameter | Value | 
   >|:-----|:----------|
-  >| Job Name | Procurement |
+  >| Job Name * | Procurement |
   >| Repository URL | URL of your GitHub repository |
-  >| Repository Credentials * | URL of your GitHub repository |
+  >| Repository Credentials ** |  |
   >| Branch | main |
   >| Pipeline | sap-ui5-cf |
   >| Build | On |
   >| Deploy | On |
 
-2. For *Job Name*, enter name that is unique in your SAP Cloud Platform subaccount. In this example, the name of the job is *Procurement*.
+  >\* For *Job Name*, enter name that is unique in your SAP Cloud Platform subaccount. In this example, the name of the job is *Procurement*.
 
-  >If your GitHub repository is private, for *Repository Credentials*, enter the credentials to access your GitHub Repository, which you've created in exercise 8.5. If your GitHub repository isn't private, leave this field empty.
+  >\*\* If your GitHub repository is private, for *Repository Credentials*, enter the credentials to access your GitHub Repository, which you've created in exercise 9.2.5. If your GitHub repository isn't private, leave this field empty.
 
-5. For *Branch*, enter the GitHub branch from which you want to receive push events.
+3. For *Branch*, enter the GitHub branch from which you want to receive push events.
 
-6. As *Pipeline*, click *sap-ui5-cf*.
+4. As *Pipeline*, click *sap-ui5-cf*.
 ![UI Job](./images/CICD_UI_job.png)
 
-7. In the *Stages* section, for the *Build* stage, verify that the *state* is set to *On*. This is the *Build* stage default value.
+5. In the *Stages* section, for the *Build* stage, verify that the *state* is set to *On*. This is the *Build* stage default value.
 
-8. Turn on the *Deploy* task.
+6. Turn on the *Deploy* task.
   <br><br>![UI Job Build Stage](./images/CICD_UI_job_build.png)<br><br>
 
-9. Provide the needed information for the *Deploy* task. You can get your API endpoint (e.g. for EU trial ), org name, and space name from your subaccount overview in the SAP Cloud Platform cockpit:
+7. Provide the needed information for the *Deploy* task. You can get your API endpoint (e.g. for EU trial ), org name, and space name from your subaccount overview in the SAP Cloud Platform cockpit:
   <br><br>![Cockpit](./images/CP_API_Endpoint.png)<br><br>
 
   >EU trial API Endpoint: https://api.cf.eu10.hana.ondemand.com
   >US trial API Endpoint: https://api.cf.us10.hana.ondemand.com
 
-10. Click the *cfdeploy* credentials that you created in a previous step.
+8. Click the *cfdeploy* credentials that you created in a previous step.
   <br><br>![UI Job Deploy Stage](./images/CICD_UI_job_deploy.png)<br><br>
 
-11. Click *Create*.
+9. Click *Create*.
 
-12. Whenever you create the first job for a GitHub repository, the *Webhook Creation* pop-up appears, which provides you with the data needed to define a webhook in GitHub. Alternatively, you can open the detail view of an existing job in the *Jobs* tab and under *General Information*, and click *Webhook Data*.
+10. Whenever you create the first job for a GitHub repository, the *Webhook Creation* pop-up appears, which provides you with the data needed to define a webhook in GitHub. Alternatively, you can open the detail view of an existing job in the *Jobs* tab and under *General Information*, and click *Webhook Data*.
   <br><br>![Webhook](./images/CICD_webhook.png)<br><br>
 
 13. In your project's GitHub repository, go to the *Settings* tab.

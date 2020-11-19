@@ -129,6 +129,6 @@ If the preview does not respond, you probably need to unexpose ports.
 
 With this, you have successfully connected you app to a real backend system. You now have the option to test run the app against a real backend or to test run it with mock data (auto generated or user provided).
 
-You also learned about single-root workspaces and multi-root workspaces. In this exercise you used *Untitled Workspace*. You can find out how to work with persistent multi-root workspaces in the SAP Business Application Studio [documnetation](https://help.sap.com/viewer/9d1db9835307451daa8c930fbd9ab264/Cloud/en-US/0919ce1ca4a342628e49c0f5e9c8cdcf.html). 
+You also learned about single-root workspaces and multi-root workspaces. In this exercise you used *Untitled Workspace*. You can find out how to work with persistent multi-root workspaces in the SAP Business Application Studio [documentation](https://help.sap.com/viewer/9d1db9835307451daa8c930fbd9ab264/Cloud/en-US/0919ce1ca4a342628e49c0f5e9c8cdcf.html). 
 
 Continue to - [Exercise 7 - Run the app on CF](../ex7/README.md)

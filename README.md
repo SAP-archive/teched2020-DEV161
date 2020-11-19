@@ -10,7 +10,7 @@ This session introduces attendees to the end-to-end development flow of an SAP F
 
 Working in the IT department of your company, your mission, should you choose to accept it, is to develop an app that will help procurement identify the inventory levels of your company's products, and which orders will be impacted.
 
-After a bit of thinking, you decided that the best approach would be to create an SAP Fiori freestyle app that follows the Worklist floorplan. Its main view will include a list of products, their inventory level, and the number of units per order. The details page will include the supplier information, and a list of orders that include the product.
+After a bit of thinking, you decided that the best approach would be to create an SAP Fiori freestyle app that follows the Worklist floorplan. Its main view will include a list of products, their inventory level, and the number of units per order. The Details View will include the supplier information, and a list of orders that include the product.
 
 At the end of the session, your application will look like this:
 
@@ -21,7 +21,7 @@ At the end of the session, your application will look like this:
 ## Requirements
 
 The requirements to follow the exercises in this repository are:
-- Get a free trial account on SAP Cloud Platform; see this [tutorial](https://developers.sap.com/tutorials/hcp-create-trial-account.html).
+- Get a free trial account on SAP Cloud Platform; see this [tutorial](https://developers.sap.com/tutorials/hcp-create-trial-account.html). Choose *Europe (Frankfurt) - AWS* or *US East (VA) - AWS* regions.
 - Create the *Northwind* destination within the Cloud Foundry environment; see this [tutorial](https://developers.sap.com/tutorials/cp-cf-create-destination.html).
 - Enable SAP Business Application Studio for development; see this [tutorial](https://developers.sap.com/tutorials/appstudio-onboarding.html).
 - Be excited about the power of SAP technologies to make your developer life easier.
