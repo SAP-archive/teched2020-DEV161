@@ -2,6 +2,12 @@
 
 In this exercise, you will enable SAP Cloud Platform Continuous Integration and Delivery, and configure and run a predefined continuous integration and delivery (CI/CD) pipeline that automatically tests, builds, and deploys your code changes.
 
+> If your trial account in the supported region already existed, then you may need to entitle SAP Cloud Platform Continuous Integration and Delivery by executing these steps: 
+<br>1. Open the Entitlements menu
+<br>2. Configure Entitlements, then Add Service Plans
+<br>3. Search for Continuous Integration & Delivery,select the trial-plan, and Add 1 Service Plan
+<br>4. Going back to the Subscriptions of your subaccount, you are able to see SAP Cloud Platform Continuous Integration and Delivery Service Tile.
+
 ## Exercise 9.1 - Enable SAP Cloud Platform Continuous Integration and Delivery
 
 After completing these steps, you will have subscribed to SAP Cloud Platform Continuous Integration and Delivery and assigned the *Administrator* role to your user.
