@@ -11,7 +11,7 @@ It is recommended that you type most the code to experience the code editor's ca
 1. This time, you'll use a new way of searching for a file using the command palette. From the main menu, select *View | Find Command*, delete the `>`, and type *Worklist*. A list of files whose name begins with *Worklist* is displayed.
     <br><br>![](images/2020-10_BAS_Command_Palette_Search_File_.jpg)<br><br>
 
-2. Click `Worklist.view.xml` to open the file in the code editor. 
+2. Click `Worklist.view.xml productsinventory/webapp/view` to open the file in the code editor. 
     <br><br>![](images/2020-10_BAS_Command_Palette_Search_File_Opened_.jpg)<br><br>
 
 3. Add the *Units Ordered* and *Units In Stock* columns to the table, and remove the `hAlign` property from the *unitNumberColumn* column (hover over the property to view its description). In the file, locate the `<columns>` section and add or modify the following code:
@@ -39,34 +39,18 @@ It is recommended that you type most the code to experience the code editor's ca
     ```xml
                                 <ObjectNumber number="{path: 'UnitsOnOrder', formatter: 'formatter.numberUnit'}" unit="PC"></ObjectNumber>
                                 <ObjectNumber number="{path: 'UnitsInStock', formatter: 'formatter.numberUnit'}" unit="PC"></ObjectNumber>
+                                
     ```
 
     <br><br>![](images/2020-10_BAS_Worklist_Cells_Added_.jpg)<br><br>
 
 ## Exercise 12.2 - Run the App Locally in the Dev Space
 
-After completing these steps, you will have tested the app with data fetched from a real backend.
+1. Refresh the app's tab that is running the app locally in the dev space for the changes to take effect. 
+    >You have three tabs running the app: A tab where the app is running locally in the dev space fetching the data from OData org's Northwind service. A tab where the app is running locally in the dev space fetching the data from the mock server. A tab where the app is running in your Cloud Foundry space fetching the data from OData org's Northwind service. You should refresh the tab where the app is running locally in the dev space fetching the data from OData org's Northwind service. 
 
-!!!If the preview does not respond, you probably need to unexpose ports.
-
-1.	Right-click any folder within the `productsinventory` folder, e.g. the `webapp` folder, and select *Preview Application*.
-    <br><br>![](images/2020-10_BAS_Preview_Application_Start-1_.jpg)<br><br>
-
-2.	The command palette opens with a list of `npm` scripts. Click *start* to run this script.
-    <br><br>![](images/2020-10_BAS_Preview_Application_Start-2_.jpg)<br><br>
-
-    >A new browser tab opens containing the SAP Fiori launchpad.
-
-    >A new tab opens in SAP Business Application Studio, showing the log of the running app.
-
-    ><br><br>![](images/2020-10_BAS_Preview_Application_Start-3_.jpg)<br><br>
-
-3. Click the *Products Inventory* tile to launch the app.
-    <br><br>![](images/2020-10_BAS_Preview_Application_Start-4_.jpg)<br><br>
-
-4. The app is run with data coming from the demo *Northwind OData* service that is provided by the OData organization.
+2. The Worklist page presents four columns: *Product Name*, *Unit Price*, *Units Ordered*, and *Units in Stock*.
     <br><br>![](images/2020-10_BAS_Preview_Application_Start-5_.jpg)<br><br>
-
 
 
 ## Summary

@@ -7,15 +7,16 @@ In this exercise, you will learn how to create an SAP Fiori application for free
 Create a folder that will contain the app's project.
 
 1. From the SAP Business Application Studio menu bar select *File | New Folder*.
+    >Using information in the popup message, verify that the new folder will be created in */home/user/projects*. If a different path is presented, it's most probably due to a flie or folder being selected. Close the *New Folder* dialog, press [CTRL] and click the selected file or folder, and repeat this step.
+    <br><br>![](images/2020-10_BAS_New_Folder_Path_.jpg)<br><br>
 
 2. Name the folder *products-inventory*, and click *OK*.
-    >Using information in the popup message, verify that the new folder will be created under */home/user/projects*.
     <br><br>![](images/2020-10_BAS_App_Project_Folder_.jpg)<br><br>
 
 ## Exercise 3.1 - Launch Yeoman UI Generator
 
 The easiest way to create an SAP Fiori app for freestyle development from scratch is to create it from a template. In this step you'll install the extension that contains high-productivity tools for SAP Fiori freestyle development.
-   >In most cases you'll conitnue the development of an existing application.To continue developing an existing application, the best practice is to use Git source code management and clone the repository.
+   >In most cases you'll conitnue the development of an existing application. To continue developing an existing application, the best practice is to use Git source code management.
 
 1. From the menu bar, select *View | Find Command* to open the Command Palette.
     <br><br>![](images/2020-10_BAS_Command_Palette_Open_.jpg)<br><br>
@@ -89,10 +90,10 @@ You'll use the worklist template available from SAP Fiori tools to create the ap
     | E | Project folder path | `/home/user/projects/products-inventory` |
     | F | Configure advanced options?  | **No** (default) |
 
+10. Wait for the project to generate. Once it is generated, the *Yeoman UI* tab closes.
+
 ## Exercise 3.4 - Open the Project's Workspace
 It's best practice to do your development either in a single project (single root) workspace or a multi-root workspace. In this exercise, you'll develop in a single project workspace environment. In a later exercise, you'll learn about multi-root workspaces.
-
-10. Wait for the project to generate. Once it is generated, the *Yeoman UI* tab closes.
 
 11. From the menu bar, select *File | Open Workspace...*, select *products-inventory*, and click *Open*.
     <br><br>![](images/2020-10_BAS_Project_Workspace_Open_.jpg)<br><br>

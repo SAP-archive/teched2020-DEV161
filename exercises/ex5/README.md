@@ -16,15 +16,18 @@ It is recommended that you type most of the code to experience the code editor's
     >Tip 1: You can get additional screen real estate for the code editor tab by closing the *Explorer* view. You can get even more real estate by double-clicking the tab's title.
 
     >Tip 2: Hovering over a control or a control property pops up a tooltip with information on it, as well as a link to its API Reference. Click the API Reference link to open it in a new browser tab.
-    ><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Code_Completion_Control_.jpg)<br><br>
+    ><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Tooltip_.jpg)<br><br>
 
 2. Add an *IconTabBar* control before the *Table* control.
-```XML
-            <IconTabBar id="iconTabBar" select=".onFilterSelect" class="sapUiResponsiveContentPadding">
-                <items>
-                </items>
-            </IconTabBar>
-```
+    ```XML
+                <IconTabBar id="iconTabBar" select=".onFilterSelect" class="sapUiResponsiveContentPadding">
+                    <items>
+                    </items>
+                </IconTabBar>
+
+    ```
+
+    <br>![](images/2020-10_BAS_Worklist_View_Code_Editor_IconTabBar_.jpg)<br><br>
 
 3. Between `<items>` and `</items>`, enter `<`. The code completion is triggered.
     <br><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Code_Completion_Control_.jpg)<br><br>
@@ -45,22 +48,22 @@ It is recommended that you type most of the code to experience the code editor's
 5. Select the *showAll* property.
     <br><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Code_Completion_Property_showAll_.jpg)<br><br>
 
-6. Control properties can also have their value selected from a list. Delete the *false* value and use [CTRL] + [SPACE] to present the list of available values.
+6. Control properties can also have their value selected from a list. Delete the *false* value and use [CTRL] + [SPACE] to present the list of available values. Select `true`.
     <br><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Code_Completion_Property_showAll_Values_.jpg)<br><br>
 
 7. Proceed with entering the code until you have the following code in place:
-```XML
-            <IconTabBar id="iconTabBar" select=".onFilterSelect" class="sapUiResponsiveContentPadding">
-                <items>
-                    <IconTabFilter showAll="true" count="{worklistView>/productsCount}" text="{i18n>worklistFilterAllProducts}" key="all"></IconTabFilter>
-                    <IconTabSeparator ></IconTabSeparator>
-                    <IconTabFilter icon="sap-icon://complete" iconColor="Positive" text="{i18n>worklistFilterNormalStockProducts}" key="Normal"></IconTabFilter>
-                    <IconTabFilter icon="sap-icon://message-warning" iconColor="Critical" text="{i18n>worklistFilterLowStockProducts}" key="Low"></IconTabFilter>
-                    <IconTabFilter icon="sap-icon://message-error" iconColor="Negative" text="{i18n>worklistFilterShortageStockProducts}" key="Shortage"></IconTabFilter>
-                </items>
-            </IconTabBar>
-            
-```
+    ```XML
+                <IconTabBar id="iconTabBar" select=".onFilterSelect" class="sapUiResponsiveContentPadding">
+                    <items>
+                        <IconTabFilter showAll="true" count="{worklistView>/productsCount}" text="{i18n>worklistFilterAllProducts}" key="all"></IconTabFilter>
+                        <IconTabSeparator ></IconTabSeparator>
+                        <IconTabFilter icon="sap-icon://complete" iconColor="Positive" text="{i18n>worklistFilterNormalStockProducts}" key="Normal"></IconTabFilter>
+                        <IconTabFilter icon="sap-icon://message-warning" iconColor="Critical" text="{i18n>worklistFilterLowStockProducts}" key="Low"></IconTabFilter>
+                        <IconTabFilter icon="sap-icon://message-error" iconColor="Negative" text="{i18n>worklistFilterShortageStockProducts}" key="Shortage"></IconTabFilter>
+                    </items>
+                </IconTabBar>
+                
+    ```
 
    <br><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Filters_Added_.jpg)<br><br>
 
@@ -174,11 +177,11 @@ After completing these steps, you will have modified the logic of the Worklist v
     <br><br>![](images/2020-10_BAS_Worklist_Controller_Outline_.jpg)<br><br>
 
 14. The following code will add the total product count as a property to the model. This property is presented at the top left corner of the view when clicking the *showAll* filter. Add it just below the end of the `variables` declaration section (*var* statement).
-```javascript
-            //set products count
-            this.getModel("worklistView").setProperty("/productsCount", iTotalItems);
+    ```javascript
+                //set products count
+                this.getModel("worklistView").setProperty("/productsCount", iTotalItems);
 
-```
+    ```
 
    <br><br>![](images/2020-10_BAS_Worklist_Controller_onUpdatedFinished_Updated_.jpg)<br><br>
 
@@ -187,29 +190,29 @@ After completing these steps, you will have modified the logic of the Worklist v
 
 16. Now it's time to handle the user action of clicking the filters. In the Outline view, click the *onRefresh* function, and add the following code above it.
 
-```javascript
-        onFilterSelect: function(oEvent){
-            var oTable = this.byId("table");
-            var sKey = oEvent.getParameter("key");
-            var oFilter = this._createFilterByTabKey(sKey);
-            var oBinding = oTable.getBinding("items");
-            oBinding.filter(oFilter);
-        },
+    ```javascript
+            onFilterSelect: function(oEvent){
+                var oTable = this.byId("table");
+                var sKey = oEvent.getParameter("key");
+                var oFilter = this._createFilterByTabKey(sKey);
+                var oBinding = oTable.getBinding("items");
+                oBinding.filter(oFilter);
+            },
 
-        _createFilterByTabKey: function(sKey){
-            switch(sKey) {
-                case "Normal":
-                    return new Filter("UnitsInStock", FilterOperator.GT, 15);
-                case "Low":
-                    return new Filter("UnitsInStock", FilterOperator.BT, 1, 15);
-                case "Shortage":
-                    return new Filter("UnitsInStock", FilterOperator.LE, 0);
-                default: 
-                return [];
-            }
-        },
-        
-```
+            _createFilterByTabKey: function(sKey){
+                switch(sKey) {
+                    case "Normal":
+                        return new Filter("UnitsInStock", FilterOperator.GT, 15);
+                    case "Low":
+                        return new Filter("UnitsInStock", FilterOperator.BT, 1, 15);
+                    case "Shortage":
+                        return new Filter("UnitsInStock", FilterOperator.LE, 0);
+                    default: 
+                    return [];
+                }
+            },
+            
+    ```
 
    <br><br>![](images/2020-10_BAS_Worklist_Controller_Filters_.jpg)<br><br>
 

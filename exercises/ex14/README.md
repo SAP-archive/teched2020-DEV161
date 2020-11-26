@@ -1,6 +1,6 @@
 # Exercise 14 - Add Breadcrumbs to the Details Page
 
-So far, you improved the view that presented the list of products and their key properties related to the business scenario at hand. in the next few exercises you'll improve the product's Details view.
+So far, you improved the view that presented the list of products and their key properties related to the business scenario at hand. In the next few exercises you'll improve the product's Details view.
 
 In this exercise, you will improve the app navigation by adding breadcrumbs to the Details view.
 

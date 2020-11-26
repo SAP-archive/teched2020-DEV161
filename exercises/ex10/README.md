@@ -6,7 +6,7 @@ It is recommended that immediately after you push the code changes to GitHub, yo
 
 ## Exercise 10.1 - Make a Change in Your Project
 
-After completing these steps, you will have made a change in your project and thereby triggered SAP Cloud Platform Continuos Integration and Delivery. The change is to replace all hard-coded app strings with internationalization (i18n) strings.
+After completing these steps, you will have made a change in your project and thereby triggered SAP Cloud Platform Continuous Integration and Delivery. The change is to replace all hard-coded app strings with internationalization (i18n) strings.
 
 1. Expand the *webapp > i18n* folder, and click the *i18n.properties* file to open it.
     <br><br>![Change Description](images/2020-10_BAS_i18n_Open_.jpg)<br><br>
@@ -16,7 +16,7 @@ After completing these steps, you will have made a change in your project and th
 
 3. Press [CTRL] + [A] and then [CTRL] + [C] to copy the file's content to the clipboard.
 
-4. Go back to SAP Business Application Studio and replace the content of the `i18n.properties` file with the content of the `i18n.properties` file from github. Press [CTRL] + [A] to select the file's content in SAP Business Application Studio, press [DELETE], and then press [CTRL] + [V] to paste the content of the file from the clipboard.
+4. Go back to SAP Business Application Studio and replace the content of the `i18n.properties` file with the content of the `i18n.properties` file from GitHub. Press [CTRL] + [A] to select the file's content in SAP Business Application Studio, press [DELETE], and then press [CTRL] + [V] to paste the content of the file from the clipboard.
 
 2. Open the *Source Control: Git* view.
     <br><br>![Git](./images/bas_git.png)<br><br>

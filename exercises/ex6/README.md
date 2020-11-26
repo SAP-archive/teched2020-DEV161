@@ -15,7 +15,7 @@ In this exercise, you will connect the app to a real backend. You will use the *
 3. When prompted "A workspace with multiple roots was created. Do you want to save your workspace configuration as a file?", click *No*. 
     <br><br>![](images/2020-10_BAS_Multi-Root-3_.jpg)<br><br>
 
-    >In the *Explorer* view, you can see that the name of the workspace changed to *UNTITLED (WORKSPACE)* and an additional project called *data* was added to this workspace. Expand the *data* project. This project contains the files you uploaded at the end of exexrcise 1,  which you will use in this exerice.
+    >In the *Explorer* view, you can see that the name of the workspace changed to *UNTITLED (WORKSPACE)* and an additional project called *data* was added to this workspace. Expand the *data* project. This project contains the files you uploaded at the end of exercise 1,  which you will use in this exercise.
     ><br><br>![](images/2020-10_BAS_Multi-Root-4_.jpg)<br><br>
 
     >You can choose to have multiple projects residing in a multi-root workspace. In this case, each project is a root in the workspace. There is a `.vscode` folder for each project, and the developer can view more than one project at a time in the workspace. In multi-root, you can save the settings, launch, and task configurations per workspace so that they affect all projects within it. You can find out more about *Workspaces* in the SAP Business Application Studio [documnetation](https://help.sap.com/viewer/9d1db9835307451daa8c930fbd9ab264/Cloud/en-US/0919ce1ca4a342628e49c0f5e9c8cdcf.html).
@@ -33,7 +33,7 @@ In this exercise, you will connect the app to a real backend. You will use the *
 6. A file compare editor with both files opens.
     <br><br>![](images/2020-10_BAS_ui5-yaml_Compare-3_.jpg)<br><br>
 
-    >Tip 1: The order you selected the files affects which file appears on the left and which file appears on the right.
+    >Tip 1: The order you selected the files affects which file appears on the left (the file selected second) and which file appears on the right (the file selected first).
 
     >Tip 2: Hovering your mouse over the tab's title provides a tooltip that indicates which file is opened where.
 
@@ -83,8 +83,6 @@ In this exercise, you will connect the app to a real backend. You will use the *
 
 After completing these steps, you will have tested the app with data fetched from a real backend.
 
-If the preview does not respond, you probably need to unexpose ports.
-
 1.	Right-click any folder within the `productsinventory` folder, e.g. the `webapp` folder, and select *Preview Application*.
     <br><br>![](images/2020-10_BAS_Preview_Application_Start-1_.jpg)<br><br>
 
@@ -96,6 +94,8 @@ If the preview does not respond, you probably need to unexpose ports.
     >![](images/2020-10_BAS_Expose_Port_Notification_.jpg)<br><br>
 
     >A new browser tab opens, containing the SAP Fiori launchpad.
+
+    >If the browser tab does not open, or a notification "You have exceeded the number of ports you can expose" appears at the bottom-right of the page, you may need to unexpose ports. Select the *Ports: Unexpose* option in the command palette (View | Find Command) to unexpose a port that is in an *[Active]* state. Repeat this procedure until no more than two ports are in *[Active]* state, and try again.
 
     >A new tab opens in SAP Business Application Studio, showing the log of the running app.
 

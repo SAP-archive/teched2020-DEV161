@@ -13,8 +13,6 @@ After completing these steps, you will know how to access SAP Business Applicati
 1. Open a browser of your choice (Google Chrome, Microsoft Edge, Apple Safari, etc).
 
 2. Go to [SAP Cloud Platform Landing Page](https://www.sap.com/products/cloud-platform.html?btp=10a432f3-a259-46c4-aebc-79c090a69b22), and click *Log in to trial* to log in to your SAP Cloud Platform cockpit. 
-    >When working with GitHub, if you want to open a link in a new tab, press [CTRL] and click the link.
-
     >If the log in doesn't work, make sure you fulfill the [requirements](../../README.md#requirements).
 
     <br>![](images/2020-10_SCP_Trial_Landing_Page_.jpg)<br><br>
@@ -70,11 +68,13 @@ After completing these steps, you will upload several files to SAP Business Appl
 10. Select *projects*, and click *Open*.
     <br><br>![](images/2020-10_BAS_Open_Workspace-2_.jpg)<br><br>
     >Wait for SAP Business Application Studio to re-load.
+    ><br>![](images/2020-10_BAS_Open_Workspace-3_.jpg)<br><br>
 
 11. From the main menu, select *File | New Folder*.
+    >Using information in the popup message, verify that the new folder will be created in */home/user/projects*. If a different path is presented, it's most probably due to a flie or folder being selected. Close the *New Folder* dialog, press [CTRL] and click the selected file or folder, and repeat this step.
+    <br><br>![](images/2020-10_BAS_New_Folder_Path_.jpg)<br><br>
 
 12. Name the folder *data*, and click *OK*.
-    >Using information in the popup message, verify that the new folder will be created in */home/user/projects*.
     <br><br>![](images/2020-10_BAS_New_Folder_.jpg)<br><br>
 
 13. Click the following [link](data/metadata.xml?raw=true) to access the `metadata.xml` file.
@@ -98,4 +98,4 @@ After completing these steps, you will upload several files to SAP Business Appl
 
 Congratulations, you have completed the [Create SAP Fiori Dev Space](#Exercise-1---Create-SAP-Fiori-Dev-Space) exercise!
 
-Continue to [Exercise 2 - Project Setup Using Business Application Studio](../ex2/README.md).
+Continue to [Exercise 2 - BAS Tour (SAP Business Application Studio Product Tour)](../ex2/README.md).

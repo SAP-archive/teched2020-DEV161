@@ -1,4 +1,4 @@
-# Exercise 2 - BAS Tour (SAP Business Application Studio Tour)
+# Exercise 2 - BAS Tour (SAP Business Application Studio Product Tour)
 
 In this exercise, you will familiarize yourself with SAP Business Application Studio.
 
@@ -15,10 +15,10 @@ A dev space can be in any of the following states: *STOPPED*, *RUNNING*, , *STAR
 To access a dev space, it needs to be in the *RUNNING* state. 
    >You can have a maximum of 1 running dev spaces in trial accounts or 2 running dev spaces in productive accounts.
 
-From the Dev Space Manager you can perfomr the following actions:
+From the Dev Space Manager you can perform the following actions:
 - Start a dev space.
 - Stop a dev space.
-- Download the content of a dev space.
+- Download the content of a dev (available for dev space states *RUNNING* or *ERROR*).
 - Delete a dev space.
 - Manage the additional extensions of a dev space.
 
@@ -51,7 +51,7 @@ After completing these steps, you will know how to customize basic SAP Business 
 1.	You can set a new theme in one of the following ways:
       - Click the *Settings* icon and select *Color Theme*.
       - From the menu bar, select *File | Settings | Color Theme*.
-      - Welcome screen, click *Set a theme* in the . 
+      - Welcome screen, click *Set a theme*. 
 
        The command palette opens, showing a list of available themes for you to choose from.
 
@@ -62,12 +62,24 @@ After completing these steps, you will know how to customize basic SAP Business 
        The *Preferences* tab opens in the *Editors* area. A comprehensive list of customization options appears. 
       - To set the font family for the editors, filter the list for `font family`, and select `Editor`. 
       - To set the font family for the terminal, filter the list for `font family`, and select `Terminal`. 
-   
-       The setting takes place immediately.
+
+       | Default Font Family Setting | Adding Georgia Font Family |
+       |:-----|:----------|
+       | <br>![](images/2020-10_BAS_Font_Family_Default_.jpg)<br><br> | <br>![](images/2020-10_BAS_Font_Family_Georgia_.jpg)<br><br> |
+
+       >The `font family` setting contains a list of font families. Based on the font families installed on your machine, the first match in the list will be used. You can change the order of the font families in the list or add additional font families to the list.
+
+       >The setting takes place immediately.
 
 3.	You can follow the same flow to set the font size. Instead of filtering the list for `font family`, filter for `font size`. The setting takes place immediately.
+       >The default `font size` is 14 pixels. Change it to a different value, e.g. 24 pixels, and see the effect. 
 
-4.	You can follow the same flow to set the font size. Instead of filtering the list for `font family`, filter for `font size`. The setting takes place immediately.
+       | Default Font Size Setting | Font Size Setting 24 pixels |
+       |:-----|:----------|
+       | <br>![](images/2020-10_BAS_Font_Size_Default_.jpg)<br><br> | <br>![](images/2020-10_BAS_Font_Size_24_.jpg)<br><br> |
+
+4. Click the *cogwheel icon | Reset Setting* to revert to the deafulat setting.
+  <br><br>![](images/2020-10_BAS_Settings_Reset_.jpg)<br><br>
 
 5.	The settings are only applicable to the dev space you're in. Making settings available across dev spaces is outside the scope of this session. You can find out more in DJ Adams' excellent [video blog](https://www.youtube.com/watch?v=YrrxWdIjqEE).
 
@@ -77,4 +89,4 @@ You've now familiarized yourself with the *Dev Space Manager* and the *Integrate
 
 Let's proceed and see all of this in action!
 
-Continue to - [Exercise 3 - Create a New Application from Template ](../ex3/README.md)
+Continue to - [Exercise 3 - Create a New Application from Template](../ex3/README.md)

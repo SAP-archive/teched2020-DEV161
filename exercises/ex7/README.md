@@ -11,7 +11,7 @@ After completing these steps, you will know how to prepare the app for deploymen
 
     > Tip: You can toggle maximize the view, in this case the terminal, by double-clicking its tab header.
 
-2. Change directory to the `productinventory` folder:
+2. Change directory to the `productsinventory` folder:
 <br><br>![](images/2020-10_BAS_Change_Directory_.jpg)<br><br>
 
     ```Shell/Bash
@@ -104,7 +104,11 @@ Both parts are executed using the following command:
 13. To run the application on Cloud Foundry, in the *SAP Cloud Platform Cockpit*, go to the Cloud Foundry space to which you deployed the app, and click the *Applications* tab. Click *products-inventory-router*, and then click the link in the *Application Routes* section.
     <br><br>![](images/2020-10_SCP_CF_Space_Application_Routes_.jpg)<br><br>
 
-15. You should see the app running on Cloud Foundry.
+    >To run the application on Cloud Foundry without accessing *SAP Cloud Platform Cockpit*, copy the link to the application from the deployment task (without the commas), paste it in a browser tab, and click [ENTER].
+    ><br>![](images/2020-10_BAS_Link_To_App_On_CF_.jpg)<br><br>
+
+
+14. You should see the app running on Cloud Foundry.
     <br><br>![](images/2020-10_App_on_CF_.jpg)<br><br>
 
 ## Summary

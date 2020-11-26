@@ -12,7 +12,7 @@ It is recommended that you type most the code to experience the code editor's ca
 
     <br><br>![](images/2020-10_BAS_App_Object_View_.jpg)<br><br>
 
-2. In SAP business Application Studio, open the file that contains the product's details, the `Object.view.xml` file.
+2. In SAP Business Application Studio, open the file that contains the product's details, the `Object.view.xml` file in the `webapp` folder.
 
 3. Add an XML namespace for "sap.ui.layout.form".
     ```xml
