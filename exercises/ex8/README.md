@@ -63,7 +63,7 @@ After completing these steps, you will have added your SAP Fiori project sources
    >You'll see that the `U` (Updated) file decoration changed to `A` (Added to staging).
 
 7. Add the message *Push project content to GitHub* to the *Message* box, and press [CTRL] + [ENTER] or click the `v` icon, to commit.
-   <br><br>![commit](images/2020-11_BAS_Git_Setup-3_.jpg)<br><br>
+   <br><br>![commit](images/2020-11_BAS_Git_Setup-4_.jpg)<br><br>
 
    > The Git view is cleared, and at the bottom of the view `HEAD COMMIT` is created.
    ><br>![commited](images/2020-11_BAS_Git_Setup-5_.jpg)<br>
