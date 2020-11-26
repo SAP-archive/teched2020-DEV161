@@ -63,20 +63,19 @@ After completing these steps, you will have added your SAP Fiori project sources
    >You'll see that the `U` (Updated) file decoration changed to `A` (Added to staging).
 
 7. Add the message *Push project content to GitHub* to the *Message* box, and press [CTRL] + [ENTER] or click the `v` icon, to commit.
-   <br><br>![commit](images/2020-11_BAS_Git_Setup-3_.jpg)<br><br>
+   <br><br>![commit](images/2020-11_BAS_Git_Setup-4_.jpg)<br><br>
 
    > The Git view is cleared, and at the bottom of the view `HEAD COMMIT` is created.
    ><br>![commited](images/2020-11_BAS_Git_Setup-5_.jpg)<br>
 
 
 8. In the terminal, link the local git repository to the remote GitHub repository that you created in exercise 8.1. 
-   >Replace `<remote GitHub repository url>` with the repository URL from GitHub.
-
    ```
    git remote add origin <remote GitHub repository url>
    ```
+   >Replace `<remote GitHub repository url>` with the repository URL from GitHub.
 
-8. In the terminal, change the project's branch name in the local repository to *main*.
+9. In the terminal, change the project's branch name in the local repository to *main*.
    >The local repository default name is `master` (You can see it on the left side of the Status Bar). Best practice is to use `main`.
 
    ```
@@ -85,12 +84,12 @@ After completing these steps, you will have added your SAP Fiori project sources
 
    ><br>![branch main](images/2020-11_BAS_Git_Setup-6_.jpg)<br>
 
-9. In the terminal, push the commit with your project content to the remote GitHub repository:
+10. In the terminal, push the commit with your project content to the remote GitHub repository:
    ```
    git push -u origin main
    ```
 
-10. When prompted, enter your GitHub user name and for password use your personal access token.
+11. When prompted, enter your GitHub user name and for password use your personal access token.
    >Until the credentials timeout expires or dev space stop, you will not need to input your credentials.
 
 ## Summary
