@@ -38,29 +38,29 @@ After completing these steps, you will have tested the app with mock data that w
 
 After completing these steps, you will have tested the app with mock data that you provided to the integrated mock server.
 
-5.	Expand the `webapp` folder, right-click the `localService` folder and select *New Folder*.
+1.	Expand the `webapp` folder, right-click the `localService` folder and select *New Folder*.
     <br><br>![](images/2020-10_BAS_Mock_Data_Folder_.jpg)<br><br>
 
-6. Name the folder *mockdata*, and click *OK*.
+2. Name the folder *mockdata*, and click *OK*.
     <br><br>![](images/2020-10_BAS_Mock_Data_Folder-2_.jpg)<br><br>
 
-7. Expand the `localService` folder.
+3. Expand the `localService` folder.
 
-8. Click [here](data/Products.json?raw=true) to access the *Products* collection mock data.
+4. Click [here](data/Products.json?raw=true) to access the *Products* collection mock data.
 
-9. Right-click the data area, and select *save as...*.
+5. Right-click the data area, and select *save as...*.
 
-10. Choose the folder where the file will be saved (*Downloads* is the default folder). Use `Products.json` as the *File name*, and click *Save*.
+6. Choose the folder where the file will be saved (*Downloads* is the default folder). Use `Products.json` as the *File name*, and click *Save*.
     >The default file extension for this operation is `txt`. Make sure you change it to `json`.
 
-11. Open the folder where you saved the file.
+7. Open the folder where you saved the file.
 
-12. Drag and drop the file to the `mockdata` folder you created in SAP Business Application Studio.
+8. Drag and drop the file to the `mockdata` folder you created in SAP Business Application Studio.
     <br><br>![](images/2020-10_BAS_App_Mock_Uploaded_.jpg)<br><br>
 
     >Follow the same steps for [Order_Details.json](data/Order_Details.json?raw=true), [Orders.json](data/Orders.json?raw=true), [Suppliers.json](data/Suppliers.json?raw=true), which will be used at a later stage of the workshop.
 
-12. Go to the app's tab and refresh it (F5). The app presents the mock data you provided.
+9. Go to the app's tab and refresh it (F5). The app presents the mock data you provided.
     <br><br>![](images/2020-10_BAS_App_Mock_Provided_.jpg)<br><br>
 
 ## Summary
