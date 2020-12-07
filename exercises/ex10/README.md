@@ -18,19 +18,21 @@ After completing these steps, you will have made a change in your project and th
 
 4. Go back to SAP Business Application Studio and replace the content of the `i18n.properties` file with the content of the `i18n.properties` file from GitHub. Press [CTRL] + [A] to select the file's content in SAP Business Application Studio, press [DELETE], and then press [CTRL] + [V] to paste the content of the file from the clipboard.
 
-2. Open the *Source Control: Git* view.
+## Exercise 10.2 - Update the Project's Git Repository
+
+1. Open the *Source Control: Git* view.
     <br><br>![Git](./images/bas_git.png)<br><br>
 
-3. Stage the changed file.
+2. Stage the changed file.
     <br><br>![Stage File](./images/bas_add_file_commit.png)<br><br>
 
-4. Specify your commit message. 
+3. Specify your commit message. 
     <br><br>![Changed File](./images/bas_commit_message.png)<br><br>
 
-5. Commit the change.
+4. Commit the change.
     <br><br>![Changed File](./images/bas_commit.png)<br><br>
 
-6. Push the changes to GitHub. This push event automatically triggers SAP Cloud Platform Continuous Integration and Delivery.
+5. Push the changes to GitHub. This push event automatically triggers SAP Cloud Platform Continuous Integration and Delivery.
     <br><br>![Push Changes](./images/git_push_bas.png)<br><br>
 
 ## Summary

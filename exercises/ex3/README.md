@@ -7,7 +7,7 @@ In this exercise, you will learn how to create an SAP Fiori application for free
 Create a folder that will contain the app's project.
 
 1. From the SAP Business Application Studio menu bar select *File | New Folder*.
-    >Using information in the popup message, verify that the new folder will be created in */home/user/projects*. If a different path is presented, it's most probably due to a flie or folder being selected. Close the *New Folder* dialog, press [CTRL] and click the selected file or folder, and repeat this step.
+    >Using information in the popup message, verify that the new folder will be created in */home/user/projects*. If a different path is presented, it's most probably due to a flie or folder being selected. Close the *New Folder* dialog, press [CTRL] and click the selected file or folder to deselct it, and repeat this step.
     <br><br>![](images/2020-10_BAS_New_Folder_Path_.jpg)<br><br>
 
 2. Name the folder *products-inventory*, and click *OK*.
@@ -100,7 +100,7 @@ You'll use the worklist template available from SAP Fiori tools to create the ap
     >If you have not opened the project in a new workspace: From the menu bar, select *File | Open Workspace...*, select *products-inventory*, and click *Open*.
     ><br>![](images/2020-10_BAS_Project_Workspace_Open_.jpg)<br><br>
 
-8. SAP Business Applications Studio reloads with an open workspace containing the *products-inventory* project. 
+8. SAP Business Application Studio reloads with an open workspace containing the *products-inventory* project. 
     >Tip 1: You can click *>* or *V* in the *Explorer* view to expand or collapse the folders.
     ><br><br>![](images/2020-10_BAS_Workspace_Open_.jpg)<br><br>
 
@@ -113,6 +113,6 @@ You'll use the worklist template available from SAP Fiori tools to create the ap
 
 You've now successfully completed the development of an SAP Fiori app using SAP Business Application Studio.
 
-In this exercise, you learned about high productivity tools that are available out-of-the-box in SAP Business Applications Studio, such as templates and wizards, command palette, and more.
+In this exercise, you learned about high productivity tools that are available out-of-the-box in SAP Business Application Studio, such as templates and wizards, command palette, and more.
 
 Continue to - [Exercise 4 - Test the Application with Mock Data ](../ex4/README.md)

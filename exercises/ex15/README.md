@@ -5,9 +5,9 @@ This requires changes to the UI (view) and also formatting enhancement.
 
 ## Exercise 15.1 - UI Modifications - Orders List
 
-5. In SAP business Application Studio, go to `Object.view.xml` editor tab.
+1. In SAP business Application Studio, go to `Object.view.xml` editor tab.
 
-3. Add a `Table` control right below the `form` control you added in a previous exercise.
+2. Add a `Table` control right below the `form` control you added in a previous exercise.
     ```xml
                     <Table inset="false"
                         items="{Order_Details}"
@@ -64,23 +64,24 @@ This requires changes to the UI (view) and also formatting enhancement.
 
 After completing these steps, you will have modified the way a number represeting percentile is presented in the view.
 
-6. In SAP business Application Studio, open the file that handles formatting, `webapp > model > formatter.js`, and add the following code:
-    ```javascript
+In SAP business Application Studio, open the file that handles formatting, `webapp > model > formatter.js`, and add the following code:
+
+   ```javascript
             },
 
             percent : function (sValue) {
                 return sValue*100;
             }
 
-    ```
+   ```
 
-    <br><br>![](images/2020-10_BAS_Formatter_Percent_.jpg)<br><br>
+   <br><br>![](images/2020-10_BAS_Formatter_Percent_.jpg)<br><br>
 
 ## Exercise 15.3 - Run the App Locally in the Dev Space
 
 After completing these steps, you will have tested the fully developed app locally in your dev space.
 
-1.	Go to the tab where the app is running, and refresh it (press [F5]). You can see the result of adding the list of orders that include the product to the product's Details view.
+Go to the tab where the app is running, and refresh it (press [F5]). You can see the result of adding the list of orders that include the product to the product's Details view.
     <br><br>![](images/2020-10_BAS_App_Object_View_After_Orders_Table_.jpg)<br><br>
 
     >Adding a shipment details view is out of scope of this workshop. You're encouraged to try it out on your own.

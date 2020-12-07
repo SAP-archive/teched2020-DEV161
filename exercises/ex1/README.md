@@ -82,7 +82,7 @@ After completing these steps, you will upload several files to SAP Business Appl
     ><br>![](images/2020-10_BAS_Open_Workspace-3_.jpg)<br><br>
 
 3. From the main menu, select *File | New Folder*.
-    >Using information in the popup message, verify that the new folder will be created in */home/user/projects*. If a different path is presented, it's most probably due to a flie or folder being selected. Close the *New Folder* dialog, press [CTRL] and click the selected file or folder, and repeat this step.
+    >Using information in the popup message, verify that the new folder will be created in */home/user/projects*. If a different path is presented, it's most probably due to a file or folder being selected. Close the *New Folder* dialog, press [CTRL] and click the selected file or folder to deselct it, and repeat this step.
     <br><br>![](images/2020-10_BAS_New_Folder_Path_.jpg)<br><br>
 
 4. Name the folder *data*, and click *OK*.

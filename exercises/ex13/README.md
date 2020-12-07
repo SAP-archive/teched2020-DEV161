@@ -50,7 +50,7 @@ It is recommended that you type most the code to experience the code editor's ca
 
 After completing these steps, you will have tested the view's look and feel.
 
-5.	Go to the tab where the app is running and refresh it (press [F5]). You can see the look and feel of how the supplier info will appear when you complete this exercise.
+Go to the tab where the app is running and refresh it (press [F5]). You can see the look and feel of how the supplier info will appear when you complete this exercise.
     <br><br>![](images/2020-10_BAS_App_Object_View_After_View_.jpg)<br><br>
 
 ## Exercise 13.3 - Logic Modifications (Controller)
@@ -59,15 +59,15 @@ After completing these steps, you will have modified the logic of the app's prod
 
 It is recommended that you type most the code to experience the code editor's capabilities.
 
-6. In SAP business Application Studio, open the file that contains the product's details logic, the `Object.controller.js` file.
+1. In SAP business Application Studio, open the file that contains the product's details logic, the `Object.controller.js` file.
 
     <br><br>![](images/2020-10_BAS_Object_Controller-1_.jpg)<br><br>
 
-7. Using the *Outline* view, locate the `_bindView` function.
+2. Using the *Outline* view, locate the `_bindView` function.
 
     <br><br>![](images/2020-10_BAS_Object_Controller-2_.jpg)<br><br>
 
-8. Use OData's `$expand` option to retrieve the product's supplier and order details. You'll use the `order_details` information in another exercise.
+3. Use OData's `$expand` option to retrieve the product's supplier and order details. You'll use the `order_details` information in another exercise.
     ```javascript
                     parameters: {
                         expand: "Supplier, Order_Details/Order"
@@ -80,7 +80,7 @@ It is recommended that you type most the code to experience the code editor's ca
 
 After completing these steps, you will have tested the product's Details view with the product's supplier info included.
 
-1.	Go to the tab where the app is running, and refresh it (press [F5]). You can see the result of adding the supplier info to the product's Details view.
+Go to the tab where the app is running, and refresh it (press [F5]). You can see the result of adding the supplier info to the product's Details view.
     <br><br>![](images/2020-10_BAS_Object_Controller-4_.jpg)<br><br>
 
 

@@ -55,7 +55,7 @@ Both parts are executed using the following command:
 
 ## Exercise 7.2 - Build for the Cloud Foundry Runtime
 
-6. To build the app for deployment, right-click the `mta.yaml` file, and select *Build MTA*.
+To build the app for deployment, right-click the `mta.yaml` file, and select *Build MTA*.
     <br><br>![](images/2020-10_BAS_Build_MTA_.jpg)<br><br>
 
     >The task is run in a new tab called *Task: Build MTA*.
@@ -66,28 +66,28 @@ Both parts are executed using the following command:
 
 ## Exercise 7.3 - Log in to Cloud Foundry
 
-7. Before deploying the app to Cloud Foundry, take a look at what your Cloud Foundry space looks like. Log in to your trial account and enter your Cloud Foundry organization (SAP Cloud Foundry subaccount) and the space to which you'll deploy the app. A new Cloud Foundry space should look as follows:
+1. Before deploying the app to Cloud Foundry, take a look at what your Cloud Foundry space looks like. Log in to your trial account and enter your Cloud Foundry organization (SAP Cloud Foundry subaccount) and the space to which you'll deploy the app. A new Cloud Foundry space should look as follows:
     <br><br>![](images/2020-10_SCP_CF_Space_Applications_Before_Deployment_.jpg)<br><br>
     ![](images/2020-10_SCP_CF_Space_Service_Instances_Before_Deployment_.jpg)<br><br>
 
-8. Log in to the Cloud Foundry space to which you'll deploy the app. From the menu bar, select *View | Find Command* to open the command palette.
+2. Log in to the Cloud Foundry space to which you'll deploy the app. From the menu bar, select *View | Find Command* to open the command palette.
 <br><br>![](images/2020-10_BAS_Command_Palette_Open_.jpg)<br><br>
 
     >You can also log in to Cloud Foundry by clicking the Home icon at the left-hand side of the status bar or, in the terminal, execute the *cf login* command and follow the same steps.
 
-9. Select the command *CF: Login to cloud foundry*.
+3. Select the command *CF: Login to cloud foundry*.
 <br><br>![](images/2020-10_BAS_CF_Login-1_.jpg)<br><br>
 
     >Type *cf* to filter commands.
 
-10. When prompted, provide your credentials, select the API endpoint, organization, and space for your project.
+4. When prompted, provide your credentials, select the API endpoint, organization, and space for your project.
 
     >The Cloud Foundry organization and space appear in the status line at the bottom left part of the screen.
     ><br>![](images/2020-10_BAS_CF_Login-2_.jpg)<br><br>
 
 ## Exercise 7.4 - Deploy to Cloud Foundry
 
-11. To deploy the app to Cloud Foundry, right-click the `products-inventory_0.0.1.mtar` file, and select *Deploy MTA Archive*.
+1. To deploy the app to Cloud Foundry, right-click the `products-inventory_0.0.1.mtar` file, and select *Deploy MTA Archive*.
     <br><br>![](images/2020-10_BAS_Deploy_MTA_Archive_.jpg)<br><br>
 
     >The task is re-using the *Task: Build MTA* tab and changes its title to *Task: Deploy MTA Archive*.
@@ -95,20 +95,20 @@ Both parts are executed using the following command:
 
     >You can follow the deployment progress both in the *Task: Deploy MTA Archive* tab and in the *SAP Cloud Platform Cockpit*.
 
-12. To see the results of the deployment to Cloud Foundry, go to the *Cloud Foundry* tab. Your Cloud Foundry space should look as follows:
+2. To see the results of the deployment to Cloud Foundry, go to the *Cloud Foundry* tab. Your Cloud Foundry space should look as follows:
     <br><br>![](images/2020-10_SCP_CF_Space_Service_Instances_After_Deployment_.jpg)<br><br>
     <br><br>![](images/2020-10_SCP_CF_Space_Applications_After_Deployment_.jpg)<br><br>
 
 ## Exercise 7.4 - Run the App on Cloud Foundry
 
-13. To run the application on Cloud Foundry, in the *SAP Cloud Platform Cockpit*, go to the Cloud Foundry space to which you deployed the app, and click the *Applications* tab. Click *products-inventory-router*, and then click the link in the *Application Routes* section.
+1. To run the application on Cloud Foundry, in the *SAP Cloud Platform Cockpit*, go to the Cloud Foundry space to which you deployed the app, and click the *Applications* tab. Click *products-inventory-router*, and then click the link in the *Application Routes* section.
     <br><br>![](images/2020-10_SCP_CF_Space_Application_Routes_.jpg)<br><br>
 
     >To run the application on Cloud Foundry without accessing *SAP Cloud Platform Cockpit*, copy the link to the application from the deployment task (without the commas), paste it in a browser tab, and click [ENTER].
     ><br>![](images/2020-10_BAS_Link_To_App_On_CF_.jpg)<br><br>
 
 
-14. You should see the app running on Cloud Foundry.
+2. You should see the app running on Cloud Foundry.
     <br><br>![](images/2020-10_App_on_CF_.jpg)<br><br>
 
 ## Summary

@@ -73,8 +73,9 @@ After completing these steps, you will have configured credentials for connectin
     >|:-----|:----------|
     >| Name | github |
     >| Type | Basic Authentication |
-    >| Username | Your Github username |
+    >| Username | Your GitHub username |
     >| Password | Your GitHub personal access token |
+
     ><br>![Credentials GitHub](./images/CICD_credentials_github.png)
 
     >*Name* must be unique in your SAP Cloud Platform subaccount. In this example, the name is *github*.
@@ -88,6 +89,7 @@ After completing these steps, you will have configured credentials for connectin
     >| Type | Basic Authentication |
     >| Username | Your SAP Cloud Platform username |
     >| Password | Your SAP Cloud Platform password |
+
     ><br>![Credentials GitHub](./images/CICD_credentials_cfdeploy.png)
 
     >*Name* must be unique in your SAP Cloud Platform subaccount. In this example, the name is *cfdeploy*.
@@ -107,8 +109,6 @@ After completing these steps, you will have configured a job in SAP Cloud Platfo
     >| Repository Credentials ** |  |
     >| Branch *** | main |
     >| Pipeline | sap-ui5-cf |
-    >| Build | On |
-    >| Deploy | On |
 
     >\* For *Job Name*, enter name that is unique in your SAP Cloud Platform subaccount. In this example, the name of the job is *Procurement*.
 
@@ -145,19 +145,22 @@ After completing these steps, you will have configured a job in SAP Cloud Platfo
 
 7. Click *Create*.
 
-8. Whenever you create the first job for a GitHub repository, the *Webhook Creation* pop-up appears, which provides you with the data needed to define a webhook in GitHub. Alternatively, you can open the detail view of an existing job in the *Jobs* tab and under *General Information*, and click *Webhook Data*.
+
+## Exercise 9.4 - Configure a GitHub Webhook
+
+1. Whenever you create the first job for a GitHub repository, the *Webhook Creation* pop-up appears, which provides you with the data needed to define a webhook in GitHub. Alternatively, you can open the detail view of an existing job in the *Jobs* tab and under *General Information*, and click *Webhook Data*.
   <br><br>![Webhook](./images/CICD_webhook.png)<br><br>
 
-9. In your project's GitHub repository, go to the *Settings* tab.
+2. In your project's GitHub repository, go to the *Settings* tab.
 
-10. In the navigation pane, click *Webhooks*.
+3. In the navigation pane, click *Webhooks*.
 
-11. Click *Add webhook*.
+4. Click *Add webhook*.
   <br><br>![Webhook](./images/GH_webhook.png)<br><br>
 
-12. Enter the *Payload URL*, *Content type*, and *Secret* from the *Webhook Creation* pop-up in SAP Cloud Platform Continuous Integration and Delivery. For all other settings, leave the default values.
+5. Enter the *Payload URL*, *Content type*, and *Secret* from the *Webhook Creation* pop-up in SAP Cloud Platform Continuous Integration and Delivery. For all other settings, leave the default values.
 
-13. Click *Add webhook*.
+6. Click *Add webhook*.
   <br><br>![Webhook Details](./images/GH_webhook_details.png)<br><br>
 
 ## Summary

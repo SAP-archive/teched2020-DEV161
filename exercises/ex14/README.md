@@ -8,9 +8,9 @@ In this exercise, you will improve the app navigation by adding breadcrumbs to t
 
 It is recommended that you type in most the code to experience the code editor's capabilities.
 
-2. In SAP business Application Studio, go to `Object.view.xml` editor tab.
+1. In SAP business Application Studio, go to `Object.view.xml` editor tab.
 
-3. Add a *Breadcrumbs* control right below the `<semantic:titleHeading>` element.
+2. Add a *Breadcrumbs* control right below the `<semantic:titleHeading>` element.
     ```xml
             <semantic:titleBreadcrumbs>
                 <Breadcrumbs currentLocationText="{ProductName}">
@@ -26,7 +26,7 @@ It is recommended that you type in most the code to experience the code editor's
 
 After completing these steps, you will have tested the breadcrunms functionality.
 
-4.	Go to the tab where the app is running, and refresh it (press [F5]). You can see that the breadcrumbs appear in the Details view, and you can use them to navigate back to the products Worklist view. Try it out!
+Go to the tab where the app is running, and refresh it (press [F5]). You can see that the breadcrumbs appear in the Details view, and you can use them to navigate back to the products Worklist view. Try it out!
     <br><br>![](images/2020-10_BAS_App_Object_View_After_Breadcrumbs_.jpg)<br><br>
 
 

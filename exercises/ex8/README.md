@@ -2,7 +2,7 @@
 
 In the following exercises (exercises 8 - 11), you will create a project in a public GitHub repository to which you'll store your source code, enable SAP Cloud Platform Continuous Integration and Delivery, and configure and run a predefined continuous integration and delivery (CI/CD) pipeline that automatically tests, builds, and deploys your code changes.
 
-## Exercise 8.1 Create a GitHub Repository
+## Exercise 8.1 - Create a GitHub Repository
 
 After completing these steps, you will have created a public GitHub repository to which you'll store the source code of your project.          
    >For this exercise, you need to have a GitHub user.
@@ -21,14 +21,14 @@ After completing these steps, you will have created a public GitHub repository t
    <br><br>![Copy GitHub URL](./images/GH_copyGitHubURL.png)<br><br>
 
 
-## Exercise 8.2 Create a Personal Access Token for GitHub
+## Exercise 8.2 - Create a Personal Access Token for GitHub
 
 After completing these steps, you will have created a personal access token to authenticate against GitHub.
 
 To create a personal access token, which you can use instead of a password, follow the steps described in [Creating a personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
 
 
-## Exercise 8.3 Connect Your GitHub Repository with Your SAP Fiori Project
+## Exercise 8.3 - Connect Your GitHub Repository with Your SAP Fiori Project
 
 After completing these steps, you will have added your SAP Fiori project sources to your GitHub repository.
 
