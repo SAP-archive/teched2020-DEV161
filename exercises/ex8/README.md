@@ -2,6 +2,16 @@
 
 In the following exercises (exercises 8 - 11), you will create a project in a public GitHub repository to which you'll store your source code, enable SAP Cloud Platform Continuous Integration and Delivery, and configure and run a predefined continuous integration and delivery (CI/CD) pipeline that automatically tests, builds, and deploys your code changes.
 
+## Exercise 8.0 - Preparations
+
+If you skipped an exercise or more to get to this exercise, you need to obtain the code of the project as it should be at the end of the previous exercise. To do so, perform the following steps.
+
+1. Click the branch's pull down in the session's repository, and select the `code-ex7-build-and-deploy` branch.
+
+2. Follow the steps in the `README.md`.
+
+3. When completed, Click the branch's pull down in the session's repository, and select the `main` branch.
+
 ## Exercise 8.1 - Create a GitHub Repository
 
 After completing these steps, you will have created a public GitHub repository to which you'll store the source code of your project.          
