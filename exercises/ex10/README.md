@@ -2,8 +2,6 @@
 
 In this exercise, you will make a simple change to your app and push the updated code to GitHub. This will trigger the pipeline that you configured previously. 
 
-It is recommended that immediately after you push the code changes to GitHub, you proceed with the next exercise to create a project in a public GitHub repository in which you'll store the app's source code, enable SAP Cloud Platform Continuous Integration and Delivery, and configure and run a predefined continuous integration and delivery (CI/CD) pipeline that automatically tests, builds, and deploys your code changes.
-
 ## Exercise 10.1 - Make a Change in Your Project
 
 After completing these steps, you will have made a change in your project and thereby triggered SAP Cloud Platform Continuous Integration and Delivery. The change is to replace all hard-coded app strings with internationalization (i18n) strings.
