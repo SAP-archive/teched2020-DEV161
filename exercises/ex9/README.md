@@ -9,12 +9,23 @@ In this exercise, you will enable the SAP Cloud Platform Continuous Integration 
 If your trial subaccount does not have the Continuous Integration & Delivery service tile (see [Exercise 9.1 - Enable SAP Cloud Platform Continuous Integration and Delivery > Step 1](#exercise-91---enable-sap-cloud-platform-continuous-integration-and-delivery)), you need to entitle SAP Cloud Platform Continuous Integration and Delivery: 
 
 1. Open the Entitlements menu.
+  <br><br>![entitlements](images/2020-10_CI-CD_Entitlement-1_.jpg)<br><br>
 
-2. Configure Entitlements, then Add Service Plans.
+2. Click *Configure Entitlements*, then click *Add Service Plans*.
+  <br><br>![entitlements](images/2020-10_CI-CD_Entitlement-2_.jpg)<br><br>
+  <br>![entitlements](images/2020-10_CI-CD_Entitlement-3_.jpg)<br><br>
+  <br>![entitlements](images/2020-10_CI-CD_Entitlement-4_.jpg)<br><br>
 
-3. Search for Continuous Integration & Delivery,select the trial-plan, and Add 1 Service Plan.
+3. Search for Continuous Integration & Delivery, and click it.
+  <br><br>![entitlements](images/2020-10_CI-CD_Entitlement-5_.jpg)<br><br>
 
-4. Going back to the Subscriptions of your subaccount, you are able to see SAP Cloud Platform Continuous Integration and Delivery Service Tile.
+4. Select the `trial (Subscription) Trial Plan`, and click *Add 1 Service Plans*.
+  <br><br>![entitlements](images/2020-10_CI-CD_Entitlement-6_.jpg)<br><br>
+
+5. Click *Save*.
+  <br><br>![entitlements](images/2020-10_CI-CD_Entitlement-7_.jpg)<br><br>
+
+6. Going back to the Subscriptions of your subaccount, you are able to see SAP Cloud Platform Continuous Integration and Delivery service tile.
 
 ## Exercise 9.1 - Enable SAP Cloud Platform Continuous Integration and Delivery
 
