@@ -35,6 +35,6 @@ After completing these steps, you will have accessed your deployed application t
 
 Nice job!!!
 
-You created a repostiroy in GitHub to store your source code and used the repository as a source code management system. You successfully configured a predefined continuous integration and delivery pipeline, and by pushing a code change of your app to your GitHub repostiroy, you triggered the pipeline that automatically builds, tests, and deploys your app to your SAP Cloud Platform, Cloud Foundry space.
+You created a repository in GitHub to store your source code and used the repository as a source code management system. You successfully configured a predefined continuous integration and delivery pipeline, and by pushing a code change of your app to your GitHub repostiroy, you triggered the pipeline that automatically builds, tests, and deploys your app to your SAP Cloud Platform, Cloud Foundry space.
 
 Continue to - [Exercise 12 - Add Columns to Worklist](../ex12/README.md).
