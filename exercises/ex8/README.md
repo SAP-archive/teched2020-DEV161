@@ -1,6 +1,8 @@
 # Exercise 8 - Connect Your Project to SAP Cloud Platform Continuous Integration and Delivery - GitHub Setup
 
-In the following exercises (exercises 8 - 11), you will create a project in a public GitHub repository to which you'll store your source code, enable SAP Cloud Platform Continuous Integration and Delivery, and configure and run a predefined continuous integration and delivery (CI/CD) pipeline that automatically tests, builds, and deploys your code changes.
+In exercises 8 - 11, you will create a project in a public GitHub repository to which you'll store your source code, enable SAP Cloud Platform Continuous Integration and Delivery, and configure and run a predefined continuous integration and delivery (CI/CD) pipeline that automatically tests, builds, and deploys your code changes.
+
+In this exercise, you will create a GitHub repository for your project, connect your project to the repository, and push your app's code to it.
 
 ## Exercise 8.0 - Preparations
 
@@ -104,6 +106,6 @@ After completing these steps, you will have added your SAP Fiori project sources
 
 ## Summary
 
-You've created a project in GitHub and stored in it your app's source code.
+You've created a repository for your project in GitHub and stored in it your app's source code.
 
 Continue to - [Exercise 9 - Connect Your Project to SAP Cloud Platform Continuous Integration and Delivery Service - Setup the Service](../ex9/README.md).

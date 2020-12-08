@@ -1,6 +1,8 @@
 # Exercise 11 - Connect Your Project to SAP Cloud Platform Continuous Integration and Delivery - Pipeline Monitoring and Results
 
-In this exercise, you will run a predefined continuous integration and delivery (CI/CD) pipeline that automatically tests, builds, and deploys your code changes.
+In exercises 8 - 11, you will create a project in a public GitHub repository to which you'll store your source code, enable SAP Cloud Platform Continuous Integration and Delivery, and configure and run a predefined continuous integration and delivery (CI/CD) pipeline that automatically tests, builds, and deploys your code changes.
+
+In this exercise, you will monitor the running build of the predefined continuous integration and delivery (CI/CD) pipeline that you triggered previously by pushing code changes to the project's GitHub repository. The running build automatically tests, builds, and deploys your code changes.
 
 ## Exercise 11.1 - Verify the Success of Your Build
 
@@ -35,6 +37,6 @@ After completing these steps, you will have accessed your deployed application t
 
 Nice job!!!
 
-You created a repository in GitHub to store your source code and used the repository as a source code management system. You successfully configured a predefined continuous integration and delivery pipeline, and by pushing a code change of your app to your GitHub repostiroy, you triggered the pipeline that automatically builds, tests, and deploys your app to your SAP Cloud Platform, Cloud Foundry space.
+You created a repository in GitHub to store your source code and used the repository as a source code management system. You successfully configured a predefined continuous integration and delivery pipeline, and by pushing a code change of your app to your GitHub repostiroy, you triggered a build of the pipeline that automatically builds, tests, and deploys your app to your space in SAP Cloud Platform, Cloud Foundry environment.
 
 Continue to - [Exercise 12 - Add Columns to Worklist](../ex12/README.md).
