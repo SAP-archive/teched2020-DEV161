@@ -1,6 +1,8 @@
 # Exercise 9 - Connect Your Project to SAP Cloud Platform Continuous Integration and Delivery Service - Set Up the Service
 
-In this exercise, you will enable SAP Cloud Platform Continuous Integration and Delivery, and configure and run a predefined continuous integration and delivery (CI/CD) pipeline that automatically tests, builds, and deploys your code changes.
+In exercises 8 - 11, you will create a project in a public GitHub repository to which you'll store your source code, enable SAP Cloud Platform Continuous Integration and Delivery, and configure and run a predefined continuous integration and delivery (CI/CD) pipeline that automatically tests, builds, and deploys your code changes.
+
+In this exercise, you will enable the SAP Cloud Platform Continuous Integration and Delivery service, and create and configure a predefined continuous integration and delivery (CI/CD) pipeline that automatically tests, builds, and deploys your code changes.
 
 ## Exercise 9.0 - SAP Cloud Platform Continuous Integration and Delivery - Preparations
 
@@ -165,6 +167,6 @@ After completing these steps, you will have configured a job in SAP Cloud Platfo
 
 ## Summary
 
-You've created a project in GitHub to store your source code, and successfully configured a predefined continuous integration and delivery pipeline that whenever the repository updates, the pipeline automatically builds, tests, and deploys your app to your SAP Cloud Platform, Cloud Foundry space.
+You've enabled the SAP Cloud Platform Continuous Integration and Delivery service and created a predefined continuous integration and delivery pipeline. You've configured a GitHub webhook that links between the GitHub repository you created in a previous exercise and the pipeline. Now, whenever the GitHub repository updates, a build of the pipeline is triggered, which automatically builds, tests, and deploys your app to your space in SAP Cloud Platform, Cloud Foundry environment.
 
 Continue to - [Exercise 10 - Connect Your Project to SAP Cloud Platform Continuous Integration and Delivery - Update Internationalization (i18n)](../ex10/README.md).
