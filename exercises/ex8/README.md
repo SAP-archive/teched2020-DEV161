@@ -6,9 +6,9 @@ In the following exercises (exercises 8 - 11), you will create a project in a pu
 
 If you skipped an exercise or more to get to this exercise, you need to obtain the code of the project as it should be at the end of the previous exercise. To do so, perform the following steps.
 
-1. Click [here](https://github.com/SAP-samples/teched2020-DEV161/blob/code-ex7-build-and-deploy/README.md) to access the branch (`code-ex7-build-and-deploy`) that contains the project and the instructions how to obtain the code.
+1. Click [here](https://github.com/SAP-samples/teched2020-DEV161/tree/code-ex7-build-and-deploy) to access the branch (`code-ex7-build-and-deploy`) that contains the project and the instructions how to obtain the code.
 
-2. Follow the steps in the `README.md`.
+2. Follow the steps on this page.
 
 3. When completed, return to the current [README.md](https://github.com/SAP-samples/teched2020-DEV161/tree/main/exercises/ex8).
 
