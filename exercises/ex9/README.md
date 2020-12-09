@@ -143,6 +143,8 @@ After completing these steps, you will have configured a job in SAP Cloud Platfo
     >| Deploy | On |
     >| Upload to Transport Management Service | Off (default) |
 
+    >To make the parameters available, you may need to click the information message in the *Stages* section or click the *Stages* tab title.
+
     <br><br>![UI Job Build Stage](images/2020-10_CICD_Create_Job_Stages_.jpg)<br><br>
 
 
@@ -152,6 +154,8 @@ After completing these steps, you will have configured a job in SAP Cloud Platfo
     >EU trial API Endpoint: https://api.cf.eu10.hana.ondemand.com
 
     >US trial API Endpoint: https://api.cf.us10.hana.ondemand.com
+
+    >If you get an error indication - remove the `/` at the end.
 
 6. Click the *cfdeploy* credentials that you created in a previous step.
   <br><br>![UI Job Deploy Stage](./images/CICD_UI_job_deploy.png)<br><br>
