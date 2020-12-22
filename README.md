@@ -1,5 +1,7 @@
 # DEV161 - Extend SAP S/4HANA with a Custom UI on SAP Cloud Platform
 
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2020-DEV161)](https://api.reuse.software/info/github.com/SAP-samples/teched2020-DEV161)
+
 ## Description
 
 This repository contains the material for the SAP TechEd 2020 session called **DEV161 - Extend SAP S/4HANA with a Custom UI on SAP Cloud Platform**.
