@@ -13,7 +13,7 @@ After completing these steps, you will know how to access SAP Business Applicati
 1. Open a browser of your choice (Google Chrome, Mozilla Firefox).
     >List of supported browsers is available [here](https://help.sap.com/viewer/9d1db9835307451daa8c930fbd9ab264/Cloud/en-US/8f46c6e6f86641cc900871c903761fd4.html).
 
-2. Go to [SAP Business Technology Platform Trial](https://account.hanatrial.ondemand.com/) page.
+2. Go to [SAP BTP trial](https://account.hanatrial.ondemand.com/) page.
 
 3. Provide your credentials, and press [ENTER] or click *Log On*.
     <br><br>![](images/2020-10_SCP_Trial_Log_On_.jpg)<br><br>
