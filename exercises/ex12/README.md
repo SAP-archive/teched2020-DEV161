@@ -9,7 +9,7 @@ After completing these steps, you will have modified the Worklist view of the ap
 It is recommended that you type most the code to experience the code editor's capabilities.
 
 1. This time, you'll use a new way of searching for a file using the command palette. From the main menu, select *View | Find Command*, delete the `>`, and type *Worklist*. A list of files whose name begins with *Worklist* is displayed.
-    <br><br>![](images/2020-10_BAS_Command_Palette_Search_File_.jpg)<br><br>
+    <br><br>![](images/BAS_Command_Palette_Search_File_.png)<br><br>
 
 2. Click `Worklist.view.xml productsinventory/webapp/view` to open the file in the code editor. 
     <br><br>![](images/2020-10_BAS_Command_Palette_Search_File_Opened_.jpg)<br><br>
