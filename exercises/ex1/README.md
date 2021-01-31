@@ -13,41 +13,31 @@ After completing these steps, you will know how to access SAP Business Applicati
 1. Open a browser of your choice (Google Chrome, Mozilla Firefox).
     >List of supported browsers is available [here](https://help.sap.com/viewer/9d1db9835307451daa8c930fbd9ab264/Cloud/en-US/8f46c6e6f86641cc900871c903761fd4.html).
 
-2. Go to [SAP Business Technology Platform Landing Page](https://www.sap.com/products/business-technology-platform.html?btp=afb73d5c-d59d-4bc1-9a8f-4241eb17b7ab), and click *Free trials*.
+2. Go to [SAP Business Technology Platform Trial](https://account.hanatrial.ondemand.com/) page.
 
+3. Provide your credentials, and press [ENTER] or click *Log On*.
+    <br><br>![](images/2020-10_SCP_Trial_Log_On_.jpg)<br><br>
     >If the log in doesn't work, make sure you fulfill the [requirements](../../README.md#requirements).
 
-    <br>![](images/2020-10_BTP_Landing_Page_.jpg)<br><br>
-
-3.  Click *Try now* of the *SAP Cloud Platform Trial*.
-    <br><br>![](images/2020-10_BTP_Free_Trials_.jpg)<br><br>
-
-4. Click *Log on to trial>*.
-    <br><br>![](images/2020-10_SCP_Trial_Landing_Page_.jpg)<br><br>
-
-5. Provide your credentials, and press [ENTER] or click *Log On*.
-    <br><br>![](images/2020-10_SCP_Trial_Log_On_.jpg)<br><br>
-
-6. Click **SAP Business Application Studio** to open the *Dev Space Manager* page of SAP Business Application Studio. 
+4. Click **SAP Business Application Studio** to open the *Dev Space Manager* page of SAP Business Application Studio. 
+    <br><br>![](images/2020-11_SCP_Trial_Access_BAS_.jpg)<br><br>
     >You may be prompted to accept the legal terms.
 
     >If the log in doesn't work, make sure you fulfill the [requirements](../../README.md#requirements).
 
-    <br>![](images/2020-11_SCP_Trial_Access_BAS_.jpg)<br><br>
-
-## Exercise 1.2 - Create Dev Space
+## Exercise 1.2 - Create Dev Space 
 
 There are several dev space types that are available for you. Each dev space type is tailored for a specific development scenario. In this session, you're developing an SAP Fiori app. Hence, you'll create a dev space of type SAP Fiori.
 
 1. Click *Create Dev Space*.
-    <br><br>![](images/2020-10_BAS_Dev_Space_Manager_Empty_.jpg)<br><br>
+    <br><br>![](images/BAS_Dev_Space_Manager_Empty_.png)<br><br>
 
 2. Enter the name of your dev space, e.g. *Procurement*, select *SAP Fiori* as the application type, and click *Create Dev Space*.
-    <br><br>![](images/2020-10_BAS_Dev_Space_Create_.jpg)<br><br>
+    <br><br>![](images/BAS_Dev_Space_Create_.png)<br><br>
 
 3. Your dev space is being created. This might take a few minutes. Wait until the status shows *RUNNING*.
-    <br><br>![](images/2020-10_BAS_Dev_Space_Starting_.jpg)<br><br>
-    ![](images/2020-10_BAS_Dev_Space_Running_.jpg)<br><br>
+    <br><br>![](images/BAS_Dev_Space_Starting_.png)<br><br>
+    ![](images/BAS_Dev_Space_Running_.png)<br><br>
 
    >If you reached the maximum number of allowed dev spaces (2 for trial accounts), you should either use an exisiting dev space of type *SAP Fiori* or delete one of your exisiting dev spaces. Do not forget to back up your information/code.
 
@@ -61,7 +51,7 @@ There are several dev space types that are available for you. Each dev space typ
 1. Click on your dev space name, e.g. *Procurement*. You'll be redirected to your newly created SAP Business Application Studio dev space.
     >You may be prompted to accept the legal terms.
 
-    <br>![](images/2020-10_BAS_Launched_.jpg)<br><br>
+    <br>![](images/BAS_Launched_.png)<br><br>
 
     >Tip: If you want to go back to the dev space manager page, use the bookmark you saved before or remove the text after its `index.html` in the URL, and press [ENTER].
 
@@ -74,12 +64,12 @@ After completing these steps, you will upload several files to SAP Business Appl
     + Connect the app to a backend system.
 
 1. Click *Open Workspace*.
-    <br><br>![](images/2020-10_BAS_Open_Workspace_.jpg)<br><br>
+    <br><br>![](images/BAS_Open_Workspace-1_.png)<br><br>
 
 2. Select *projects*, and click *Open*.
-    <br><br>![](images/2020-10_BAS_Open_Workspace-2_.jpg)<br><br>
+    <br><br>![](images/BAS_Open_Workspace-2_.png)<br><br>
     >Wait for SAP Business Application Studio to re-load.
-    ><br>![](images/2020-10_BAS_Open_Workspace-3_.jpg)<br><br>
+    ><br>![](images/BAS_Open_Workspace-3_.png)<br><br>
 
 3. From the main menu, select *File | New Folder*.
     >Using information in the popup message, verify that the new folder will be created in */home/user/projects*. If a different path is presented, it's most probably due to a file or folder being selected. Close the *New Folder* dialog, press [CTRL] and click the selected file or folder to deselct it, and repeat this step.
@@ -99,11 +89,11 @@ After completing these steps, you will upload several files to SAP Business Appl
     ><br><br>![](images/2020-10_Save_File_.jpg)<br><br>
 
 8. Open the folder to where you saved the file, and drag and drop it to the *data* folder you created in SAP Business Application Studio.
-    <br><br>![](images/2020-10_BAS_Metadata_Uploaded_.jpg)<br><br>
+    <br><br>![](images/BAS_Metadata_Uploaded_.png)<br><br>
 
     >Follow the same steps for [ui5.yaml](data/ui5.yaml?raw=true), [package.json](data/package.json?raw=true), [manifest.json](data/manifest.json?raw=true), which will be used at a later stage of the workshop.
     >Do not forget to change the *Save as type* to *All Files (\*.\*)*, and for each file make sure you modify its extension to yaml or json.
-    ><br>![](images/2020-10_BAS_Files_Uploaded_.jpg)<br>
+    ><br>![](images/BAS_Files_Uploaded_.png)<br>
 
 ## Summary
 

@@ -32,7 +32,7 @@ Find out more about managing your dev spaces in the SAP Business Application Stu
 ## Exercise 2.2 - Integrated Development Environment (IDE) - The Big Picture
 
 After reading this, you will know how to navigate the IDE.
-    <br><br>![](images/2020-10_BAS_IDE_.jpg)<br><br>
+    <br><br>![](images/BAS_IDE_.png)<br><br>
 
 On the left side you find a quick bar to open most important views.
 

@@ -51,22 +51,22 @@ Both parts are executed using the following command:
     <br><br>![](images/2020-10_BAS_NPX-4_.jpg)<br><br>
 
     >As a result of executing the `npx` command, you'll see that the project structure was updated accordingly.
-    ><br>![](images/2020-10_BAS_Project_After_Config_Deploy_.jpg)<br><br>
+    ><br>![](images/BAS_Project_After_Config_Deploy_.png)<br><br>
 
 ## Exercise 7.2 - Build for the Cloud Foundry Runtime
 
 To build the app for deployment, right-click the `mta.yaml` file, and select *Build MTA*.
-    <br><br>![](images/2020-10_BAS_Build_MTA_.jpg)<br><br>
+    <br><br>![](images/BAS_Build_MTA_.png)<br><br>
 
-    >The task is run in a new tab called *Task: Build MTA*.
-    ><br>![](images/2020-10_BAS_Build_MTA_Task_.jpg)<br><br>
+   >The task is run in a new tab called *Task: Build MTA*.
+   ><br>![](images/BAS_Build_MTA_Task_.png)<br><br>
 
-    >When the build task is complete, additional artifacts are added to the project. The artifact that is used for deployment is the MTA archive (MTAR) `product-inventory_0.0.1.mtar`.
-    ><br>![](images/2020-10_BAS_Project_After_Build_MTA_.jpg)<br><br>
+   >When the build task is complete, additional artifacts are added to the project. The artifact that is used for deployment is the MTA archive (MTAR) `product-inventory_0.0.1.mtar`.
+   ><br>![](images/BAS_Project_After_Build_MTA_.png)<br><br>
 
 ## Exercise 7.3 - Log in to Cloud Foundry
 
-1. Before deploying the app to Cloud Foundry, take a look at what your Cloud Foundry space looks like. Log in to your trial account and enter your Cloud Foundry organization (SAP Cloud Foundry subaccount) and the space to which you'll deploy the app. A new Cloud Foundry space should look as follows:
+1. Before deploying the app to Cloud Foundry, take a look at what your Cloud Foundry space looks like. Log in to your trial account and enter your Cloud Foundry organization (your subaccount in SAP BTP, Cloud Foundry environment) and the space to which you'll deploy the app. A new Cloud Foundry space should look as follows:
     <br><br>![](images/2020-10_SCP_CF_Space_Applications_Before_Deployment_.jpg)<br><br>
     ![](images/2020-10_SCP_CF_Space_Service_Instances_Before_Deployment_.jpg)<br><br>
 
@@ -88,10 +88,10 @@ To build the app for deployment, right-click the `mta.yaml` file, and select *Bu
 ## Exercise 7.4 - Deploy to Cloud Foundry
 
 1. To deploy the app to Cloud Foundry, right-click the `products-inventory_0.0.1.mtar` file, and select *Deploy MTA Archive*.
-    <br><br>![](images/2020-10_BAS_Deploy_MTA_Archive_.jpg)<br><br>
+    <br><br>![](images/BAS_Deploy_MTA_Archive_.png)<br><br>
 
     >The task is re-using the *Task: Build MTA* tab and changes its title to *Task: Deploy MTA Archive*.
-    ><br>![](images/2020-10_BAS_Deploy_MTA_Task_.jpg)<br><br>
+    ><br>![](images/BAS_Deploy_MTA_Task_.png)<br><br>
 
     >You can follow the deployment progress both in the *Task: Deploy MTA Archive* tab and in the *SAP Cloud Platform Cockpit*.
 
@@ -115,7 +115,7 @@ To build the app for deployment, right-click the `mta.yaml` file, and select *Bu
 
 Congratulations, you completed the [Run the app on Cloud Foundry](#Run-the-app-on-CF) exercise!
 
-With this, you have successfully completed the deployment of your SAP Fiori app to SAP Cloud Platform using SAP Business Application Studio.
+With this, you have successfully completed the deployment of your SAP Fiori app to SAP BTP, Cloud Foundry runtime using SAP Business Application Studio.
 
 In this exercise, you used high productivity tools that are available out-of-the-box in SAP Business Applications Studio that make it easy to build and deploy applications as well as work in the Cloud Foundry environment.
 

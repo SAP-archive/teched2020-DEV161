@@ -9,9 +9,9 @@ After completing these steps, you will have modified the Worklist view of the ap
 It is recommended that you type most of the code to experience the code editor's capabilities.
 
 1. Choose *webapp > view* and click the `Worklist.view.xml` file.
-    <br><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Open_.jpg)<br><br>
+    <br><br>![](images/BAS_Worklist_View_Code_Editor_Open_.png)<br><br>
     >The `Worklist.view.xml` file is opened in a code editor tab.
-    >![](images/2020-10_BAS_Worklist_View_Code_Editor_Opened_.jpg)<br><br>
+    >![](images/BAS_Worklist_View_Code_Editor_Opened_.png)<br><br>
 
     >Tip 1: You can get additional screen real estate for the code editor tab by closing the *Explorer* view. You can get even more real estate by double-clicking the tab's title.
 
@@ -31,6 +31,8 @@ It is recommended that you type most of the code to experience the code editor's
 
 3. Between `<items>` and `</items>`, enter `<`. The code completion is triggered.
     <br><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Code_Completion_Control_.jpg)<br><br>
+
+    >The pane at the bottom fills up with additional log messages. This is because every change in the cde editor triggers an suto-refresh of the running app.
 
     >Tip 1: You can select which control to use with the mouse or by using the arrow keys on the keyboard.
 
@@ -70,10 +72,10 @@ It is recommended that you type most of the code to experience the code editor's
 8. You probably noticed that the `Worklist.view.xml` file, including its folders hierarchy, is marked as error. The *Status Bar* will show error too.
    <br><br>![](images/2020-10_BAS_Worklist_View_Code_Editor_Error_Explorer_.jpg)<br><br>
 
-   ![](images/2020-10_BAS_Worklist_View_Code_Editor_Error_Status_Bar_.jpg)<br><br>
+   ![](images/BAS_Worklist_View_Code_Editor_Error_Status_Bar_.png)<br><br>
 
 9. Open the *Problems* tab by clicking the problems indication area in the status bar or by selecting *View | Problems* from the menu bar.
-   <br><br>![](images/2020-10_BAS_Worklist_View_Problems_Pane_.jpg)<br><br>
+   <br><br>![](images/BAS_Worklist_View_Problems_Pane_.png)<br><br>
 
 10. According to the problem description: *The aggregation \"content\" has a cardinality of 0..1 and may only contain one element*. Therefore, wrap the *IconTabBar* and *Table* controls in a `<VBox>` element, and indent accordingly.
 
@@ -156,8 +158,12 @@ It is recommended that you type most of the code to experience the code editor's
 
 ```
 
-11. Test - Refresh the tab where the app is running to see the UI changes.
-   <br><br>![](images/2020-10_BAS_App_After_UI_Changes_.jpg)<br><br>
+11. Test - Go to the app's tab. The app auto-refreshes, presentsting the mock data you provided.
+    >You may need to refresh the tab (F5).
+
+    >It may take time for the app to load.
+
+    <br>![](images/2020-10_BAS_App_After_UI_Changes_.jpg)<br><br>
 
     >Clicking the filters has no impact as the logic was not implemented. This will be the next step in the exercise.
 
@@ -169,12 +175,12 @@ It is recommended that you type most of the code to experience the code editor's
 After completing these steps, you will have modified the logic of the Worklist view of the app to present the list of products according to the selected filter.
 
 1. Choose *webapp > controller* and click the `Worklist.controller.js` file.
-    <br><br>![](images/2020-10_BAS_Worklist_Controller_Code_Editor_Open_.jpg)<br><br>
+    <br><br>![](images/BAS_Worklist_Controller_Code_Editor_Open_.png)<br><br>
     >The `Worklist.controller.js` file opens in a code editor tab.
-    >![](images/2020-10_BAS_Worklist_Controller_Code_Editor_Opened_.jpg)<br><br>
+    >![](images/BAS_Worklist_Controller_Code_Editor_Opened_.png)<br><br>
 
 2. Click *Outline* at the top-right corner of the page to open the outline view. Locate the *onUpdateFinished* function, and click it. The code editor focuses on this function.
-    <br><br>![](images/2020-10_BAS_Worklist_Controller_Outline_.jpg)<br><br>
+    <br><br>![](images/BAS_Worklist_Controller_Outline_.png)<br><br>
 
 3. The following code will add the total product count as a property to the model. This property is presented at the top left corner of the view when clicking the *showAll* filter. Add it just below the end of the `variables` declaration section (*var* statement).
     ```javascript
@@ -183,10 +189,14 @@ After completing these steps, you will have modified the logic of the Worklist v
 
     ```
 
-   <br><br>![](images/2020-10_BAS_Worklist_Controller_onUpdatedFinished_Updated_.jpg)<br><br>
+   <br>![](images/BAS_Worklist_Controller_onUpdatedFinished_Updated_.png)<br><br>
 
-4. Refresh the app to see the effect of this change.
-   <br><br>![](images/2020-10_BAS_Worklist_Controller_onUpdatedFinished_Updated_App_.jpg)<br><br>
+4. Go to the app's tab to see the effect of this change. 
+    >You may need to refresh the tab (F5).
+
+    >It may take time for the app to load.
+
+    <br>![](images/2020-10_BAS_Worklist_Controller_onUpdatedFinished_Updated_App_.jpg)<br><br>
 
 5. Now it's time to handle the user action of clicking the filters. In the Outline view, click the *onRefresh* function, and add the following code above it.
 
@@ -218,8 +228,12 @@ After completing these steps, you will have modified the logic of the Worklist v
 
 ## Exercise 5.3 - Run the App Locally in the Dev Space
 
-1. Refresh the app's tab for the changes to take effect. Click the various filters and see how the list of products changes according to the selected filter.
-   <br><br>![](images/2020-10_BAS_Worklist_Controller_Filters_Low_.jpg)<br><br>
+1. Go to the app's tab to see the effect of this change (the app auto-refreshes). Click the various filters and see how the list of products changes according to the selected filter.
+    >You may need to refresh the tab (F5).
+
+    >It may take time for the app to load.
+
+    <br><br>![](images/2020-10_BAS_Worklist_Controller_Filters_Low_.jpg)<br><br>
 
 2. Close the *Outline* view and all open tabs in the editors section, except the *Welcome* tab.
 

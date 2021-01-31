@@ -5,7 +5,9 @@ In this exercise, you will connect the app to a real backend. You will use the *
 
 ## Exercise 6.0 Preparations
 
-1.	Right-click an empty space in the *Explorer* view and select *Add Folder to Workspace...*.
+1.	Hover over the workspace title in the *Explorer* view, click the `...` and select *Add Folder to Workspace...*.
+    <br><br>![](images/BAS_Add_Project_to_Workspace_.png)<br><br>
+
     >You can also search for this command in the Command Palette. From the menu bar, select *View | Find Command* to open the Command Palette.
     <br><br>![](images/2020-10_BAS_Multi-Root-1_.jpg)<br><br>
 
@@ -16,7 +18,7 @@ In this exercise, you will connect the app to a real backend. You will use the *
     <br><br>![](images/2020-10_BAS_Multi-Root-3_.jpg)<br><br>
 
     >In the *Explorer* view, you can see that the name of the workspace changed to *UNTITLED (WORKSPACE)* and an additional project called *data* was added to this workspace. Expand the *data* project. This project contains the files you uploaded at the end of exercise 1,  which you will use in this exercise.
-    ><br><br>![](images/2020-10_BAS_Multi-Root-4_.jpg)<br><br>
+    ><br><br>![](images/BAS_Multi-Root-4_.png)<br><br>
 
     >You can choose to have multiple projects residing in a multi-root workspace. In this case, each project is a root in the workspace. There is a `.vscode` folder for each project, and the developer can view more than one project at a time in the workspace. In multi-root, you can save the settings, launch, and task configurations per workspace so that they affect all projects within it. You can find out more about *Workspaces* in the SAP Business Application Studio [documnetation](https://help.sap.com/viewer/9d1db9835307451daa8c930fbd9ab264/Cloud/en-US/0919ce1ca4a342628e49c0f5e9c8cdcf.html).
 
@@ -89,7 +91,7 @@ After completing these steps, you will have tested the app with data fetched fro
 2.	The command palette opens with a list of options. Click *start* to run this script.
     <br><br>![](images/2020-10_BAS_Preview_Application_Start-2_.jpg)<br><br>
 
-    >You may receive notifications at the bottom right of the screen asking you to expose ports. Click *Yes*.
+    >You may receive notifications at the bottom right of the screen asking you to expose ports (8081, 35XXX). Click *Yes*.
 
     >![](images/2020-10_BAS_Expose_Port_Notification_.jpg)<br><br>
 

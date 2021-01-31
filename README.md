@@ -1,10 +1,10 @@
-# DEV161 - Extend SAP S/4HANA with a Custom UI on SAP Cloud Platform
+# DEV161 - Extend SAP S/4HANA with a Custom UI on SAP Business Technology Platform
 
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2020-DEV161)](https://api.reuse.software/info/github.com/SAP-samples/teched2020-DEV161)
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2020 session called **DEV161 - Extend SAP S/4HANA with a Custom UI on SAP Cloud Platform**.
+This repository contains the material for the SAP TechEd 2020 session called **DEV161 - Extend SAP S/4HANA with a Custom UI on SAP Business Technology Platform**.
 
 ## Overview
 
@@ -23,7 +23,7 @@ At the end of the session, your application will look like this:
 ## Requirements
 
 The requirements to follow the exercises in this repository are:
-- Get a free trial account on SAP Cloud Platform; see this [tutorial](https://developers.sap.com/tutorials/hcp-create-trial-account.html). Choose *Europe (Frankfurt) - AWS* or *US East (VA) - AWS* regions.
+- Get a free trial account on SAP BTP Trial; see this [tutorial](https://developers.sap.com/tutorials/hcp-create-trial-account.html). Choose *Europe (Frankfurt) - AWS* or *US East (VA) - AWS* regions.
 - Create the *Northwind* destination within the Cloud Foundry environment; see this [tutorial](https://developers.sap.com/tutorials/cp-cf-create-destination.html).
 - Enable SAP Business Application Studio for development; see this [tutorial](https://developers.sap.com/tutorials/appstudio-onboarding.html).
 - Be excited about the power of SAP technologies to make your developer life easier.
@@ -47,7 +47,7 @@ The requirements to follow the exercises in this repository are:
     - [Exercise 3.4 - Open the Project's Workspace](exercises/ex3#exercise-34---open-the-project's-workspace)
 - [Exercise 4 - Test the Application with Mock Server](exercises/ex4/)
     - [Exercise 4.1 - Run the Application with Auto-Generated Mock Data](exercises/ex4#exercise-41---run-the-application-with-auto-generated-mock-data)
-    - [Exercise 4.2 - Run the app with User Provided Mock Data](exercises/ex2#Exercise-42---run-the-application-with-user-provided-mock-data)
+    - [Exercise 4.2 - Run the app with User Provided Mock Data](exercises/ex4#Exercise-42---run-the-application-with-user-provided-mock-data)
 - [Exercise 5 - Add Data Filters](exercises/ex5/)
     - [Exercise 5.1 - UI Modifications](exercises/ex5#exercise-51---ui-modifications)
     - [Exercise 5.2 - Logic Modifications (Controller)](exercises/ex5#exercise-52---logic-modifications-(controller))
@@ -63,21 +63,21 @@ The requirements to follow the exercises in this repository are:
     - [Exercise 7.3 - Log in to CF](exercises/ex7#exercise-73---log-in-to-cf)
     - [Exercise 7.4 - Deploy to CF](exercises/ex7#exercise-74---deploy-to-cf)
     - [Exercise 7.5 - Run the App on CF](exercises/ex7#exercise-75---run-the-app-on-cf)
-- [Exercise 8 - Apply CI/CD to SAP Fiori Development on SAP Cloud Platform - GitHub Setup](exercises/ex8/)
+- [Exercise 8 - Apply CI/CD to SAP Fiori Development on SAP Business Technology Platform - GitHub Setup](exercises/ex8/)
     - [Exercise 8.1 - Create a GitHub Project](exercises/ex8#exercise-81---create-a-github-project)
     - [Exercise 8.2 - Create Personal Access Token for GitHub](exercises/ex8#exercise-82---create-personal-access-token-for-github)
     - [Exercise 8.3 - Add Git repository to Fiori project](exercises/ex8#exercise-83---add-git-repository-to-fiori-project)
-- [Exercise 9 - Apply CI/CD to SAP Fiori Development on SAP Cloud Platform - CICD Setup](exercises/ex9/)
-    - [Exercise 9.0 - SAP Cloud Platform Continuous Integration and Delivery - Preparations](exercises/ex9#exercise-90---sap-cloud-platform-continuous-integration-and-delivery---preparations)
-    - [Exercise 9.1 - Enable SAP CP Continuous Integration and Delivery](exercises/ex9#exercise-91---enable-sap-cp-continuous-integration-and-delivery)
-    - [Exercise 9.2 - Configure Credentials in SAP CP Continuous Integration and Delivery](exercises/ex9#exercise-92---configure-credentials-in-sap-cp-continuous-integration-and-delivery)
-    - [Exercise 9.3 - Configure a job in SAP Cloud Platform Continuous Integration and Delivery](exercises/ex9#exercise-93---configure-a-job-in-sap-cloud-platform-continuous-integration-and-delivery)
+- [Exercise 9 - Apply CI/CD to SAP Fiori Development on SAP Business Technology Platform - CICD Setup](exercises/ex9/)
+    - [Exercise 9.0 - SAP Continuous Integration and Delivery](exercises/ex9#exercise-90---sap-continuous-integration-and-delivery---preparations)
+    - [Exercise 9.1 - Enable SAP Continuous Integration and Delivery](exercises/ex9#exercise-91---enable-sap-continuous-integration-and-delivery)
+    - [Exercise 9.2 - Configure Credentials in SAP Continuous Integration and Delivery](exercises/ex9#exercise-92---configure-credentials-in-sap-continuous-integration-and-delivery)
+    - [Exercise 9.3 - Configure a job in SAP Continuous Integration and Delivery](exercises/ex9#exercise-93---configure-a-job-in-sap-continuous-integration-and-delivery)
     - [Exercise 9.4 - Configure a GitHub Webhook](exercises/ex9#exercise-94---configure-a-github-webhook)
-- [Exercise 10 - Apply CI/CD to SAP Fiori Development on SAP Cloud Platform - App Modification](exercises/ex10/)
+- [Exercise 10 - Apply CI/CD to SAP Fiori Development on SAP Business Technology Platform - App Modification](exercises/ex10/)
     - [Exercise 10.1 - Make a Change in the Project](exercises/ex10#exercise-101---make-a-change-in-the-project)
     - [Exercise 10.2 - Update the Project's Git Repository](exercises/ex10#exercise-102---update-the-project's-git-repository)
-- [Exercise 11 - Apply CI/CD to SAP Fiori Development on SAP Cloud Platform - CICD Monitoring](exercises/ex11/)
-    - [Exercise 11.1 - Verify Build Success in SAP CP Continuous Integration and Delivery](exercises/ex11#exercise-111---verify-build-success-in-sap-cp-continuous-integration-and-delivery)
+- [Exercise 11 - Apply CI/CD to SAP Fiori Development on SAP Business Technology Platform - CICD Monitoring](exercises/ex11/)
+    - [Exercise 11.1 - Verify Build Success in SAP Continuous Integration and Delivery](exercises/ex11#exercise-111---verify-build-success-in-sap-continuous-integration-and-delivery)
     - [Exercise 11.2 - Access the Application](exercises/ex11#exercise-112---access-the-application)
 - [Exercise 12 - Add Columns to Worklist](exercises/ex12/)
     - [Exercise 12.1 - Add Columns to Worklist](exercises/ex12#exercise-121---add-columns-to-worklist)
