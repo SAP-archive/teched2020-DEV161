@@ -72,6 +72,6 @@ Usually you should start with the deploy finctionality. However, since the appis
 
 Congratulations, you completed the [Useful CF Commands](#useful-cf-commands) exercise!
 
-It is a set of powerful tools that lets you interact with SAP Cloud Platform without leaving SAP Business Application Studio. This can save you a lot of time!
+It is a set of powerful tools that lets you interact with SAP Business Technology Platform without leaving SAP Business Application Studio. This can save you a lot of time!
 
-Return to [DEV161 - Extend SAP S/4HANA with a Custom UI on SAP Cloud Platform](../../README.md).
+Return to [DEV161 - Extend SAP S/4HANA with a Custom UI on SAP Business Technology Platform](../../README.md).
