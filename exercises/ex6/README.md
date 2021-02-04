@@ -20,7 +20,7 @@ In this exercise, you will connect the app to a real backend. You will use the *
     >In the *Explorer* view, you can see that the name of the workspace changed to *UNTITLED (WORKSPACE)* and an additional project called *data* was added to this workspace. Expand the *data* project. This project contains the files you uploaded at the end of exercise 1,  which you will use in this exercise.
     ><br><br>![](images/BAS_Multi-Root-4_.png)<br><br>
 
-    >You can choose to have multiple projects residing in a multi-root workspace. In this case, each project is a root in the workspace. There is a `.vscode` folder for each project, and the developer can view more than one project at a time in the workspace. In multi-root, you can save the settings, launch, and task configurations per workspace so that they affect all projects within it. You can find out more about *Workspaces* in the SAP Business Application Studio [documnetation](https://help.sap.com/viewer/9d1db9835307451daa8c930fbd9ab264/Cloud/en-US/0919ce1ca4a342628e49c0f5e9c8cdcf.html).
+    >You can choose to have multiple projects residing in a multi-root workspace. In this case, each project is a root in the workspace. There is a `.vscode` folder for each project, and the developer can view more than one project at a time in the workspace. In multi-root, you can save the settings, launch, and task configurations per workspace so that they affect all projects within it. You can find out more about *Workspaces* in the SAP Business Application Studio [documentation](https://help.sap.com/viewer/9d1db9835307451daa8c930fbd9ab264/Cloud/en-US/0919ce1ca4a342628e49c0f5e9c8cdcf.html).
 
 ## Exercise 6.1 - Modify the `ui5.yaml` file
 
