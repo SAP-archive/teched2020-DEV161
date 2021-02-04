@@ -166,7 +166,7 @@ After completing these steps, you will have configured a job in SAP Continuous I
     <br><br>![UI Job Build Stage](images/2020-10_CICD_Create_Job_Stages_.jpg)<br><br>
 
 
-5. Provide the needed information for the *Deploy* task. You can get your API endpoint (e.g. for EU trial ), org name, and space name from your subaccount overview in the SAP Cloud Platform cockpit:
+5. Provide the needed information for the *Deploy* task. You can get your API endpoint (e.g. for EU trial ), org name, and space name from your subaccount overview in the SAP BTP Cockpit:
   <br><br>![Cockpit](./images/CP_API_Endpoint.png)<br><br>
 
     >EU trial API Endpoint: https://api.cf.eu10.hana.ondemand.com
