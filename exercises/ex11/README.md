@@ -24,9 +24,9 @@ After completing these steps, you will have monitored the outcome of your job in
 
 ## Exercise 11.2 - Access the Deployed Application.
 
-After completing these steps, you will have accessed your deployed application through the SAP Cloud Platform cockpit.
+After completing these steps, you will have accessed your deployed application through the SAP BTP Cockpit.
 
-1. To see the results of the deployment to Cloud Foundry, in the *SAP Cloud Platform Cockpit*, go to the Cloud Foundry space to which you deployed the app, and click the *Applications* tab. Click *products-inventory-router*, and then click the link in the *Application Routes* section.
+1. To see the results of the deployment to Cloud Foundry, in the *SAP BTP Cockpit*, go to the Cloud Foundry space to which you deployed the app, and click the *Applications* tab. Click *products-inventory-router*, and then click the link in the *Application Routes* section.
     <br><br>![CP Apps](./images/CP_app_routes.png) <br><br>
 
 2. Verify that the deployed application is running and showing the change that you've made.

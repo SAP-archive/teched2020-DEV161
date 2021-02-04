@@ -4,7 +4,7 @@ In this exercise, you will create the app's deployment artifacts, deploy the app
 
 ## Exercise 7.1 - Configure the App to Use the Cloud Foundry Runtime
 
-After completing these steps, you will know how to prepare the app for deployment to the Cloud Foundry runtime, and use the Cloud Foundry command line tools as well as SAP Cloud Platform cockpit.
+After completing these steps, you will know how to prepare the app for deployment to the Cloud Foundry runtime, and use the Cloud Foundry command line tools as well as SAP BTP Cockpit.
 
 1. Open a new terminal using *[CTRL] + ~ keyboard* shortcut or *Terminal | New Terminal* from the menu bar.
 <br><br>![](images/2020-10_BAS_Open_Terminal_.jpg)<br><br>
@@ -44,13 +44,7 @@ Both parts are executed using the following command:
 
     <br><br>![](images/2020-10_BAS_NPX-2_.jpg)<br><br>
 
-    >After you complete the above, a script runs and you'll enter the SAP Fiori launchpad configuration step.
-    ><br>![](images/2020-10_BAS_NPX-3_.jpg)<br><br>
-
-5. For *Add FLP config and generate artifacts?* type `n` (default), and press [ENTER].
-    <br><br>![](images/2020-10_BAS_NPX-4_.jpg)<br><br>
-
-    >As a result of executing the `npx` command, you'll see that the project structure was updated accordingly.
+5. As a result of executing the `npx` command, you'll see that the project structure was updated accordingly.
     ><br>![](images/BAS_Project_After_Config_Deploy_.png)<br><br>
 
 ## Exercise 7.2 - Build for the Cloud Foundry Runtime
@@ -76,7 +70,7 @@ To build the app for deployment, right-click the `mta.yaml` file, and select *Bu
     >You can also log in to Cloud Foundry by clicking the Home icon at the left-hand side of the status bar or, in the terminal, execute the *cf login* command and follow the same steps.
 
 3. Select the command *CF: Login to cloud foundry*.
-<br><br>![](images/2020-10_BAS_CF_Login-1_.jpg)<br><br>
+<br><br>![](images/BAS_CF_Login-1_.png)<br><br>
 
     >Type *cf* to filter commands.
 
@@ -93,7 +87,7 @@ To build the app for deployment, right-click the `mta.yaml` file, and select *Bu
     >The task is re-using the *Task: Build MTA* tab and changes its title to *Task: Deploy MTA Archive*.
     ><br>![](images/BAS_Deploy_MTA_Task_.png)<br><br>
 
-    >You can follow the deployment progress both in the *Task: Deploy MTA Archive* tab and in the *SAP Cloud Platform Cockpit*.
+    >You can follow the deployment progress both in the *Task: Deploy MTA Archive* tab and in the *SAP BTP Cockpit*.
 
 2. To see the results of the deployment to Cloud Foundry, go to the *Cloud Foundry* tab. Your Cloud Foundry space should look as follows:
     <br><br>![](images/2020-10_SCP_CF_Space_Service_Instances_After_Deployment_.jpg)<br><br>
@@ -101,11 +95,11 @@ To build the app for deployment, right-click the `mta.yaml` file, and select *Bu
 
 ## Exercise 7.4 - Run the App on Cloud Foundry
 
-1. To run the application on Cloud Foundry, in the *SAP Cloud Platform Cockpit*, go to the Cloud Foundry space to which you deployed the app, and click the *Applications* tab. Click *products-inventory-router*, and then click the link in the *Application Routes* section.
+1. To run the application on Cloud Foundry, in the *SAP BTP Cockpit*, go to the Cloud Foundry space to which you deployed the app, and click the *Applications* tab. Click *products-inventory-router*, and then click the link in the *Application Routes* section.
     <br><br>![](images/2020-10_SCP_CF_Space_Application_Routes_.jpg)<br><br>
 
-    >To run the application on Cloud Foundry without accessing *SAP Cloud Platform Cockpit*, copy the link to the application from the deployment task (without the commas), paste it in a browser tab, and click [ENTER].
-    ><br>![](images/2020-10_BAS_Link_To_App_On_CF_.jpg)<br><br>
+    >To run the application on Cloud Foundry without accessing *SAP BTP Cockpit*, copy the link to the application from the deployment task (without the commas), paste it in a browser tab, and click [ENTER].
+    ><br>![](images/BAS_Link_To_App_On_CF_.png)<br><br>
 
 
 2. You should see the app running on Cloud Foundry.
@@ -123,4 +117,4 @@ You reached a major milestone of this session, the full app lifecycle: creation,
 
 You're awesome!
 
-Continue to [Connect Your Project to SAP Cloud Platform Continuous Integration and Delivery - Github Setup](../ex8/README.md).
+Continue to [Connect Your Project to SAP Continuous Integration and Delivery - Github Setup](../ex8/README.md).
